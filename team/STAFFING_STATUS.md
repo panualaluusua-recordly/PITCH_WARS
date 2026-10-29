@@ -2,7 +2,7 @@
 
 Updated: 2026-10-29 (Europe/Helsinki).
 
-**Active round 2:** Kela v3, LahiTapiola v3, Alma Media v3, Enfuce v2, Ponsse v3 and Savings Banks Group v3. See `team/staffing/ROUND2.md` for current scope and effort. Ville now owns all Prio A buyers, including Valmet; earlier "primary Valmet" notes below are historical. No new Prio A versions or roster edits are made by this agent. Live consultant verification awaits access to the existing local team-token file; role-only work continues.
+**Active round 2:** Kela v3, LahiTapiola v3, Alma Media v3, Enfuce v2, Ponsse v3 and Savings Banks Group v4. See `team/staffing/ROUND2.md` for current scope and effort. Ville now owns all Prio A buyers, including Valmet; earlier "primary Valmet" notes below are historical. No new Prio A versions or roster edits are made by this agent. Live consultant verification awaits access to the existing local team-token file; role-only work continues.
 
 ## Current assignment and status
 

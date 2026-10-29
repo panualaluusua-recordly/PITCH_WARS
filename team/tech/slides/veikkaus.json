@@ -9,7 +9,9 @@
       "bullets": [
         "**Licence baseline first:** entitlement vs. actual use per multi-year commitment, from the admin and usage logs you have. A new component is proposed only where existing capacity fails a tested need.",
         "**Proof, not promises:** every finding is a card with log evidence and a compliance note, or is marked \"confidence low, evidence requested\". Options are scored on five weighted criteria from your brief; compliance is also a pass/fail gate.",
-        "**Model deployment is measured, not rebuilt:** lead time and manual hand-offs per step on your in-house AI platform. Vendor-neutral: products are confirmed in week 1."
+        "**Model deployment is measured, not rebuilt:** lead time and manual hand-offs per step on your in-house AI platform. Vendor-neutral: products are confirmed in week 1.",
+        "**Sample finding card:** \"Nightly player-reporting job, 14 of 90 runs failed, 3 manual restarts. Source: task log. Impact: late reports. Compliance: audit trail OK, lineage gap. Confidence: medium.\"",
+        "**Checks added:** D2: is localisation of player-facing report and model outputs a pipeline step (finding, not fix). D3: rollback tested on one past deployment where history exists. D4: option C is a paper sketch only, no tool bake-off; throughput scored on peak load and batch lag from task logs, run cost per option is a scoring input."
       ],
       "diagram": {
         "columns": [
@@ -44,7 +46,7 @@
             ]
           }
         ],
-        "band": "Scope map in your brief's own labels, not your confirmed architecture. Every finding: access control, audit trail, lineage, player-data handling."
+        "band": "Scope map in your brief's own labels, not your confirmed architecture. Every finding: access control, audit trail, lineage, player-data handling. Arrows indicative: data / models / reports."
       }
     },
     {

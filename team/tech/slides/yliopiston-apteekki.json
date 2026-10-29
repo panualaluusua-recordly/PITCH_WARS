@@ -43,19 +43,39 @@
             ]
           }
         ],
-        "band": "Arviointi tehdään lukuoikeuksin ja nykyisillä lisensseillä. Tuotantoon ei kosketa, apteekkien arki jatkuu ennallaan."
+        "band": "Arviointi tehdään lukuoikeuksin, nykyisillä lisensseillä ja irrotetuilla otteilla tai synteettisellä datalla. Tuotantojärjestelmiin ei tehdä muutoksia eikä niiden kuormaa lisätä."
       }
     },
     {
       "title": "Neljä tarkistuspistettä: te hyväksytte kriteerit ennen pisteytystä, ja pistokoe tehdään ilman asiakastietoja",
       "table": [
-        ["Tarkistuspiste", "Milloin", "Läpäisyehto"],
-        ["Nykytilakartta", "vk 2", "ERP, BI, pilvi ja verkkoapteekin tietovirrat nimetty; nykyiset selaintunnisteet listattu havaintoina (emme poista niitä)"],
-        ["Portti 1: kriteerit", "vk 3", "Hyväksytte kriteerit ja painot ennen pisteytystä; tietosuojavastaava on nähnyt poissulkevan ehdon, EU/ETA-ehdon ja oikeusperustekysymykset"],
-        ["Pistokoe", "vk 4–5", "1 ERP-virta ja 1 verkkoapteekin tapahtumavirta jokaisen vaihtoehdon läpi synteettisellä tai anonymisoidulla datalla; ei asiakas- tai reseptitason tietoja"],
-        ["Päätös", "vk 6", "Vaihtoehto valittu (myös A on sallittu); 12 kk:n tiekartta tarkistuspisteineen kuukausina 3 ja 6"]
+        [
+          "Tarkistuspiste",
+          "Milloin",
+          "Läpäisyehto"
+        ],
+        [
+          "Nykytilakartta",
+          "vk 2",
+          "ERP, BI, pilvi ja verkkoapteekin tietovirrat nimetty; nykyiset selaintunnisteet listattu havaintoina (emme poista niitä)"
+        ],
+        [
+          "Portti 1: kriteerit",
+          "vk 3",
+          "Hyväksytte kriteerit ja painot ennen pisteytystä; tietosuojavastaava on nähnyt poissulkevan ehdon, EU/ETA-ehdon ja oikeusperustekysymykset"
+        ],
+        [
+          "Pistokoe",
+          "vk 4–5",
+          "Pistokoe läpäisty vaihtoehdolle, kun sama ERP-virta ja sama verkkoapteekin tapahtuma saapuvat perille ilman selainpuolen skriptiä; viive ja ajokustannus mitataan ja raportoidaan vaihtoehdoittain; epäonnistuminen kirjataan pisteisiin. Data on synteettistä tai anonymisoitua, ei asiakas- tai reseptitason tietoja"
+        ],
+        [
+          "Päätös",
+          "vk 6",
+          "Vaihtoehto valittu (myös A on sallittu); 12 kk:n tiekartta tarkistuspisteineen kuukausina 3 ja 6"
+        ]
       ],
-      "note": "Tuntemattomat: ERP, BI ja pilvi nimetään vk 1 (vaihtoehdot riippuvat niistä); lisenssiluettelo vk 2, ilman sitä kustannus on vain suunta; esimerkkidata ilman henkilötietoja vk 3, ilman sitä pistokoe on dokumenttitarkistus ja pisteet merkitään epävarmemmiksi. Emme tee: toteutusta, migraatiota, tunnisteiden poistoa, oikeudellista arviota emmekä tekoälyä."
+      "note": "Tuntemattomat: ERP, BI ja pilvi nimetään vk 1 (vaihtoehdot riippuvat niistä); lisenssiluettelo vk 2, ilman sitä kustannus on vain suunta; esimerkkidata ilman henkilötietoja vk 3, ilman sitä pistokoe on dokumenttitarkistus ja pisteet merkitään epävarmemmiksi. Emme tee: toteutusta, migraatiota, tunnisteiden poistoa, oikeudellista arviota emmekä tekoälyä. Poissulkeva ehto todennetaan työkalukohtaisesti toimittajadokumentaation ja arkkitehtuurikuvauksen katselmuksella; selaintunnisteet inventoidaan sivuston tunnistehallinnan asetuksista (vaihe 1), ei lisäämällä seurantaa."
     }
   ]
 }

@@ -7,6 +7,7 @@
       "title": "Cost visibility per member bank and workload, with guardrails inside your own Snowflake and Azure",
       "bullets": [
         "Snowflake usage, Azure cost data and Power BI capacity are combined in one cost model, tagged by member bank and workload. Guardrails stop runaway spend before the invoice.",
+        "Attribution: query and role tags where warehouses are per bank, usage-based allocation where shared; the remainder goes to a visible 'unallocated' line that you approve. Baseline = at least 3 months of usage, read-only roles, signed off by you.",
         "Everything runs in your tenant in the EU. No data goes to non-European AI toolchains.",
         "DORA: an ICT-risk register entry per tool, an exit plan, and an audit log of every guardrail change."
       ],
@@ -46,7 +47,7 @@
             ]
           }
         ],
-        "band": "Pipelines tied to non-European AI toolchains are inventoried in the definition phase and replaced or documented with an exit plan"
+        "band": "Inventory method: scan Snowflake external functions, integrations, tasks and query history, plus Azure app registrations and egress. Each finding is remove, replace or exit plan and feeds the DORA register; replacing a pipeline over 2 days is a change request after Definition"
       }
     },
     {
@@ -89,7 +90,7 @@
         420,
         444
       ],
-      "note": "Phases: definition = baseline + toolchain inventory; delivery = guardrails and optimisation; ongoing = monthly review. Savings targets are set after the baseline; we do not quote % savings before measuring."
+      "note": "Phases: definition = baseline + toolchain inventory; delivery = guardrails and optimisation; ongoing = monthly review. Savings targets are set after the baseline; we do not quote % savings before measuring. Guardrails go live alert-only for 2 weeks, then enforce; hard suspend only on non-production warehouses; every change is code with rollback. Read-only access in Definition, write access only in Delivery on approved changes. Out of scope: re-platforming; a flagged pipeline over 2 days to replace is a change request."
     }
   ],
   "subtitle": "Two slides for deck-writer to insert after the answer-first slide"

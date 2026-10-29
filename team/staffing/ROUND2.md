@@ -17,7 +17,7 @@ Current staffing pass: Kela, LahiTapiola, Alma Media, Enfuce, Ponsse and Savings
 | Alma Media | v3 | MLOps lead 20 x EUR 960 + DE 20 x EUR 920 = 40 days | EUR 37,600 | Lean pair retained; start at signature is a target requiring resource verification, not a guaranteed mobilisation claim. |
 | Enfuce | v2 | Architect 12 + Snowflake DE 10 = 22 days at EUR 920/day | EUR 20,240 | Candidate experience, certificates and availability are requirements rather than unsupported assertions. |
 | Ponsse | v3 | DE 13 x EUR 920 + DA 7 x EUR 1,000 + architect 2 x EUR 920 = 22 days | EUR 20,800 | Smaller scope: three KPIs, two feeds, one reporting unit, six elapsed weeks. Assessment EUR 6,600; gated dashboard EUR 14,200. |
-| Savings Banks Group | v3 | Definition 14 + Delivery 26 + ongoing 9 = 49 days at EUR 920/day | EUR 45,080 | Advisor effort moved to 2 days in each build phase, within the roster's 10% peak cap. No named resource commitment; optional VDE architecture must be separately funded. |
+| Savings Banks Group | v4 | Definition 14 + Delivery 26 + ongoing 9 = 49 days at EUR 920/day | EUR 45,080 | Advisor effort moved to 2 days in each build phase, within the roster's 10% peak cap. No named resource commitment; optional VDE architecture must be separately funded. |
 
 All totals exclude VAT. Other commercial inclusions remain as described in the draft. Architect and other-role base rates are proposed commercial rates unless separately confirmed; Rauno's mandatory DE/DA/AI rules are preserved. The shared price-check also sets EUR 115/h for other roles, which these variants meet.
 
@@ -55,3 +55,5 @@ Before a named commitment: check live roster and validity time, actual role/lang
 ## Verification
 
 All six PDFs rendered and visually checked page by page (39 slides total); no renderer overflow marker. Prices above reconcile to role days at the stated 8-hour rates. These are staffing drafts for the existing offer owners, not submissions or verified consultant bookings.
+
+Savings Banks Group v4 incorporates the concurrently published technical v3 safeguards (attribution rules, three-month baseline, alert-only rollout, non-production suspend limits, least-privilege access and two-day replacement cap), then adds the staffing corrections above. Technical v3 is preserved unchanged.

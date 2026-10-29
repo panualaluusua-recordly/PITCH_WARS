@@ -6,12 +6,27 @@ Slides are separated by a line containing only '---'.
 The first slide is the cover. A slide whose first line is '<!-- statement -->'
 renders as a lime statement slide.
 """
-import base64, pathlib, re, subprocess, sys
+import base64, os, pathlib, re, subprocess, sys
 import markdown
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 LOGO = ROOT / ".claude/skills/frontend-slides/bold-template-pack/templates/recordly/assets/logo/recordly-wordmark-knockout.png"
-CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+CHROME_CANDIDATES = [
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+    r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+]
+
+
+def find_chrome():
+    """CHROME env var wins; else the first installed browser in the list."""
+    env = os.environ.get("CHROME")
+    if env:
+        return env
+    for candidate in CHROME_CANDIDATES:
+        if pathlib.Path(candidate).exists():
+            return candidate
+    sys.exit("No Chrome or Edge found; set the CHROME environment variable to the browser executable.")
 
 CSS = """
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&display=swap");
@@ -108,7 +123,7 @@ def main(path):
     html_path = src.with_suffix(".html")
     html_path.write_text(doc)
     pdf_path = src.with_suffix(".pdf")
-    subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--no-pdf-header-footer", "--virtual-time-budget=8000",
+    subprocess.run([find_chrome(), "--headless=new", "--disable-gpu", "--no-pdf-header-footer", "--virtual-time-budget=8000",
                     "--run-all-compositor-stages-before-draw", f"--print-to-pdf={pdf_path}", html_path.as_uri()],
                    check=True, capture_output=True)
     print(f"{pdf_path} ({len(slides)} slides, {pdf_path.stat().st_size // 1024} KB)")
