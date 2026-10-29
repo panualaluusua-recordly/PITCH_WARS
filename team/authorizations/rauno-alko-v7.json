@@ -1,0 +1,22 @@
+{
+  "source": "direct human instruction in chat",
+  "by_player": "rauno",
+  "at": "2026-10-29T12:11:34.406897+00:00",
+  "human_instruction": "käytä sitä; sit ala vaan painaa tarjouksia sisään ohjeiden mukaisesti",
+  "buyer_id": "alko",
+  "project_id": "alko-master-data-quality-and-duplicate-cleanup",
+  "version": 7,
+  "price_eur": 21320,
+  "allowed_kinds": [
+    "proposal"
+  ],
+  "pdf_source": "team/decks/alko/alko-master-data-quality-and-duplicate-cleanup-v7.pdf",
+  "pdf_sha256": "5e0b0deb0a37d8c064fd8fa7837788cb46b2d720f4aacd092a5a190503c9d3c5",
+  "review": "Buyer feedback addressed; technical-owner latest fixes preserved. Scope/effort and 8-hour rate arithmetic checked; PDFs visually checked; no named consultant or verified availability invented.",
+  "status": "active",
+  "control_change_explicitly_approved": true,
+  "control_approval_at": "2026-10-29T12:05:35.304676+00:00",
+  "control_approval_human_reply": "anna mennä (reply to explicit approval-control change and exact three-offer question)",
+  "derived_from_authorization": "team/authorizations/rauno-alko-v5.json",
+  "revision_basis": "Buyer-feedback correction under the ongoing human instruction to update and submit these three offers; explicit chat-control approval retained. This is agent-delegated revision, not a claim of new human PDF-by-PDF review."
+}
