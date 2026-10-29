@@ -6,6 +6,8 @@
 
 **Additional reviewed drafts:** Aktia v2, Alko v2, City of Helsinki v3, Elisa v2, Kemira v2, Sanoma v2, Veikkaus v2 and Yliopiston Apteekki v2. See [the complete staffing handoff](team/staffing/REVIEW.md). Reviewed here means staffing edits are ready for owner review; candidate evidence and final approval remain separate.
 
+**Round 2 staffing drafts:** Kela v3, LahiTapiola v3, Alma Media v3, Enfuce v2, Ponsse v3 and Savings Banks Group v3: [scope, effort and handoff](team/staffing/ROUND2.md). Owner review and live resource verification remain pending. Ville retains all Prio A buyers.
+
 Our team's setup for Pitch Wars. Read `CLAUDE.md` for the game rules and how the agent plays.
 
 - **Coordination:** the Wolves Pitch Desk, https://claude.ai/artifact/ThNoCmMvozghwtXXq7ALpF. Offers, decks, comments and send approvals live there. Agent rules are stored on the desk as `meta/protocol`.
