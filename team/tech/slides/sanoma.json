@@ -46,7 +46,7 @@
             ]
           }
         ],
-        "band": "In your repository and cloud tenant: branch protection, no agent merge right, no production credentials, run log and cost cap per ticket, pause switch. Ticket text is treated as data, not instructions; sandbox has no network access except your model endpoint; no secrets in its environment. Model runs in your cloud tenant on your credits; tickets and code leave it nowhere. Retry cap 3 attempts per ticket; cost cap per ticket proposed on day 2 from the hackathon runs"
+        "band": "In your repository and cloud tenant: branch protection, no agent merge right, no production credentials, run log and cost cap per ticket, pause switch. Ticket text is treated as data, not instructions; sandbox has no network access except your model endpoint; no secrets in its environment. Model runs in your cloud tenant on your credits; we confirm on day 1 that ticket and code data stay inside it, and stop if the available model cannot do that. Retry cap 3 attempts per ticket; cost cap per ticket proposed on day 2 from the hackathon runs. The agent rebases on main; a conflict with an engineer's open change stops it and goes to the engineer"
       }
     },
     {
@@ -65,12 +65,12 @@
         [
           "Hackathon go/no-go",
           "Week 1, day 2",
-          "Feasibility note: stack fit, routine share of the sample, edge cases found, access gaps, baseline lead time. Sanoma decides. Port check on day 1 (<= 2 h): repo and CI access, a dev schema, a model change built and tested by hand. If any fails we say so and the plan stops there"
+          "Feasibility note: stack fit, routine share of the sample, edge cases found, access gaps, baseline lead time, count of closed tickets with a linked merged change. Sanoma decides. Port check on day 1 (<= 2 h): repo and CI access, a dev schema, a model change built and tested by hand. If any fails we say so and the plan stops there"
         ],
         [
           "Setup gate",
           "End of week 3",
-          "Agent replays 30-50 of your closed tickets on the repo state before each fix, incl. the ones that \"always go wrong\" and those that went wrong before; output compared with the merged human change (tests pass, data diff matches); every rejected merge request adds a case; pass share agreed with you before the first run, not after. Merge request attaches a before/after data diff (row counts, key columns) on masked data, plus its reasoning"
+          "Agent replays 30-50 of your closed tickets with a linked merged change (if fewer than 30 exist, all of them, with the pass share set on that smaller sample and stated as such) on the repo state before each fix, incl. the ones that \"always go wrong\" and those that went wrong before; output compared with the merged human change (tests pass, data diff matches); every rejected merge request adds a case; pass share agreed with you before the first run, not after. Merge request attaches a before/after data diff (row counts, key columns) on masked data, plus its reasoning. Masking keeps the keys and distributions joins need (rules agreed before day 1), because a diff on masked data can mislead; the diff also runs on a dev-schema sample when policy allows"
         ],
         [
           "Pilot, weekly",
