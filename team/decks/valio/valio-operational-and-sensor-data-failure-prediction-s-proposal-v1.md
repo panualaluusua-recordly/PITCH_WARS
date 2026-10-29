@@ -1,7 +1,7 @@
 <!-- title: Valio · Failure-prediction study -->
 
 # Test predictive maintenance inside Valio’s binding design
-## 18 days · €19,440 fixed · excl. VAT
+## 18 days · €18,480 fixed · excl. VAT
 
 Study machine telemetry, operational data and ERP context, then report whether a bounded failure-risk indicator is supportable within Valio’s approved blueprint. No redesign or unapproved production change.
 
@@ -23,4 +23,4 @@ Deliverables: blueprint compliance matrix; data readiness note; baseline compari
 
 # Bounded effort and explicit assumptions
 
-Proposed data scientist 10 days × €1,080, engineer 6 days × €920 and architect 2 days × €1,080 = **€19,440 excl. VAT**. Specialist floors require price-owner confirmation. Role-only; verify names, relevant credentials and availability. Assumes approved sample extracts, blueprint and up to four hours/week from an SME. 50% kickoff / 50% readout; no production deployment or licences. No overage without written approval.
+Proposed data scientist 10 days × €1,080, engineer 6 days × €920 and architect 2 days × €1,080 = **€18,480 excl. VAT**. Specialist floors require price-owner confirmation. Role-only; verify names, relevant credentials and availability. Assumes approved sample extracts, blueprint and up to four hours/week from an SME. 50% kickoff / 50% readout; no production deployment or licences. No overage without written approval.
