@@ -1,0 +1,92 @@
+{
+  "client": "Aktia Bank",
+  "title": "Tech & architecture slides for the Aktia deck",
+  "subtitle": "Two slides for deck-writer: architecture replaces the 'Technical solution architecture' slide; gates and risks goes after the compliance slide",
+  "footer": "Recordly | Aktia | Ticket-to-merge-request analytics developer agent",
+  "slides": [
+    {
+      "title": "The agent drafts, a person merges: one loop inside Aktia's tenant, with no path around review",
+      "bullets": [
+        "**No bypass, enforced technically:** the agent's identity has no approve, merge or admin right. Branch protection and CODEOWNERS are owned by Aktia admins. Schema-dependency paths also need the data owner. The reviewer is never the ticket requester.",
+        "**Model hosting is Aktia's choice, with the residual exposure named:** open-weight model in your tenant (no external provider in the call path); EU-headquartered provider (external call, DORA register entry); hyperscaler or Snowflake-hosted model in an EU region (EU residency, but a foreign-HQ provider). One swappable interface, exit tested.",
+        "**Stack assumed, confirmed in week 1:** on Snowflake + dbt we deploy our agent team; on another stack the agent is a new build, and scope is re-agreed at the gate."
+      ],
+      "diagram": {
+        "columns": [
+          {
+            "title": "Aktia's inputs",
+            "boxes": [
+              "Analytics ticket in your ticket system (never from chat)",
+              "Data model and conventions in your Git repo",
+              "Analytics layer in dev, masked where needed; no Temenos or prod access"
+            ]
+          },
+          {
+            "title": "Agent in your tenant",
+            "boxes": [
+              "Data engineer agent: plan, code, tests",
+              "Model behind one swappable interface",
+              "Unclear ticket: questions back, no guessing"
+            ]
+          },
+          {
+            "title": "Checks",
+            "boxes": [
+              "Review agents and tests on every change",
+              "Schema-dependency paths flagged (CODEOWNERS)",
+              "Auditor log to Aktia's log store, append-only"
+            ]
+          },
+          {
+            "title": "Aktia decides",
+            "boxes": [
+              "Pull request: diff, test evidence, reasoning",
+              "Named Aktia reviewer approves or rejects",
+              "Only a person merges; deploy via your pipeline"
+            ]
+          }
+        ],
+        "band": "All in Aktia's tenant and repos: Aktia-issued identities, secrets in your vault, agent writes only to its branches and a dev schema, no production credentials, kill switch"
+      }
+    },
+    {
+      "title": "Three technical gates before the agent touches real work, and the failure risks we design for",
+      "bullets": [
+        "**Week 1, integrations:** stack, ticket system, Git host and CI confirmed; bypass test passes (push or merge as the agent identity fails).",
+        "**Week 3, Definition gate:** hosting options run on 20 of your tickets and reported with their exposure; Aktia compliance picks one or stops. Baseline set: rework rate, review minutes, lead time.",
+        "**Week 9, pilot gate:** approved-without-rework rate, review minutes per PR and cost per ticket vs. baseline. Targets set at week 3; a miss means stop or adjust."
+      ],
+      "table": [
+        [
+          "Failure risk",
+          "What we do"
+        ],
+        [
+          "Plausible but wrong PR; reviewer fatigue and rubber-stamping",
+          "Reasoning summary in every PR; review minutes and approval trend tracked; sampled second review"
+        ],
+        [
+          "Prompt injection or vague text in a ticket",
+          "Ticket treated as untrusted input; agent can only open a PR a person rejects; unclear tickets go back"
+        ],
+        [
+          "Flaky tests give a false green",
+          "Tests re-run; a pass that a reviewer rejects is counted and reviewed"
+        ],
+        [
+          "Provider or model version changes behaviour",
+          "Pinned versions; test set replayed before any switch; worse result blocks release"
+        ],
+        [
+          "No model option is good enough or accepted",
+          "Scope narrows to simple ticket types, or Aktia stops at the gate"
+        ],
+        [
+          "Agent loops or gets stuck",
+          "Retry cap; it stops and writes what it tried"
+        ]
+      ],
+      "note": "Unknowns: ticket volume and quality, ticket-system API or webhook, run cost per ticket (measured in Definition, then a monthly cap and alert). Aktia compliance signs the control matrix; we do not certify."
+    }
+  ]
+}
