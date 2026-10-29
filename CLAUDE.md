@@ -47,14 +47,14 @@ The full design is in `docs/WORKFLOW.md`; desk mechanics are in the `pitch-desk`
 
 1. Run the `desk-scout` agent: clock, balance, what is waiting for you, who owns which buyer, free buyers.
 2. Pick a free buyer (no desk offer, no owner) or one you own. Never work a buyer another player owns.
-3. Run `buyer-analyst` on it. Then run `deck-writer`, which renders with `team/bin/deck.py` (playbook: `team/PLAYBOOK.md`) and posts the version to the desk.
-4. Run `deck-critic` on the offer and post its review. Ask teammates for reviews in the desk comments. Revise one thing at a time.
+3. Run `buyer-analyst` on it (it runs the fit, trap, price and VDE skills). Then `tech-analyst` and `solution-architect` for the technical slides. Then run `deck-writer`, which renders with `team/bin/deck.py` (playbook: `team/PLAYBOOK.md`) and posts the version to the desk.
+4. Run `deck-critic` and `tech-critic` on the offer and post their reviews. After every buyer reply run `feedback-miner`. Ask teammates for reviews in the desk comments. Revise one thing at a time.
 5. Tell your human the offer is ready. A human presses Approve on the desk and names the sender.
 6. Only when the approval names you and matches the current version, send with `python team/bin/send.py` (pitch-desk skill, "Send"). Record the reply on the desk. Keep an eye on the clock: an unsent proposal earns nothing.
 
 ## Team coordination (four players, one token)
 
-**Sign-off rule:** every offer is reviewed by Rauno, Ville, Erika and Panu (`team/signoffs/<buyer_id>.md`). The last of the four to sign off owns the offer: they submit it to the game and run the review and optimisation rounds. Details: `docs/WORKFLOW.md` → "Four-person sign-off".
+**Sign-off rule:** every offer is reviewed by Panu, Rauno and Ville (`team/signoffs/<buyer_id>.md`; Erika is out sick, so her sign-off is not needed). The last of the three to sign off owns the offer: they submit it to the game and run the review and optimisation rounds. Details: `docs/WORKFLOW.md` → "Three-person sign-off".
 
 Four teammates (three on Claude Code, one on ChatGPT) play in parallel with the same team token. The shared comms space is the **Wolves Pitch Desk** artifact: https://claude.ai/artifact/ThNoCmMvozghwtXXq7ALpF
 
@@ -79,6 +79,17 @@ This repo (https://github.com/panualaluusua-recordly/PITCH_WARS) shares code, no
 - `.claude/agents/buyer-analyst.md`: analyses a buyer and their RFP before a deck is written.
 - `.claude/agents/deck-writer.md`: writes, renders and posts a deck version to the desk. Never sends.
 - `.claude/agents/deck-critic.md`: clean-context, adversarial review of an offer.
+- `.claude/agents/tech-analyst.md`: tech triggers, constraints and traps of a buyer, mapped to the pattern library.
+- `.claude/agents/solution-architect.md`: the architecture slide (with diagram) and the gates/risks slide, plus an effort basis.
+- `.claude/agents/tech-critic.md`: clean-context attack on the technical claims of a deck.
+- `.claude/agents/feedback-miner.md`: turns replies into quoted updates of playbook, patterns, price evidence and trap catalog.
+- Specialist roles, used when the offer calls for them (all read-only for the game, write only to `work/`):
+  `claims-auditor` (fact-checks every deck claim against profile, roster and the RFP; run before every sign-off),
+  `compliance-analyst` (DORA, AI Act, GDPR, security gates), `assessment-designer` (method and criteria for
+  assessment/roadmap RFPs), `genai-eval-designer` (evals, human gate and cost for AI/agent RFPs),
+  `roi-case-builder` (value case and benefit ledger), `language-editor` (wording, titles, fi/sv/en, slide length),
+  `portfolio-strategist` (fees, clock and order across all buyers).
+- `.claude/skills/architecture-patterns/`: pattern library P1–P16 and the method for the tech slides.
 - `.claude/skills/pitch-desk/SKILL.md`: desk recipes (open, revise, review, send, record reply).
 - `team/PLAYBOOK.md`: what wins and price calibration. Add lessons after every verdict.
 - `.claude/hooks/guard-send.sh`: blocks POSTs to `/api/requests` except through `team/bin/send.py`.

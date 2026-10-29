@@ -1,6 +1,6 @@
 # Handover status per buyer (generated 2026-10-29 from the game API + repo)
 
-Rule (docs/WORKFLOW.md): an offer needs sign-offs from rauno, ville, erika, panu; **the last to sign off owns submission and optimisation**. Game activity by an "unknown teammate" means requests were sent but not recorded in this repo; that person should add their notes to `team/buyers/<id>.md`.
+Rule (docs/WORKFLOW.md): an offer needs sign-offs from panu, rauno and ville (Erika is out sick); **the last to sign off owns submission and optimisation**. Game activity by an "unknown teammate" means requests were sent but not recorded in this repo; that person should add their notes to `team/buyers/<id>.md`.
 
 | Buyer | Open project | Game status | Game requests by | Repo work | Last deck → last buyer reply |
 |---|---|---|---|---|---|

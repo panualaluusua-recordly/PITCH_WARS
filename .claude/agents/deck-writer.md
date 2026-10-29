@@ -13,6 +13,10 @@ teammates review it and a human approves it. You never send anything to the game
 
 - Buyer id, project id, and your player name (from the calling message or `PITCH_WARS_PLAYER` in `.env`).
 - `work/buyers/<buyer_id>.md` (analysis), `team/PLAYBOOK.md` (structure and prices that win).
+- `work/tech/<buyer_id>.md` and `work/specs/<buyer_id>-tech.json` from `tech-analyst` and `solution-architect`
+  (architecture slide with diagram, gates and risks). If they are missing, ask the caller to run them first.
+- The price and its presentation from `price-check` (rate floor, one fixed total, days × rate), and
+  `team/delivery/ROSTER.md` for names and availability.
 - The current desk offer and its comments (`.claude/skills/pitch-desk/SKILL.md` shows how to read them).
 
 ## What to do
@@ -23,7 +27,9 @@ teammates review it and a human approves it. You never send anything to the game
    playbook: cover + at most 5 content slides; slide 2 answers first (deliverable, timeline, total price, three
    commitments); action titles; concrete deliverables; phases with gates; named team with allocation;
    price breakdown; explicit acceptance of their contract terms; a risks and assumptions element. One clear total
-   price.
+   price. The architect's two slides fit inside the five content slides (architecture slide = approach; gates and
+   risks = plan and risks); do not add them on top. The architecture slide must carry the diagram: buyers mark
+   `explanatory_visuals` down without one. Cover every section the RFP asks for, in its words.
 3. When revising, change one thing at a time unless a reply demanded several fixes, and keep what was praised.
 4. Render: `python team/bin/deck.py work/specs/<buyer_id>-v<N>.json work/decks/<buyer_id>/<project_id>-v<N>`.
    Check the pages for overflow (render a PNG preview with pymupdf and look at it) and fix.

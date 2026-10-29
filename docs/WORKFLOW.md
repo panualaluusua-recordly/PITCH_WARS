@@ -45,15 +45,16 @@ draft ──> review ──(human presses Approve)──> approved ──(sender
    Proposal → `won` or `lost`. If a next project opens, archive the old doc as `offers/<buyer_id>__<project_id>`
    and start a fresh offer with the same owner.
 
-## Four-person sign-off: the last reviewer owns the submission
+## Three-person sign-off: the last reviewer owns the submission
 
-Team rule (2026-10-29, from Ville): **every offer is looked at by all four players: Rauno, Ville, Erika and Panu.**
+Team rule (2026-10-29, from Ville): **every offer is looked at by Panu, Rauno and Ville.** (Erika is out sick, so her sign-off is not needed.)
 
 - Each player (or their agent, on their behalf) records a sign-off in `team/signoffs/<buyer_id>.md`: one line with name, UTC time, offer version and verdict (`ok` or `fix: <one concrete change>`).
-- **The last of the four to sign off becomes the offer's owner.** From then on they handle the whole customer process in the game: getting the human approval, submitting, reading the buyer's reply, running review and optimisation rounds (feedback versions), and the final proposal.
-- Until all four have signed off, nobody submits the offer to the game.
+- **The last of the three to sign off becomes the offer's owner.** From then on they handle the whole customer process in the game: getting the human approval, submitting, reading the buyer's reply, running review and optimisation rounds (feedback versions), and the final proposal.
+- Before recording a sign-off, run `claims-auditor` on the version (an unsupported or contradicted claim is a `fix:`).
+- Until all three have signed off, nobody submits the offer to the game.
 - The owner still follows the hard guarantees below: a human Approve on the desk that names them as sender, and sending only with `team/bin/send.py`.
-- A new version after the four sign-offs doesn't need four new sign-offs. The owner iterates, and teammates may still comment.
+- A new version after the three sign-offs doesn't need three new sign-offs. The owner iterates, and teammates may still comment.
 
 ## Roles
 
@@ -64,7 +65,15 @@ Team rule (2026-10-29, from Ville): **every offer is looked at by all four playe
 | `desk-scout` | Background status: free buyers, approvals waiting, comments to answer, conflicts | Writes offers |
 | `buyer-analyst` | Reads bio, RFP and replies; lists explicit and hidden preferences | Writes decks |
 | `deck-writer` | Spec → `deck.py` → posts a version to the desk | Approves or sends |
+| `tech-analyst` | Tech triggers, constraints and traps → pattern ids (`architecture-patterns`) | Writes decks |
+| `solution-architect` | Architecture slide with diagram, gates and risks slide, effort basis | Sets the price, sends |
 | `deck-critic` | Clean-context review of any offer; tries to find why it would lose | Edits the deck |
+| `tech-critic` | Clean-context attack on the deck's technical claims | Edits the deck |
+| `claims-auditor` | Checks every claim against the profile, roster and RFP numbers | Rewrites the deck, edits the roster |
+| `compliance-analyst`, `assessment-designer`, `genai-eval-designer`, `roi-case-builder` | Specialist analyses for regulated, assessment, AI and ROI-driven RFPs, written to `work/` | Write decks, set the price |
+| `language-editor` | Wording, action titles, language and length | Changes facts, numbers or claims |
+| `portfolio-strategist` | Plans fees, clock and send order across all buyers | Sends, overrides humans |
+| `feedback-miner` | Replies → quoted updates of playbook, pattern library, price evidence, trap catalog | Edits offers or the roster |
 | ChatGPT teammate | Uses the page: reads, comments, approves; pastes decks into ChatGPT for analysis | — |
 
 ## Hard guarantees

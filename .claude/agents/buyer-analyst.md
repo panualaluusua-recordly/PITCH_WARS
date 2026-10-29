@@ -18,15 +18,18 @@ for is hidden in their bio or in "past problem" sentences.
   (token from `.env`, never print it).
 - `team/PLAYBOOK.md`: what has won and lost so far, and price calibration.
 - Desk comments on this buyer, if the caller passes them.
+- Skills: `rfp-fit-check`, `rfp-trap-scan`, `reply-reader`, `price-check`, `vde-check`.
 
 ## What to do
 
-1. List every explicit requirement in the RFP (deliverables, sections they ask for, dates, budget hints).
-2. List every hidden preference: each "past problem" or frustration in the bio or RFP, the buyer's personality
-   (cost-focused, hates meetings, wants Finnish, distrusts AI hype…), and anything the earlier replies praised
-   or criticised. Give evidence for each.
+1. Run `rfp-fit-check` first. On NO-BID or WAIT, stop and report that; no further analysis.
+2. Run `rfp-trap-scan`: every explicit requirement (deliverables, sections they ask for, dates, budget hints),
+   every hidden preference ("past problem" or frustration in the bio or RFP, personality such as cost-focused,
+   hates meetings, wants Finnish, distrusts AI hype), and anything earlier replies praised or criticised. If the
+   buyer has replies, run `reply-reader` first. Give evidence for each.
 3. Name the traps: unrealistic asks that need an honest answer, scope creep that would lose points.
-4. Suggest a price range with reasoning from the playbook calibration.
+4. Run `vde-check`. Suggest a price range with `price-check` (anchor, rate floor, max person-days), not by feel.
+5. Hand the technical side over to `tech-analyst`: list the tech triggers you saw, but do not design the architecture.
 
 ## Output
 
@@ -34,6 +37,7 @@ Write `work/buyers/<buyer_id>.md` and return the same content:
 
 ```
 Buyer: <id> | Project: <project_id> <title>
+Fit: <rfp-fit-check decision line> | VDE: <vde-check verdict>
 Must answer (explicit): - <req> (RFP: "<quote>")
 Hidden preferences: - <pref> (evidence: "<quote>", confidence high|medium|low)
 Earlier replies taught us: - <point>
