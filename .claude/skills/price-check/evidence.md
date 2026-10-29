@@ -33,3 +33,11 @@ Teammates' prices: decks sent with `send.sh` carry the price in the uploaded fil
 | upm | 1 ML engineer ~50% × 6 months + coordinator | €107,400 → €75,480 → €68,800 | fb, fb, proposal | over budget → "quite high, might be within outer bounds" → LOST, price "good" (hidden preference: chatbots/conversational tooling) |
 | vr-group | analytics engineer ~60% × 6 months | €109,800 → €73,600 cap | fb, proposal | "flat-out above budget" → no reply → LOST, price "fair" |
 | valmet | senior DE ~60% × 6 months | €73,600 cap | fb (no reply), proposal | LOST, price "fair" (wanted client staff time capped at half a day a week, Q1 freeze, EU jurisdiction) |
+| mandatum | AI Act readiness (probe, tiers €13.8k / €27.6k / €50.6k) | tiers | feedback | "full scope … sits firmly above our approved budget"; wants discovery-paced, not a rigid lump sum |
+| fennia | platform phase 1 (probe, same tiers) | tiers | feedback | no price complaint ("close but not there yet"); worry: ramp-up on their core insurance system |
+| posti | streaming pipeline (probe, same tiers) | tiers | feedback | no price complaint; wants hypercare / run support through peak season |
+| vahterus | legacy reporting (probe, same tiers) | tiers | feedback | no price complaint; wants reporting inside the ERP (not a separate BI tool) and a deck in Finnish |
+| terveystalo | arch assessment (probe, same tiers) | tiers | feedback | no reply |
+| fingrid | finance & margin reporting, 21 pd | €19,320 | proposal | LOST, price "excellent"; lost because the team had no finance/business role |
+| terveystalo | architecture assessment, 19 pd | €17,480 | proposal | LOST, price "over budget" ("well beyond"); budget < €17k |
+| mandatum | AI Act readiness, discovery + cap | €24,840 | proposal | LOST, price "excellent"; silent on automated decision-making vs human oversight per business line |

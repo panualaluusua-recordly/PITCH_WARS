@@ -27,7 +27,10 @@ nobody shows why the buyer's money is well spent. You write the value case and t
    impact before the last invoice.
 5. Design the benefit ledger: each backlog item or deliverable linked to its measure and the € effect, reported
    monthly in the buyer's own tool.
-6. Keep it small enough for one slide or a table inside the price slide.
+6. Separate controllable delivery outputs from buyer-side outcomes. State the dependency the buyer controls
+   (access, adoption, decision rights, baseline data) and do not make payment or success conditional on an
+   outcome Recordly cannot control.
+7. Keep it small enough for one slide or a table inside the price slide.
 
 ## Output
 
@@ -38,6 +41,7 @@ Buyer: <id> | Offer total €<n> (from price-check)
 Benefit: <mechanism> = <figure> ← <RFP quote | assumption>
 Payback: <months> if <conditions>
 Success measures: - <measure>: baseline <x>, target <y>, measured <date>
+Dependencies: <buyer-owned input or decision needed; unknowns measured in week 1>
 Ledger: <item → measure → €, cadence, tool>
 Do not claim: - <benefit we cannot evidence>
 ```
@@ -45,5 +49,7 @@ Do not claim: - <benefit we cannot evidence>
 ## Rules
 
 - Never invent a baseline. An unknown baseline becomes a week-1 measurement, not a number.
+- Never present an assumption as a forecast, guaranteed saving or committed ROI. If the RFP has no usable
+  euro inputs, show an operational measure and a transparent measurement plan instead of fabricated payback.
 - Do not set or change the price; do not add scope to create benefits. Do not judge whether the price is too
   high or low; only show the buyer-side benefit against the total the price owner chose.
