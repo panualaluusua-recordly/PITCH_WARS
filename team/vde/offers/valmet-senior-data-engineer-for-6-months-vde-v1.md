@@ -1,9 +1,9 @@
 <!-- title: Valmet · Senior Data Engineer -->
-# A certified senior data engineer, with a Virtual Data Engineer for capacity
+# A senior data engineer with AI-assisted delivery and architecture support
 
 ## Ingestion pipelines from Infor CloudSuite and mill operations into Snowflake. Built for constrained satellite links and kept inside your own environment.
 
-Proposal to Milla Kaartinen, Data & AI Development Manager · Recordly Oy · Helsinki
+Draft proposal to Milla Kaartinen, Data & AI Development Manager · Recordly Oy · Helsinki
 
 ---
 
@@ -12,9 +12,9 @@ Proposal to Milla Kaartinen, Data & AI Development Manager · Recordly Oy · Hel
 | | |
 |---|---|
 | **Outcome** | Reliable, monitored ingestion from Infor CloudSuite and operational sources into Snowflake, ready for reporting in your BI tool |
-| **People** | **Laura Heikkilä**, senior data engineer (**SnowPro Advanced: Data Engineer**), 3 days a week in Espoo and on your chat tool from 1 Dec 2026, plus **Tuomas Rantanen**, solution architect (5%) |
+| **People** | **Proposed senior data engineer** (**SnowPro Advanced: Data Engineer**), 3 days a week in Espoo and on your chat tool targeting 1 Dec 2026, subject to confirmation, plus **Proposed AI solution architect** (14 days) |
 | **Agents** | Recordly **Virtual Data Engineer** (months 4–6) runs 24/7 inside your Snowflake account and takes repetitive pipeline, test and monitoring work |
-| **Price** | **€104,280 fixed**, 6 × €17,380 per month |
+| **Price** | **€115,320 fixed**, 6 × €19,220 per month |
 | **Visibility** | A monthly capacity and results report for your leadership: pipelines delivered, lead time, incidents avoided |
 
 ---
@@ -45,18 +45,28 @@ Proposal to Milla Kaartinen, Data & AI Development Manager · Recordly Oy · Hel
 # Team credentials and price
 
 :::cols
-### Laura Heikkilä, senior data engineer
-- **SnowPro Core · SnowPro Advanced: Data Engineer** (certificate IDs provided for verification)
-- Finnish and English · **60% from 1 Dec 2026**
-- **Tuomas Rantanen**, solution architect (Azure Solutions Architect Expert), 5%
+### Required profile: senior data engineer
+- **SnowPro Core · SnowPro Advanced: Data Engineer** (required; candidate evidence pending)
+- Finnish and English · **60% target from 1 Dec 2026; availability pending**
+- **Proposed AI solution architect** (Azure Solutions Architect Expert required), 14 days
 :::col
 ### Price
 | Item | Amount |
 |---|---|
-| Laura Heikkilä, 78 days × €920 | €71,760 |
-| Tuomas Rantanen, 6 days × €920 | €5,520 |
+| Proposed senior data engineer, 78 days × €960 | €74,880 |
+| Proposed AI solution architect, 14 days × €960 | €13,440 |
 | VDE, 3 months × €9,000 | €27,000 |
-| **Fixed total** | **€104,280** |
+| **Fixed total** | **€115,320** |
 
-Snowflake AI credits used by the agents are billed on Valmet's account and reported monthly. No contractual deviations.
+Snowflake AI credits used by the agents are billed on Valmet's account and reported monthly. Draft for review; scope, staffing and commercial terms need owner confirmation.
 :::
+
+---
+
+# Staffing basis and confirmation gate
+
+- Planning assumption: six months = 26 weeks, five working days/week, eight hours/day; exact holiday and absence calendar to confirm. Engineer: 3 days/week = 78 days (60%).
+- Architect: 8 setup days + 2 review days in each of the 3 VDE months = **14 days**, about 10.8% across 26 weeks. Setup precedes agent use.
+- AI DE and AI architect: **EUR 120/h (EUR 960/day)**; analytics engineer: **EUR 125/h (EUR 1,000/day)**. Architect base EUR 115/h plus AI EUR 5/h is a proposed commercial rate, not an approved company minimum.
+- Candidate names, CVs, certificates, languages, start dates and availability require written verification before submission. Named profiles in earlier drafts are not evidence.
+- Fixed fee covers the stated capacity and prioritised backlog. Validate source effort and VDE offload in discovery; changes outside this boundary need written approval. AI credits, travel and licences are excluded. No additional production throughput is guaranteed.

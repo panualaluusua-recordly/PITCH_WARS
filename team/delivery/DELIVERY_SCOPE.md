@@ -20,6 +20,12 @@ Source: the second-batch RFPs and bios, plus every buyer reply and review so far
 **Not ours:** architecture and tech choices (tech role), the final price (price owner), storyline and visual style
 (deck-writer). We hand over two slides per deck plus an effort basis.
 
+## Staffing guardrails from Rauno (2026-10-29)
+
+Use `team/staffing/REVIEW.md` for corrected role-by-phase effort and pricing. Maximum two architects per offer; choose complementary roles that the scope actually needs. DE minimum EUR 115/hour, DA minimum EUR 125/hour; AI expertise adds EUR 5/hour to the relevant specialist. Fixed price requires all role costs, a defensible estimate, explicit scope and documented risk allowance.
+
+The examples below describe desired delivery patterns, not evidence about real people. A name in `ROSTER.md` does not verify a CV, certificate, language proficiency or availability. Do not claim "confirmed" or "verified" until evidence and date are recorded by the offer owner. The draft candidate tables now state role requirements and target starts. Internal costing notes are removed when merging buyer decks; the verification caveat remains until resolved.
+
 ## 2. Delivery patterns
 
 | Id | Pattern | Trigger | Standard answer |

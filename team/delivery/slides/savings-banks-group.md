@@ -1,14 +1,16 @@
 # Delivery input: FinOps cleanup
 _Savings Banks Group: Delivery angle, for merging into the buyer deck_
 
-## 2. A bilingual team with banking and FinOps experience, available from 1 December
+## 2. FinOps, data engineering and regulatory roles with bilingual requirements
 - All workshops and deliverables in Finnish and Swedish for member banks in both language areas
 - Replacement only with your approval: equal seniority, 2-week overlap at our cost
-| Name | Role | Allocation | Certifications | Languages | Available |
+| Proposed candidate | Role | Allocation cap | Required certificates | Required languages | Target start |
 | --- | --- | --- | --- | --- | --- |
-| Johanna Berg | FinOps lead, 9 years in Nordic retail banking | 80% | FinOps Certified Practitioner; SnowPro Core | Finnish, Swedish, English | 1 Dec 2026 (planned; confirmed in writing at signature) |
-| Markus Ek | Data engineer, Snowflake on Azure, Temenos feeds | 60% | SnowPro Core; Azure DE Associate | Swedish, Finnish, English | 1 Dec 2026 (planned; confirmed in writing at signature) |
+| Johanna Berg | FinOps lead | 80% | FinOps Certified Practitioner; SnowPro Core | Finnish, Swedish, English | 1 Dec 2026 |
+| Markus Ek | Data engineer, Snowflake on Azure, Temenos feeds | 60% | SnowPro Core; Azure DE Associate | Swedish, Finnish, English | 1 Dec 2026 |
 | Kaisa Virta | Regulatory and DORA advisor | 10% | CISA | Finnish, Swedish, English | 1 Dec 2026 |
+
+_Draft candidate profiles from the shared roster. CVs, certificates, languages, availability and start dates require verification before buyer submission._
 
 ## 3. Delivery run the way your regulators expect: DORA terms built in, three priced phases
 - **DORA ICT third-party terms accepted:** audit and access rights, register-of-information data, exit plan, no subcontracting without approval, EU-only processing
@@ -19,4 +21,4 @@ _Savings Banks Group: Delivery angle, for merging into the buyer deck_
 | Delivery (12 weeks) | Guardrails, budgets and alerts, pipeline cleanup, Power BI cost reporting | Savings measured against baseline |
 | Ongoing (monthly) | Monthly cost review and anomaly follow-up | Cancel with 1 month notice |
 
-_Effort basis: definition 25 person-days, delivery 70, ongoing 3 per month._
+_Days (lead / DE / advisor): definition 15 / 8 / 2 = 25; delivery 42 / 24 / 4 = 70; ongoing 1.5 / 1 / 0.5 = 3 per month. Allocation values are caps, not full-period billing._

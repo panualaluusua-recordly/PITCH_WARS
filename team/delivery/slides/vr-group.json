@@ -1,77 +1,85 @@
 {
- "client": "VR Group",
- "title": "Delivery input: analytics engineer, 6 months",
- "slides": [
-  {
-   "title": "A Finnish-speaking senior analytics engineer who knows rail, in your Helsinki team from 1 December",
-   "table": [
-    [
-     "Name",
-     "Role",
-     "Allocation",
-     "Certifications",
-     "Languages",
-     "Available"
-    ],
-    [
-     "Jari Lehtonen",
-     "Senior analytics engineer",
-     "100%, 6 months",
-     "SnowPro Advanced: Data Engineer; dbt Analytics Engineering; AWS Data Engineer Associate",
-     "Finnish (native), English",
-     "1 Dec 2026 (planned; confirmed in writing at signature)"
-    ],
-    [
-     "Tuomas Rantanen",
-     "Solution architect, quality review",
-     "10%",
-     "Azure Solutions Architect Expert",
-     "Finnish, English",
-     "1 Dec 2026"
-    ]
-   ],
-   "bullets": [
-    "**Rail concepts stay in Finnish:** workshops, Data Vault business keys and documentation in Finnish; no translation layer between your operations experts and the model",
-    "8 years of logistics and transport data, Data Vault 2.0 hubs, links and satellites on Snowflake",
-    "Replacement at your request: equal seniority within 10 working days, 2-week overlap at our cost"
-   ]
-  },
-  {
-   "title": "Production changes only in December and from April: Q1 is build-and-test only",
-   "table": [
-    [
-     "When",
-     "Work",
-     "Production?"
-    ],
-    [
-     "Dec 2026",
-     "Onboarding, extraction inventory for all sources, first satellites to production",
-     "Yes, before freeze"
-    ],
-    [
-     "Jan to Mar 2027",
-     "Build and test the remaining sources in non-production; release package prepared",
-     "No: Q1 freeze respected"
-    ],
-    [
-     "Apr 2027",
-     "Release of the Q1 package in agreed weekend windows, with rollback",
-     "Yes"
-    ],
-    [
-     "May 2027",
-     "Hardening, Finnish runbooks, handover to your team",
-     "Yes"
-    ]
-   ],
-   "bullets": [
-    "Your backlog, your sprint rhythm; a written update every second week, no extra status meetings",
-    "Fixed monthly fee; hours reported weekly in your tool; your standard terms accepted"
-   ],
-   "note": "Effort basis for the price owner: 1 FTE x 6 months = about 120 person-days + 12 days architect review."
-  }
- ],
- "subtitle": "Delivery angle, for merging into the buyer deck",
- "footer": "Recordly | delivery input | vr-group"
+  "client": "VR Group",
+  "title": "Delivery input: analytics engineer, 6 months",
+  "slides": [
+    {
+      "title": "Proposed analytics delivery team with Finnish-language requirements",
+      "table": [
+        [
+          "Proposed candidate",
+          "Role",
+          "Allocation cap",
+          "Required certificates",
+          "Required languages",
+          "Target start"
+        ],
+        [
+          "Jari Lehtonen",
+          "Senior analytics engineer",
+          "100%, 6 months",
+          "SnowPro Advanced: Data Engineer; dbt Analytics Engineering; AWS Data Engineer Associate",
+          "Finnish (native), English",
+          "1 Dec 2026"
+        ],
+        [
+          "Tuomas Rantanen",
+          "Solution architect, quality review",
+          "10%",
+          "Azure Solutions Architect Expert",
+          "Finnish, English",
+          "1 Dec 2026"
+        ]
+      ],
+      "bullets": [
+        "**Rail concepts stay in Finnish:** workshops, Data Vault business keys and documentation in Finnish; no translation layer between your operations experts and the model",
+        "Replacement at your request: equal seniority within 10 working days, 2-week overlap at our cost"
+      ],
+      "note": "Draft candidate profiles from the shared roster. CVs, certificates, languages, availability and start dates require verification before buyer submission.",
+      "col_widths": [
+        110,
+        185,
+        110,
+        205,
+        120,
+        134
+      ]
+    },
+    {
+      "title": "Production changes only in December and from April: Q1 is build-and-test only",
+      "table": [
+        [
+          "When",
+          "Work",
+          "Production?"
+        ],
+        [
+          "Dec 2026",
+          "Onboarding, extraction inventory for all sources, first satellites to production",
+          "Yes, before freeze"
+        ],
+        [
+          "Jan to Mar 2027",
+          "Build and test the remaining sources in non-production; release package prepared",
+          "No: Q1 freeze respected"
+        ],
+        [
+          "Apr 2027",
+          "Release of the Q1 package in agreed weekend windows, with rollback",
+          "Yes"
+        ],
+        [
+          "May 2027",
+          "Hardening, Finnish runbooks, handover to your team",
+          "Yes"
+        ]
+      ],
+      "bullets": [
+        "Your backlog, your sprint rhythm; a written update every second week, no extra status meetings",
+        "Fixed monthly fee; hours reported weekly in your tool; your standard terms accepted"
+      ],
+      "note": "Planning basis: 120 days analytics engineer + 12 days architect = 132 days; 7.5 h/day. Price analytics work at least EUR 125/h; architecture priced separately."
+    }
+  ],
+  "subtitle": "Delivery angle, for merging into the buyer deck",
+  "footer": "Recordly | delivery input | vr-group"
 }
