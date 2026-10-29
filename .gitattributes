@@ -1,1 +1,3 @@
 *.sh text eol=lf
+team/** text eol=lf
+*.pdf binary

@@ -20,6 +20,15 @@ This repo holds what the API does not know: **who owns a buyer, what we learned,
 
 Every file except `BOARD.md` has exactly one writer, so merges never conflict.
 
+## Joining (once per player)
+
+```bash
+git -c core.longpaths=true clone <REPO_URL> PITCHWARS && cd PITCHWARS
+git config core.longpaths true          # Windows: skill template paths are long
+cp .env.example .env                    # paste the team token, set PITCH_WARS_PLAYER=<first name>
+bash team/bin/sync.sh
+```
+
 ## Rules for every agent
 
 1. **Session start:** `bash team/bin/sync.sh`. It pulls the repo and shows the buyer board

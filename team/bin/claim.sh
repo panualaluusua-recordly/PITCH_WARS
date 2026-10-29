@@ -9,7 +9,7 @@ f="team/claims/$buyer.md"
 for attempt in 1 2 3 4; do
   git pull --rebase --autostash -q
   if [ -f "$f" ]; then
-    owner=$(sed -n 's/^owner: //p' "$f")
+    owner=$(sed -n 's/^owner: //p' "$f" | tr -d '\r')
     if [ "$owner" = "$ME" ]; then echo "already yours: $buyer"; exit 0; fi
     if [ "$owner" != "unknown" ] && [ "$owner" != "released" ]; then
       echo "TAKEN by $owner: $buyer"; exit 1
