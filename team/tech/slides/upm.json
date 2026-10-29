@@ -6,6 +6,7 @@
     {
       "title": "Models reach SAP through one tested pipeline pattern, not fragile one-off scripts",
       "bullets": [
+        "The embedded engineer builds this template in your repos in the first 30 days, then reuses it for each model.",
         "Every production model uses the same template: features from Snowflake + dbt, training and registry in Databricks, scored output written back to SAP S/4HANA through a staged, reconciled interface.",
         "No release in the days around quarterly close."
       ],
@@ -30,7 +31,7 @@
           {
             "title": "Scoring pipeline",
             "boxes": [
-              "Scheduled batch scoring",
+              "Scheduled batch scoring, paused in your quarterly close window",
               "Tests on every output",
               "Retry & alert, no silent failure"
             ]
@@ -71,7 +72,7 @@
           "Business continues if a release misbehaves"
         ],
         [
-          "Cost cap and monthly cost report",
+          "Weekly timesheet vs. agreed monthly cap, plus compute cost per pipeline",
           "Spend stays inside the department estimate"
         ]
       ],
@@ -79,7 +80,7 @@
         380,
         484
       ],
-      "note": "Snowflake + dbt is the best fit for Recordly's Virtual Data Engineer (see team/vde); offer it only as the variant Ville prepared."
+      "note": "Quarter-close dates come from your finance calendar. Every release has a named owner and a rollback."
     }
   ],
   "subtitle": "Two slides for deck-writer to insert after the answer-first slide"

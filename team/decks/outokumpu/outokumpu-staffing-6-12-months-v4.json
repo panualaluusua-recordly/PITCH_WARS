@@ -1,0 +1,176 @@
+{
+ "client": "Outokumpu Oyj",
+ "title": "Two certified lakehouse engineers in your team from 1 December, with lineage you can read",
+ "subtitle": "Recordly proposal | Data Lakehouse & Analytics Engineering Staff Augmentation",
+ "footer": "Recordly | Outokumpu Oyj | Staff Augmentation",
+ "slides": [
+  {
+   "title": "Two senior engineers for 6 months, €96,000 fixed, extendable to 12 months at the same rate",
+   "bullets": [
+    "**Capacity:** 2 full-time Azure Databricks / SAP data engineers embedded in your Enterprise Data & Advanced Analytics team",
+    "**Start:** 1 December 2026, both planned from that date, confirmed in writing at signature; interviews at your convenience",
+    "**Working mode:** your backlog, your standards, your repos; daily collaboration in your chat tool, no extra vendor layer",
+    "**Plain lineage, no stock graphics:** every pipeline we touch is documented as source table → Bronze → Silver → Gold → BI dataset (Unity Catalog lineage if enabled, otherwise a lineage page in your repo)",
+    "**Low friction:** one named contact, monthly 1-page report, no steering ceremonies",
+    "**Price:** €8,000 per engineer-month; 2 × 6 = **€96,000**; months 7-12 optional at the same rate"
+   ]
+  },
+  {
+   "title": "Our engineers work inside your lakehouse as it is: lineage from SAP to report, no stock graphics",
+   "bullets": [
+    "We plug into your existing Azure Databricks setup, repos and conventions; we add no tools of our own.",
+    "Every pipeline we touch has a plain end-to-end lineage, and that lineage is what we show in reviews. Scope follows your backlog; we add no side projects."
+   ],
+   "diagram": {
+    "columns": [
+     {
+      "title": "SAP sources",
+      "boxes": [
+       "MM / SD: supply chain",
+       "PP / QM: production & quality",
+       "SAP tables your backlog names"
+      ]
+     },
+     {
+      "title": "Ingest",
+      "boxes": [
+       "Your existing extraction pattern",
+       "Incremental loads, schema checks",
+       "Reusable job templates"
+      ]
+     },
+     {
+      "title": "Azure Databricks lakehouse",
+      "boxes": [
+       "Bronze → silver → gold",
+       "Lineage & access (Unity Catalog if enabled)",
+       "CI/CD in your repo"
+      ]
+     },
+     {
+      "title": "Enterprise reporting",
+      "boxes": [
+       "Certified gold tables",
+       "BI tool semantic models",
+       "Data quality checks visible to users"
+      ]
+     }
+    ],
+    "band": "Team works in your chat tool and your sprint board · code reviewed by your leads · nothing outside your tenant"
+   },
+   "note": "Inside Databricks, lineage comes from Unity Catalog if enabled. SAP-to-Bronze and Gold-to-BI links are documented by us and checked in your review. No decorative visuals."
+  },
+  {
+   "title": "Productive in week 2: onboarding and transition plan",
+   "table": [
+    [
+     "When",
+     "Step"
+    ],
+    [
+     "Week 0",
+     "Interviews, access requests, security onboarding prepared before start"
+    ],
+    [
+     "Week 0-1",
+     "Confirm Unity Catalog status, SAP extraction method, BI tool and CI/CD; list tables in scope; lineage baseline for the first pipeline"
+    ],
+    [
+     "Week 1",
+     "Pair with your engineering leads, read the lakehouse standards, first small ticket merged"
+    ],
+    [
+     "Weeks 2-24",
+     "Full backlog delivery; sprint ceremonies per your team rhythm"
+    ],
+    [
+     "Month 5",
+     "Transition review: extend, scale up/down, or hand over"
+    ],
+    [
+     "Final 4 weeks",
+     "Your engineers lead, ours support; each pipeline's lineage page, runbook and job template handed over"
+    ]
+   ],
+   "col_widths": [
+    150,
+    714
+   ],
+   "bullets": [
+    "Knowledge transfer throughout: a pairing session with your engineers every sprint, not only at the end"
+   ]
+  },
+  {
+   "title": "Proposed named engineers, planned from 1 December 2026, certificates verifiable before signing",
+   "table": [
+    [
+     "Name",
+     "Role",
+     "Allocation",
+     "Certifications",
+     "Experience"
+    ],
+    [
+     "Teemu Hakala",
+     "Senior data engineer, SAP → Databricks",
+     "100%",
+     "Databricks Data Engineer Professional, SAP Certified Associate, Azure Data Engineer Associate",
+     "9 yrs, manufacturing + supply chain"
+    ],
+    [
+     "Noora Lindqvist",
+     "Senior analytics engineer",
+     "100%",
+     "Databricks Data Engineer Associate, Azure Data Engineer Associate, your BI tool Data Analyst Associate",
+     "7 yrs, lakehouse + BI"
+    ],
+    [
+     "Antti Koskinen",
+     "Engagement lead (no extra cost)",
+     "as needed",
+     "Azure Solutions Architect Expert",
+     "Escalation + replacement guarantee"
+    ]
+   ],
+   "bullets": [
+    "Certificates verifiable via Credly / Microsoft Learn on request; both engineers available for your interview rounds"
+   ]
+  },
+  {
+   "title": "€96,000 fixed for 6 months, on your terms, with scaling options",
+   "table": [
+    [
+     "Item",
+     "Price"
+    ],
+    [
+     "2 engineers × 6 months (€8,000 / engineer-month)",
+     "€96,000"
+    ],
+    [
+     "Optional months 7-12, per engineer-month",
+     "€8,000"
+    ],
+    [
+     "Additional engineer if scaling up",
+     "€8,000 / month"
+    ],
+    [
+     "**Total, initial 6 months**",
+     "**€96,000** (VAT 0%)"
+    ]
+   ],
+   "col_widths": [
+    480,
+    300
+   ],
+   "bullets": [
+    "**Terms:** your standard terms accepted without deviations; monthly invoicing, 30 days net",
+    "**Replacement:** you may request a replacement at any time; equal seniority within 10 working days, overlap at our cost",
+    "**Assumptions:** remote-first with on-site days in Helsinki as needed; access to your Azure tenant and repos from week 1",
+    "You may recruit our consultants after 12 months, with no fee",
+    "One written page per month, decisions logged; no steering ceremonies"
+   ]
+  }
+ ]
+}
