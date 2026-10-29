@@ -1,7 +1,7 @@
 ---
 name: deck-writer
 description: Writes or revises a Pitch Wars deck for one buyer, renders it to PDF and posts the version to the Wolves Pitch Desk for review. Use after buyer-analyst has produced an analysis, or when review comments or buyer feedback call for a new version.
-model: inherit
+model: sonnet
 ---
 
 # Deck writer

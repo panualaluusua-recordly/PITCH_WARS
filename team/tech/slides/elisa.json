@@ -1,0 +1,84 @@
+{
+  "client": "Elisa Oyj",
+  "title": "Tech & architecture slides for the Elisa deck",
+  "subtitle": "Two slides for deck-writer: the architecture slide replaces the tier table on the solution slide, the gates slide goes right after it",
+  "footer": "Recordly | Elisa | Data platform architecture and tool selection",
+  "slides": [
+    {
+      "title": "Real-time where a domain needs it, on your own Google Cloud stack. Literal zero-batch is not achievable for reconciled finance",
+      "bullets": [
+        "**Freshness per domain, not one rule:** each domain gets the slowest tier that still meets its tested need. Target ranges per tier are agreed at Gate 1, after we measure current freshness.",
+        "**Why not literally everything real-time:** finance close reconciles daily, and streaming all data raises run cost, failure surface and the retention exposure of traffic data. Option C, all real-time as written, is scored with its cost so the committee decides.",
+        "**Existing services first:** Pub/Sub and change capture are proposed Google Cloud options, not assumed to be in your stack today. No new licence, no AI or ML, no new platform unless a tested need fails."
+      ],
+      "diagram": {
+        "columns": [
+          {
+            "title": "Your sources",
+            "boxes": [
+              "Network and operational events",
+              "ERP (vendor and change capture confirmed in sprint)",
+              "Other transactional sources, listed in sprint"
+            ]
+          },
+          {
+            "title": "Freshness tier",
+            "boxes": [
+              "Streaming, seconds: Pub/Sub to BigQuery Storage Write API (proposed)",
+              "Change capture, minutes: if the ERP supports it; otherwise API polling",
+              "Micro-batch: Cloud Composer incremental loads",
+              "Daily: Composer, reconciled finance"
+            ]
+          },
+          {
+            "title": "BigQuery",
+            "boxes": [
+              "Raw, as received",
+              "Curated and joined",
+              "Marts per domain"
+            ]
+          },
+          {
+            "title": "Serving",
+            "boxes": [
+              "Looker on live BigQuery",
+              "Power BI: DirectQuery or import, mode assessed per tier"
+            ]
+          }
+        ],
+        "band": "DAGs and CI/CD in your repos · same IAM and policy tags in Looker and Power BI · cost per tier · we read metadata only; no subscriber rows leave your GCP project"
+      }
+    },
+    {
+      "title": "Technical gates: nothing is locked before it is measured",
+      "table": [
+        [
+          "Gate",
+          "When",
+          "Passes when"
+        ],
+        [
+          "Access ready",
+          "Before sprint day 1",
+          "NDA and secrecy undertaking signed; read-only Elisa-issued roles on BigQuery, Composer and Looker metadata and logs; no subscriber rows leave your GCP project; a sandbox dataset for the latency test"
+        ],
+        [
+          "Gate 1",
+          "End of week 2",
+          "Each priority domain (3 to 5) has an owner, a stated freshness need and current freshness measured from logs; one real feed run Pub/Sub to BigQuery to Looker, end-to-end latency measured; ERP named with its change-capture options; target range per tier agreed"
+        ],
+        [
+          "Checkpoint B",
+          "Week 8",
+          "Options A tuned, B tiered, C all real-time scored on latency, cost and quota per tier, Composer load, failure mode and effort; every score cites a measurement or is marked 'not tested'"
+        ],
+        [
+          "Final",
+          "Week 10",
+          "Target architecture and roadmap accepted by the steering committee; anything untested marked 'not tested'"
+        ]
+      ],
+      "note": "Unknowns and how each is settled: which ERP and its change capture (sprint; without CDC, API polling or micro-batch at an interval set at Gate 1) · Power BI connectivity (import refreshes on a schedule; DirectQuery freshness is bounded by query load, limits and cost; measured per report in the sprint) · real freshness need per domain (owners answer in your chat tool by week 2) · where Composer code, CI/CD and access policies live (recorded in the sprint; existing pipelines stay unless a test fails)."
+    }
+  ]
+}

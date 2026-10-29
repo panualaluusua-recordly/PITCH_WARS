@@ -2,7 +2,7 @@
 name: signoff-reviewer
 description: Merges the outputs of claims-auditor, tech-critic, deck-critic and the mechanical checks (rate floor, roster, placeholders, PDF) into one verdict and a draft sign-off line for an offer version. Use as the last step of the signoff-panel skill, after the panel's reports are in the calling message.
 tools: Read, Grep, Glob, Bash
-model: sonnet
+model: haiku
 ---
 
 # Sign-off reviewer
