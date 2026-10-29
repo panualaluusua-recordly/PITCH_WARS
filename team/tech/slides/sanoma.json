@@ -32,7 +32,7 @@
           {
             "title": "Checks",
             "boxes": [
-              "Review agent: SQL and your conventions",
+              "Review agent, scored on the same test set and never the only gate: your CI and data diff decide",
               "Your CI tests + edge-case regression set",
               "Retry cap, then stops and writes what it tried"
             ]
@@ -46,7 +46,7 @@
             ]
           }
         ],
-        "band": "In your repository and cloud tenant: branch protection, no agent merge right, no production credentials, run log and cost cap per ticket, pause switch. Model runs in your cloud tenant on your credits; tickets and code leave it nowhere. Retry cap 3 attempts per ticket; cost cap per ticket proposed on day 2 from the hackathon runs"
+        "band": "In your repository and cloud tenant: branch protection, no agent merge right, no production credentials, run log and cost cap per ticket, pause switch. Ticket text is treated as data, not instructions; sandbox has no network access except your model endpoint; no secrets in its environment. Model runs in your cloud tenant on your credits; tickets and code leave it nowhere. Retry cap 3 attempts per ticket; cost cap per ticket proposed on day 2 from the hackathon runs"
       }
     },
     {
@@ -70,7 +70,7 @@
         [
           "Setup gate",
           "End of week 3",
-          "Agent scored on 30-50 of your closed tickets, incl. the ones that \"always go wrong\" and those that went wrong before; every rejected merge request adds a case; pass share agreed with you after the first run, not before. Merge request attaches a before/after data diff (row counts, key columns) on masked data, plus its reasoning"
+          "Agent replays 30-50 of your closed tickets on the repo state before each fix, incl. the ones that \"always go wrong\" and those that went wrong before; output compared with the merged human change (tests pass, data diff matches); every rejected merge request adds a case; pass share agreed with you before the first run, not after. Merge request attaches a before/after data diff (row counts, key columns) on masked data, plus its reasoning"
         ],
         [
           "Pilot, weekly",

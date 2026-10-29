@@ -81,6 +81,7 @@ def main():
                 and record.get("buyer_id") == buyer
                 and record.get("project_id") == project
                 and record.get("control_change_explicitly_approved") is True
+                and record.get("status") == "active"
                 and kind in record.get("allowed_kinds", [])
                 and record.get("pdf_sha256") == hashlib.sha256(Path(deck).read_bytes()).hexdigest()
                 and expected is not None):

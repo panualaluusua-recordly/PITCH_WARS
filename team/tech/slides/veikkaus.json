@@ -7,19 +7,19 @@
     {
       "title": "We read evidence at every layer of your stack, labelled the way your brief labels it",
       "bullets": [
-        "**Licence baseline first:** entitlement vs. actual use per multi-year commitment, from the admin and usage logs you have (window: last 90 days of task logs or all available; sources: scheduler/task logs, admin and usage logs, access-grant export; each card cites log name and period). A new component is proposed only where existing capacity fails a tested need.",
+        "**Licence baseline first:** entitlement vs. actual use per multi-year commitment, from the admin and usage logs you have (window: last 90 days of task logs or all available; sources: scheduler/task logs, admin and usage logs, access-grant export; each card cites log name and period; D1 also delivers an interface list between the four layers: source, target, direction, schedule, owner, failure points marked). A new component is proposed only where existing capacity fails a tested need.",
         "**Proof, not promises:** every finding is a card with log evidence and a compliance note, or is marked \"confidence low, evidence requested\". Options are scored on five weighted criteria from your brief; compliance is also a pass/fail gate.",
-        "**Model deployment is measured, not rebuilt:** lead time and manual hand-offs per step on your in-house AI platform. Vendor-neutral: products are confirmed in week 1.",
+        "**Model deployment is measured, not rebuilt:** lead time and manual hand-offs per step on your in-house AI platform. Vendor-neutral: products are confirmed in week 1. Certifications on the team slide show breadth; the assessment uses your products only.",
         "**Sample finding card:** \"Nightly player-reporting job, 14 of 90 runs failed, 3 manual restarts. Source: task log. Impact: late reports. Compliance: audit trail OK, lineage gap. Confidence: medium.\"",
-        "**Checks added:** D2: is localisation of player-facing report and model outputs a pipeline step (finding, not fix). D3: rollback traced on one past deployment from release records and runbook; nothing executed by us. D4: option C is a paper sketch only, no tool bake-off; throughput scored on peak load and batch lag from task logs, run cost per option is a scoring input."
+        "**Checks added:** D2: is localisation of player-facing report and model outputs a pipeline step (finding, not fix). D3: rollback traced on one past deployment from release records and runbook; nothing executed by us. D4: option C is a paper sketch only, no tool bake-off; throughput scored on peak load and batch lag from task logs, run cost per option is a scoring input; if under 90 days of load data exists, throughput is scored as a range, marked low confidence, and the option is not ranked on throughput alone."
       ],
       "diagram": {
         "columns": [
           {
             "title": "Sources",
             "boxes": [
-              "Operational source systems",
-              "ERP system (feeds and receives)"
+              "Operational source systems (to be confirmed in week 1)",
+              "ERP system (interfaces to be confirmed in week 1)"
             ]
           },
           {
@@ -42,7 +42,7 @@
             "title": "Consumers",
             "boxes": [
               "BI tool: D1 usage logs",
-              "ERP-facing outputs"
+              "ERP-facing outputs (ERP to be confirmed in week 1)"
             ]
           }
         ],
@@ -65,7 +65,7 @@
         [
           "Evidence quality",
           "Week 4 checkpoint",
-          "Target: ≥80% of commitments have usage data and ≥10 debt items are log-evidenced, confirmed with you after week 1. Scoring anchors agreed. Otherwise re-scope before phase 3"
+          "Target: ≥80% of commitments have usage data and ≥10 debt items are log-evidenced, confirmed with you after week 1. Scoring anchors agreed. Otherwise re-scope before phase 3 If under 90 days of load data exists, throughput is scored as a range with low confidence."
         ],
         [
           "Compliance",

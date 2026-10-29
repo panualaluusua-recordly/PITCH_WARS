@@ -1,7 +1,7 @@
 <!-- title: Alko · Master Data Quality and Duplicate Cleanup -->
 # Alkon tuote- ja toimittajatiedot kuntoon: kaksoiskappaleet pois, säännöt näkyviin
 
-## Auditointi, kaksoiskappaleiden siivous ja automaattinen validointi 10 viikossa. Kiinteä hinta 21 320 € (+ alv). Ei sopimuspoikkeamia.
+## Auditointi, kaksoiskappaleiden siivous ja automaattinen validointi 10 viikossa. Kiinteä hinta 35 280 € (+ alv). Ei sopimuspoikkeamia.
 
 Ehdotus: Katariina Lehtonen, Head of Data and Analytics · Recordly Oy · Helsinki
 
@@ -11,7 +11,7 @@ Ehdotus: Katariina Lehtonen, Head of Data and Analytics · Recordly Oy · Helsin
 
 | Alkon lähtökohta | Mitä lupaamme |
 |---|---|
-| Tuote- ja toimittajatiedot ohjaavat ERP:tä, nykyistä dataratkaisua ja BI-työkalua. **Kaksoiskappaleet vääristävät raportit ja toimintaa.** | **Rajattu ensimmäinen vaihe:** yhden ERP:n enintään 5 000 tuotetta ja 500 toimittajaa, 200 hyväksytyn yhdistämisen pilotti ja 10 validointisääntöä. Laajempi siivous erikseen. |
+| Tuote- ja toimittajatiedot ohjaavat ERP:tä, nykyistä dataratkaisua ja BI-työkalua. **Kaksoiskappaleet vääristävät raportit ja toimintaa.** | **Ensimmäinen vaihe:** tuote- ja toimittajarekisterit. Muut rekisterit vasta tuloksen perusteella. |
 | Englanninkieliset työpajat ja ohjeet ovat jumittaneet käyttöönotot | **Kaikki suomeksi:** työpajat, sääntökirja, ohjeet ja koulutus. Suomen kieli on roolivaatimus; kielitaito vahvistetaan ennen lähettämistä. |
 | Katariina tarkistaa jokaisen kyselyn parametrin itse | **Täysi läpinäkyvyys:** jokainen sääntö ja raja-arvo sääntökirjassa. Hän hyväksyy säännöt ja raja-arvot ennen käyttöönottoa, eikä mitään yhdistetä ilman hyväksyntää. |
 | Tavoitteena näkyvä, merkittävä muutos | **Mitattava tulos:** laatumittaristo BI-työkaluun, ennen/jälkeen-luvut johdolle |
@@ -58,9 +58,9 @@ Ehdotus: Katariina Lehtonen, Head of Data and Analytics · Recordly Oy · Helsin
 
 **Pääietue ja tyhjät arvot:** attribuuttikohtainen voittosääntö (esim. aktiivinen ennen passiivista, täydempi tietue, uusin muutos) kirjataan sääntökirjaan portilla 1. Jos pakkauskoko tai vahvuus-% puuttuu, pari menee tarkistusjonoon, ei varmaksi ehdokkaaksi.
 
-- **Sääntöpohjainen, ei koneoppimista:** jokainen osuma selitettävissä. Samankaltaisuus lasketaan avoimella merkkijonomitalla (ehdotus: Jaro-Winkler). Raja-arvot 0,85 ja 0,9 ovat esimerkkejä: ne viritetään Alkon omasta datasta merkityllä otoksella.
+- **Sääntöpohjainen, ei koneoppimista:** jokainen osuma selitettävissä. Samankaltaisuus lasketaan avoimella merkkijonomitalla (ehdotus: Jaro-Winkler). Raja-arvot 0,85 ja 0,9 ovat esimerkkejä: ne viritetään Alkon omasta datasta merkityllä otoksella. Normalisointi (isot/pienet kirjaimet, ä/ö, välimerkit, lyhenteet, vuosikerran muoto) kirjataan sääntökirjaan ja testataan 300 merkityllä parilla; varmojen sääntöjen tarkkuustavoite esim. vähintään 99 %, sovitaan portilla 1.
 - **Ei poistoja:** yhdistäminen Alkon ERP-muutosprosessin kautta, jokainen päätös auditointitaulussa ja peruttavissa.
-- Koodi ja säännöt Alkon omassa repossa ja ympäristössä, lukuoikeus **päivästä 1**. 10 tärkeintä validointisääntöä (esim. EAN-tarkiste, Y-tunnus) ajetaan Alkon nykyisessä latauksessa tai ajastettuna; tarkennetaan vk 1.
+- Koodi ja säännöt Alkon omassa repossa ja ympäristössä, lukuoikeus **päivästä 1**. 10 tärkeintä validointisääntöä (esim. EAN-tarkiste, Y-tunnus) ajetaan Alkon nykyisessä latauksessa tai ajastettuna; tarkennetaan vk 1. Lista 10 säännöstä sovitaan portilla 1 auditoinnin löydösten mukaan; kunnes se on sovittu, esimerkit ovat luonnos. Vähintään yksi säännöistä ajaa T1/T2-haun uusille tietueille ja ilmoittaa mahdollisen kaksoiskappaleen luontihetken jälkeen (ei estä tallennusta), jotta kaksoiskappaleet eivät palaa.
 
 ---
 
@@ -68,15 +68,15 @@ Ehdotus: Katariina Lehtonen, Head of Data and Analytics · Recordly Oy · Helsin
 
 | Vaihe | Viikot | Toimitus | Pv |
 |---|---|---|---|
-| **1 · Auditointi** | 1–2 | D1: auditointiraportti (kaksoiskappaleaste, täyttöasteet, avainvirheet) | 4 |
+| **1 · Auditointi** | 1–2 | D1: auditointiraportti (kaksoiskappaleaste, täyttöasteet, avainvirheet) | 7 |
 | **Portti 1** | vk 2 | Alko päättää laajuuden ja sääntöjen raja-arvot | – |
-| **2 · Kaksoiskappaleet** | 3–6 | D2: sääntökirja (suomeksi), D3: hyväksytyt yhdistämislistat | 7 |
-| **Portti 2** | vk 5 | Enintään 200 hyväksytyn yhdistämisen pilotti; ei koko rekisterin massasiivousta | – |
-| **3 · Validointi** | 6–9, koeajo alkaa vk 6 | D4: 10 automaattista sääntöä, virheilmoitukset kanavaanne; **portti 3:** 2 vk koeajo ennen ilmoituksia | 8 |
-| **4 · Vakiinnutus** | 10 | D5: laatumittaristo BI:ssä: kaksoiskappaleaste, täyttöaste, avainvirheet ja avoimet poikkeamat rekistereittäin, ennen/jälkeen; suomenkieliset ohjeet, koulutus | 4 |
+| **2 · Kaksoiskappaleet** | 3–6 | D2: sääntökirja (suomeksi), D3: hyväksytyt yhdistämislistat | 13 |
+| **Portti 2** | vk 5 | 200 yhdistämisen pilotti ennen koko erää | – |
+| **3 · Validointi** | 6–9, koeajo alkaa vk 6 | D4: 10 automaattista sääntöä (lista sovittu portilla 1, sis. luontihetken kaksoiskappaleilmoitus), virheilmoitukset kanavaanne; **portti 3:** 2 vk koeajo ennen ilmoituksia | 12 |
+| **4 · Vakiinnutus** | 10 | D5: laatumittaristo BI:ssä: kaksoiskappaleaste, täyttöaste, avainvirheet ja avoimet poikkeamat rekistereittäin, ennen/jälkeen; suomenkieliset ohjeet, koulutus | 6 |
 
-- **Ei jatkuvaa rinnakkain työskentelyä:** Recordly tekee profiloinnin, koodin ja testit itsenäisesti. Alkolta yhteensä enintään 12 tuntia: aloitus 1 h, merkintäotos 4 h, sääntö- ja porttipäätökset 3 h, hälytysotos 2 h, luovutus 2 h. Kirjallinen viikkoraportti, ei toistuvia statuspalavereja. Opastus tallenteena ja suomenkielisin ohjein.
-- **Edellytykset:** lukuoikeus tuote- ja toimittajadataan vk 1, yhdistämiset ERP-ylläpidon kautta; tarkistusjonon koko ja ERP-ajon vaatima asiakastyö arvioidaan vk 2. Pilotin edellytys on toimiva nykyinen yhdistämismekanismi ja että hyväksynnät sekä ERP-ajo mahtuvat 12 tunnin asiakaspanokseen; muuten portilla pysähdytään tai pilotin eräkokoa pienennetään.
+- **Yhdessä tekeminen viikosta 1:** Alkon osaajat työskentelevät rinnalla, ei loppusiirtoa. Lyhyt kirjallinen viikkoraportti, ei status-palavereja.
+- **Edellytykset:** lukuoikeus tuote- ja toimittajadataan vk 1, yhdistämiset ERP-ylläpidon kautta; tarkistusjonon koko arvioidaan vk 2.
 
 ---
 
@@ -84,8 +84,8 @@ Ehdotus: Katariina Lehtonen, Head of Data and Analytics · Recordly Oy · Helsin
 
 | Portti | Milloin | Läpäisyehto |
 |---|---|---|
-| **1 · Laajuus** | vk 2 | Kaksoiskappaleaste rekistereittäin; varmojen (T1, T2, S1) ja tarkistusjonon osuus; ERP:n yhdistämisreitti vahvistettu; enintään 300 merkittyä ehdokasparia (Alkon asiantuntija merkitsee, noin 0,5 pv); varmojen sääntöjen tarkkuustavoite sovitaan ja vahvistetaan ennen yhtään yhdistämistä. Alko päättää laajuuden ja raja-arvot. Löydettyjen kaksoiskappaleiden kattavuus arvioidaan käsin tarkistetusta satunnaisotoksesta (esim. 200 riviä), ja puuttuvien osuus raportoidaan D1:ssä. |
-| **2 · Pilotti** | vk 5 | 200 hyväksyttyä yhdistämistä ERP-muutosprosessin kautta; viitteet siirretty; vähintään yksi palautus testattu. Jos ERP:ssä ei ole rajapintaa: yhdistämislista ja viiteluettelo luovutetaan ERP-ylläpidolle, pilotti mitataan heidän läpimenoajallaan (rivit/pv), ja koko erän koko mitoitetaan sen mukaan. Tämän hinnan toimitus päättyy enintään 200 hyväksyttyyn yhdistämiseen ja lopun aineiston hyväksyttyyn siivousjonoon. Koko rekisterin jatkoajo ja uudet ERP-integraatiot eivät sisälly hintaan. |
+| **1 · Laajuus** | vk 2 | Kaksoiskappaleaste rekistereittäin; varmojen (T1, T2, S1) ja tarkistusjonon osuus; ERP:n yhdistämisreitti vahvistettu; vähintään 300 merkittyä ehdokaspariä (Alkon asiantuntija merkitsee, noin 0,5 pv); varmojen sääntöjen tarkkuustavoite sovitaan ja vahvistetaan ennen yhtään yhdistämistä. Alko päättää laajuuden ja raja-arvot. Tarkistusjonon koko ja arvioitu hyväksyjän työmäärä (rivit/pv) raportoidaan D1:ssä; Alko nimeää hyväksyjän ja varahyväksyjän. Yhdistämisten ajoikkunat sovitaan ERP-ylläpidon kanssa niin, ettei avoimia tilauksia tai hinnastokierrosta häiritä. 10 validointisäännön lista sovitaan. Löydettyjen kaksoiskappaleiden kattavuus arvioidaan käsin tarkistetusta satunnaisotoksesta (esim. 200 riviä), ja puuttuvien osuus raportoidaan D1:ssä. |
+| **2 · Pilotti** | vk 5 | 200 hyväksyttyä yhdistämistä ERP-muutosprosessin kautta; viitteet siirretty; vähintään yksi palautus testattu. Jos ERP:ssä ei ole rajapintaa: yhdistämislista ja viiteluettelo luovutetaan ERP-ylläpidolle, pilotti mitataan heidän läpimenoajallaan (rivit/pv), ja koko erän koko mitoitetaan sen mukaan. Vasta sitten koko erä. Jos koko erä ei ehdi vk 6 mennessä, viimeistellyt listat luovutetaan vk 6 ja loput yhdistämiset ajetaan ERP-ylläpidon aikataulussa vk 7-10 rinnakkain validoinnin kanssa; D3 on valmis kun lista on hyväksytty, ei kun ERP on ajanut sen. |
 | **3 · Validointi** | vk 8 | Säännöt ajettu 2 vk koeajona (vk 6-8) ilman ilmoituksia kanavaan; väärien hälytysten osuus mitataan Alkon tarkistamasta 100 hälytyksen otoksesta, tavoite (esim. alle 5 %) sovitaan portilla 1. Nykyiset poikkeamat luetellaan lähtötasona, ilmoitetaan vain uudet. |
 
 ### Tekniset tuntemattomat ja miten ne ratkeavat
@@ -102,9 +102,9 @@ Ehdotus: Katariina Lehtonen, Head of Data and Analytics · Recordly Oy · Helsin
 |---|---|---|---|
 | **Vaaditut sertifikaatit** | Azure Solutions Architect Expert · AWS Certified Solutions Architect | Azure Data Engineer Associate · Google Cloud Professional Data Engineer · dbt | Power BI Data Analyst Associate |
 | **Vaaditut kielet** | Suomi (vaatimus), englanti | Suomi (vaatimus), englanti | Suomi (vaatimus), englanti |
-| **Suunniteltu panos** | 5 pv / 10 vk | 16 pv / 10 vk | 2 pv, loppuvaihe |
+| **Saatavuus** | 1 pv/vk allekirjoituksesta | 2–3 pv/vk allekirjoituksesta | vk 8–10 |
 
-Pilvialusta ei ole tarjouspyynnössä nimetty: roolien vaadittu pilviosaaminen täsmennetään alustanne mukaan vk 1; henkilöt ja aloitus vahvistetaan ennen nimeämistä. Alkolla on oikeus vaatia konsultin vaihtoa; korvaaja on yhtä kokenut, perehdytys meidän kustannuksellamme.
+Pilvialusta ei ole tarjouspyynnössä nimetty: tiimi kattaa kolme suurta pilveä, ja täsmennämme vk 1. Alkolla on oikeus vaatia konsultin vaihtoa; korvaaja on yhtä kokenut, perehdytys meidän kustannuksellamme.
 
 ---
 
@@ -112,17 +112,17 @@ Pilvialusta ei ole tarjouspyynnössä nimetty: roolien vaadittu pilviosaaminen t
 
 | Rooli | Päivät | Päivähinta |
 |---|---|---|
-| Lead Data Architect | 5 | 920 € |
-| Senior Data Engineer | 16 | 920 € |
-| Senior Data Analyst | 2 | 1 000 € |
+| Lead Data Architect | 10 | 920 € |
+| Senior Data Engineer | 24 | 920 € |
+| Senior Data Analyst | 4 | 1 000 € |
 
-## Kiinteä kokonaishinta: 23 henkilöpäivää = 21 320 € (+ alv)
+## Kiinteä kokonaishinta: 38 henkilöpäivää = 35 280 € (+ alv)
 
-- **Maksu:** portti 1: 3 680 €, hyväksytty pilotti: 6 440 €, validointi ja luovutus: 11 200 € (yhteensä 21 320 €), 30 pv netto. **Lisenssit:** ei uusia, rakennetaan nykyisen ympäristön päälle.
+- **Maksu:** kolme yhtä suurta laskua (portti 1, vk 6, vk 10), 30 pv netto. **Lisenssit:** ei uusia, rakennetaan nykyisen ympäristön päälle.
 - **Kiinteä hinta:** ylitykset ovat Recordlyn riski. Kaikki toimitukset ja koodi ovat Alkon omaisuutta.
 - **Sopimuspoikkeamat: ei ole. Alkon vakiosopimusehdot sellaisenaan.**
 
 
-**Rajaus ja hinta:** 23 henkilöpäivää, 8 h/pv: arkkitehti 5 × 920 €, DE 16 × 920 €, DA 2 × 1 000 €. Enintään yksi arkkitehti. CV:t, vaaditut sertifikaatit ja aloituspäivä vahvistetaan ennen henkilöiden nimeämistä. Vaiheittain: auditointi A1+DE3 = 3 680 €; siivous A2+DE5 = 6 440 €; validointi A1+DE6+DA1 = 7 440 €; luovutus A1+DE2+DA1 = 3 760 €. Portilla 1 voidaan lopettaa 3 680 €:n auditointiin. Laajempi siivous, uudet integraatiot ja muut rekisterit vain erillisellä kirjallisella tilauksella.
+**Staffing-tarkistus / Rauno:** roolit ovat vaatimuksia, eivät vahvistettuja henkilöprofiileja. CV:t, sertifikaatit, kielitaito ja todellinen saatavuus vahvistetaan ennen lähettämistä. Työpäivä = 8 h; DE vähintään 115 €/h, DA 125 €/h, AI-osaaminen +5 €/h. Arkkitehdin perushinta 115 €/h on ehdotus hyväksyttäväksi, ei käyttäjän antama vähimmäishinta. Enintään kaksi arkkitehtia. Kiinteän hinnan laajuus ja riskit vahvistetaan ennen sitoutumista.
 
-<!-- coverage v6 (v5 + survivorship/blanks, recall sample + D5 metrics, Gate 2 overrun) / v5 (v4 + three tech fixes): RFP aims/background=slide2; technical solution=slide3 (architecture diagram)+slide4 (rules); deliverables+plan+timeline=slide5 (D1-D5); tech gates+unknowns=slide6; team+certs+availability=slide7; total pricing=slide8; contract deviations=none slide1+8. Hidden: English workshops->all Finnish (s2,s5,s7); reviews every parameter->rule table, metric named, thresholds tuned on labelled sample, repo access day 1 (s4), approval before any merge, audit table + unmerge (s3); high-impact->BI scorecard before/after (s2,s5). Traps: no AI/ML (s4 rule-based); no new licences (s3 band); honest unknowns stack, dup rate, ERP write-back, references (s6); scope fence = item+supplier masters only. -->
+<!-- coverage v7 (v6 + 10-rule list agreed at Gate 1 and creation-time duplicate check, review-queue/approver sizing and ERP merge windows, name normalisation and precision example) / coverage v6 (v5 + survivorship/blanks, recall sample + D5 metrics, Gate 2 overrun) / v5 (v4 + three tech fixes): RFP aims/background=slide2; technical solution=slide3 (architecture diagram)+slide4 (rules); deliverables+plan+timeline=slide5 (D1-D5); tech gates+unknowns=slide6; team+certs+availability=slide7; total pricing=slide8; contract deviations=none slide1+8. Hidden: English workshops->all Finnish (s2,s5,s7); reviews every parameter->rule table, metric named, thresholds tuned on labelled sample, repo access day 1 (s4), approval before any merge, audit table + unmerge (s3); high-impact->BI scorecard before/after (s2,s5). Traps: no AI/ML (s4 rule-based); no new licences (s3 band); honest unknowns stack, dup rate, ERP write-back, references (s6); scope fence = item+supplier masters only. -->

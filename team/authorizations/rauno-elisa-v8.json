@@ -5,18 +5,20 @@
   "human_instruction": "käytä sitä; sit ala vaan painaa tarjouksia sisään ohjeiden mukaisesti",
   "buyer_id": "elisa",
   "project_id": "elisa-data-platform-architecture-and-tool-selection-as",
-  "version": 8,
+  "version": "rauno-alternative-v1",
   "price_eur": 20240,
   "allowed_kinds": [
     "proposal"
   ],
-  "pdf_source": "team/decks/elisa/elisa-data-platform-architecture-and-tool-selection-as-v8.pdf",
+  "pdf_source": "team/decks/elisa/elisa-data-platform-architecture-and-tool-selection-as-rauno-alternative-v1.pdf",
   "pdf_sha256": "69affbfd4903321c3965026ae4c38db0cb302a0227e317c343aac9c9ff089d98",
   "review": "Buyer feedback addressed; technical-owner latest fixes preserved. Scope/effort and 8-hour rate arithmetic checked; PDFs visually checked; no named consultant or verified availability invented.",
-  "status": "active",
+  "status": "inactive: project won; no further sends",
   "control_change_explicitly_approved": true,
   "control_approval_at": "2026-10-29T12:05:35.303363+00:00",
   "control_approval_human_reply": "anna mennä (reply to explicit approval-control change and exact three-offer question)",
   "derived_from_authorization": "team/authorizations/rauno-elisa-v6.json",
-  "revision_basis": "Buyer-feedback correction under the ongoing human instruction to update and submit these three offers; explicit chat-control approval retained. This is agent-delegated revision, not a claim of new human PDF-by-PDF review."
+  "revision_basis": "Buyer-feedback correction under the ongoing human instruction to update and submit these three offers; explicit chat-control approval retained. This is agent-delegated revision, not a claim of new human PDF-by-PDF review.",
+  "note": "Unsent response-led alternative. Same version number had independently been used upstream; upstream file preserved unchanged.",
+  "closed_observed_at": "2026-10-29T12:14:14.667129+00:00"
 }

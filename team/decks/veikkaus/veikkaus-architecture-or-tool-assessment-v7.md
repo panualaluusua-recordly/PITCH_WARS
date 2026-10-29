@@ -1,7 +1,7 @@
 <!-- title: Veikkaus · Data and AI Architecture Assessment -->
 # An independent, evidence-based assessment of your analytics architecture
 
-## Technical debt, model deployment and target-state patterns, with your existing licences used first. €13,440 fixed. Finnish and Swedish deliverables. No contractual deviations.
+## Technical debt, model deployment and target-state patterns, with your existing licences used first. €19,200 fixed. Finnish and Swedish deliverables. No contractual deviations.
 
 Proposal to Matias Lehtoranta, Development Manager, Data & Analytics · Recordly Oy · Helsinki
 
@@ -25,15 +25,15 @@ Proposal to Matias Lehtoranta, Development Manager, Data & Analytics · Recordly
 
 ## We read evidence at every layer of your stack, in your brief's own labels. Vendor-neutral: products confirmed in week 1.
 
-<div style="display:flex;align-items:stretch;gap:12px;margin:0.1em 0 0.4em 0;font-size:0.6em;line-height:1.25"><div style="flex:1;background:#2A2A2A;border:2px solid #434343;border-radius:10px;padding:12px"><b style="color:#E3FF87">SOURCES</b><br>Operational source systems · ERP system (feeds and receives)</div><div style="align-self:center;color:#E3FF87;font-size:2em;text-align:center">&rarr;<div style="font-size:0.35em">data (indicative)</div></div><div style="flex:1.3;background:#2A2A2A;border:2px solid #434343;border-radius:10px;padding:12px"><b style="color:#E3FF87">CLOUD DATA PLATFORM</b><br>Operational metrics, player reporting pipelines<br><b>D2</b> debt · <b>D1/D4</b> volumes, job durations, peak load</div><div style="align-self:center;color:#E3FF87;font-size:2em;text-align:center">&rarr;<div style="font-size:0.35em">models (indicative)</div></div><div style="flex:1.3;background:#2A2A2A;border:2px solid #434343;border-radius:10px;padding:12px"><b style="color:#E3FF87">IN-HOUSE AI PLATFORM</b><br>Train → register → approve → deploy → monitor<br><b>D3</b> lead time and hand-offs per step</div><div style="align-self:center;color:#E3FF87;font-size:2em;text-align:center">&rarr;<div style="font-size:0.35em">reports (indicative)</div></div><div style="flex:1;background:#2A2A2A;border:2px solid #434343;border-radius:10px;padding:12px"><b style="color:#E3FF87">BI TOOL · ERP</b><br><b>D1</b> usage logs, interfaces</div></div>
+<div style="display:flex;align-items:stretch;gap:12px;margin:0.1em 0 0.4em 0;font-size:0.6em;line-height:1.25"><div style="flex:1;background:#2A2A2A;border:2px solid #434343;border-radius:10px;padding:12px"><b style="color:#E3FF87">SOURCES</b><br>Operational source systems (to be confirmed in week 1) · ERP system (interfaces to be confirmed in week 1)</div><div style="align-self:center;color:#E3FF87;font-size:2em;text-align:center">&rarr;<div style="font-size:0.35em">data (indicative)</div></div><div style="flex:1.3;background:#2A2A2A;border:2px solid #434343;border-radius:10px;padding:12px"><b style="color:#E3FF87">CLOUD DATA PLATFORM</b><br>Operational metrics, player reporting pipelines<br><b>D2</b> debt · <b>D1/D4</b> volumes, job durations, peak load</div><div style="align-self:center;color:#E3FF87;font-size:2em;text-align:center">&rarr;<div style="font-size:0.35em">models (indicative)</div></div><div style="flex:1.3;background:#2A2A2A;border:2px solid #434343;border-radius:10px;padding:12px"><b style="color:#E3FF87">IN-HOUSE AI PLATFORM</b><br>Train → register → approve → deploy → monitor<br><b>D3</b> lead time and hand-offs per step</div><div style="align-self:center;color:#E3FF87;font-size:2em;text-align:center">&rarr;<div style="font-size:0.35em">reports (indicative)</div></div><div style="flex:1;background:#2A2A2A;border:2px solid #434343;border-radius:10px;padding:12px"><b style="color:#E3FF87">BI TOOL · ERP</b><br><b>D1</b> usage logs, interfaces<br>(ERP: to be confirmed in week 1)</div></div>
 <div style="background:#2A2A2A;border:2px dashed #E3FF87;border-radius:10px;padding:8px 14px;font-size:0.6em;margin-bottom:0.5em"><b style="color:#E3FF87">EVERY LAYER:</b> D1 entitlement vs. use per commitment · access control, audit trail, lineage, player-data handling checked per finding, from configuration and metadata only (access-grant lists, audit-log settings, catalog lineage; no player-level rows read) · a scope map, not your confirmed architecture</div>
 
 | # | Deliverable (Finnish + Swedish) | Evidence and checks |
 |---|---|---|
-| **D1** | **Current-state map, licence-utilisation baseline** | Entitlement vs. use, volumes, job durations, from the admin and task logs you have; gaps listed in week 1. **Window:** last 90 days of task logs (or all available). **Sources:** scheduler/task logs, admin and usage logs, access-grant export. Each card cites log name and period |
+| **D1** | **Current-state map, licence-utilisation baseline** | Entitlement vs. use, volumes, job durations, from the admin and task logs you have; gaps listed in week 1. **Window:** last 90 days of task logs (or all available). **Sources:** scheduler/task logs, admin and usage logs, access-grant export. Each card cites log name and period. **Interface list between the four layers:** source, target, direction, schedule, owner, with failure points marked |
 | **D2** | **Technical-debt register, ranked** | Failure rate, manual steps, duplicated logic, lineage gaps; counts from task logs. **Check:** is localisation of player-facing report and model outputs a pipeline step? Reported as a finding, not a fix |
 | **D3** | **Model deployment review** | Lead time per step, manual hand-offs, monitoring; rollback traced on one past deployment from release records and runbook, walked through with your engineers; nothing executed by us; AI Act lens: model inventory, risk class, human oversight (we assess, not certify) |
-| **D4** | **Target-state options, scored** | A keep and repair · B reuse first · C re-platform pattern, paper sketch only, no tool bake-off. Throughput scored on peak load and batch lag from your task logs; run cost per option is a scoring input. Weights: compliance 25 (also pass/fail), existing capacity 25, deployment 20, throughput 20, effort 10 |
+| **D4** | **Target-state options, scored** | A keep and repair · B reuse first · C re-platform pattern, paper sketch only, no tool bake-off. Throughput scored on peak load and batch lag from your task logs; run cost per option is a scoring input. **If under 90 days of load data exists, throughput is scored as a range and marked low confidence, and the option is not ranked on throughput alone.** Weights: compliance 25 (also pass/fail), existing capacity 25, deployment 20, throughput 20, effort 10 |
 | **D5** | **Roadmap and decision memo** | Owners, days, a go/stop gate per step; changes proposed, never applied |
 
 **Sample finding card:** "Nightly player-reporting job, 14 of 90 runs failed, 3 manual restarts. Source: task log. Impact: late reports. Compliance: audit trail OK, lineage gap. Confidence: medium."
@@ -42,31 +42,17 @@ Proposal to Matias Lehtoranta, Development Manager, Data & Analytics · Recordly
 
 # Implementation plan and timeline
 
-## 8 weeks, 14 person-days, about 2 hours a week from your team
+## 8 weeks, 20 person-days, about 2 hours a week from your team
 
 | Phase | Weeks | Person-days | Output and gate |
 |---|---|---|---|
-| **1 · Baseline** | 1–3 | 4 | **Gate, week 1:** named read-only accounts, access list and NDA signed. If approval is late, your admins export the logs and the plan moves by the delay. D1 draft |
-| **2 · Debt and deployment** | 3–5 | 5 | D2 and D3. **Checkpoint, week 4:** target: usage evidence for the three selected platform commitments and up to six priority log-evidenced debt items, confirmed with you after week 1; scoring anchors agreed. Otherwise re-scope before phase 3 |
-| **3 · Target state** | 5–7 | 3 | D4 scored with your team. **Compliance gate:** an option that fails is not recommended, whatever its score |
+| **1 · Baseline** | 1–3 | 6 | **Gate, week 1:** named read-only accounts, access list and NDA signed. If approval is late, your admins export the logs and the plan moves by the delay. D1 draft |
+| **2 · Debt and deployment** | 3–5 | 7 | D2 and D3. **Checkpoint, week 4:** target ≥80% of commitments with usage data and ≥10 log-evidenced debt items, confirmed with you after week 1; scoring anchors agreed. Otherwise re-scope before phase 3 |
+| **3 · Target state** | 5–7 | 5 | D4 scored with your team; throughput scored as a range, low confidence, if under 90 days of load data. **Compliance gate:** an option that fails is not recommended, whatever its score |
 | **4 · Roadmap and read-out** | 7–8 | 2 | D5, native Swedish review, final read-out |
 
 - **Honest unknowns:** the products and licence terms behind "cloud data platform" and "in-house AI platform" (week-1 checklist); whether usage logs can be exported (gaps shown on D1 cards); under 6 months of deployment history means lead time is shown as a range; throughput is scored against measured load, with no real-time promise.
 - **Interview (2 hours):** we walk one finding card end to end, the method and the team answer your questions.
-
----
-
-# Controls designed around Veikkaus risks, not platform defaults
-
-| Concrete failure to examine | Tailored control design | Evidence delivered |
-|---|---|---|
-| Privileged access hides who saw player data | Proposed field-level entitlements and break-glass approval, separation of operator and auditor | Risk-to-control matrix, named owner, access-grant and privileged-session log references; gaps marked explicitly |
-| A model release cannot be reconstructed for audit | Release/version identity linked to approval, dataset lineage and retained deployment evidence | One historical release traced end to end; proposed evidence schema and audit query, no production execution |
-| Existing task logs miss a cross-platform handoff | Correlation identifier, expected-event checks and exception escalation across platform and AI deployment | Two priority flow maps, missing-evidence checklist and a tabletop walkthrough of the failure scenario |
-
-**Bounded EUR 13,440 scope:** three priority platform commitments, two representative flows and one historical model release. D1–D5 are delivered for this scope. Other systems are inventoried and ranked for a later separately agreed assessment. The 14 days include 8 AI-architect and 6 MLOps-DE days at EUR 120/h, with the AI premium retained.
-
-We design and assess controls against your observed risks using your logs and metadata; default configuration is only the starting baseline. No production configuration changes, certification or blanket compliance guarantee. Bespoke implementation is a separately scoped decision after your governance review.
 
 ---
 
@@ -76,22 +62,22 @@ We design and assess controls against your observed risks using your logs and me
 |---|---|---|
 | **Required certifications** | Microsoft Certified: Azure Solutions Architect Expert · Databricks Certified Data Engineer Professional · SnowPro Core | Microsoft Certified: Azure Data Engineer Associate · Google Cloud Professional Data Engineer · Databricks Certified Machine Learning Professional |
 | **Required languages** | Finnish required, English | Finnish required, Swedish proficiency required, English |
-| **Days** | 8 | 6 |
+| **Days** | 12 | 8 |
 | **Availability** | **Target at signature; evidence pending** | **Target at signature; evidence pending** |
 
-Two people who do the work themselves. Recordly sells no licences and takes no vendor commissions. Any replacement is of equal seniority and agreed with you first.
+Certifications show breadth across the market; the assessment itself uses your products only. Two people who do the work themselves. Recordly sells no licences and takes no vendor commissions. Any replacement is of equal seniority and agreed with you first.
 
 ---
 
 # Detailed pricing and contract deviations
 
-## Fixed total: €13,440 (excl. VAT)
+## Fixed total: €19,200 (excl. VAT)
 
 | Role | Person-days | Day rate (8 h) |
 |---|---|---|
-| Lead Data Architect | 8 | €960 |
-| Senior Data Engineer (MLOps) | 6 | €960 |
-| **Total** | **14 days** | **14 × €960 = €13,440** |
+| Lead Data Architect | 12 | €960 |
+| Senior Data Engineer (MLOps) | 8 | €960 |
+| **Total** | **20 days** | **20 × €960 = €19,200** |
 
 - **Invoicing:** half at the week-4 checkpoint, half on final acceptance of D5; 21 days net
 - **Fixed price:** effort above plan is Recordly's risk. Travel in Helsinki included.
@@ -101,6 +87,6 @@ Two people who do the work themselves. Recordly sells no licences and takes no v
 ### Contract deviations
 **None.** We accept Veikkaus' standard terms as they are.
 
-**Mobilisation:** role capabilities and required credentials are stated above; named CVs, Swedish review capability and start dates require confirmation before appointment. No unverified person is reserved. One person-day is 8 hours.
+**Staffing review / Rauno:** role profiles are requirements, not verified people. Confirm CVs, certificates, languages and actual availability before submission. One day = 8 hours; DE minimum EUR 115/h, DA EUR 125/h, AI expertise adds EUR 5/h for the relevant specialist. Architect base EUR 115/h is proposed for owner confirmation, not a user-supplied minimum. At most two architects. Validate fixed scope and risk allowance before commitment.
 
-The two assessment profiles require AI-platform / MLOps expertise: 14 days at EUR 120/h, including the EUR 5/h premium. This adds no new AI feature to the scope.
+The two assessment profiles require AI-platform / MLOps expertise: 20 days at EUR 120/h, including the EUR 5/h premium. This adds no new AI feature to the scope.

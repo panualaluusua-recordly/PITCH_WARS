@@ -2,7 +2,7 @@
   "client": "Alko Oy",
   "title": "Tekniset diat: Alko, tuote- ja toimittajatietojen laatu",
   "footer": "Recordly | Alko | Master data quality and duplicate cleanup",
-  "subtitle": "Two slides: architecture after 'Tavoitteet ja tausta', gates and risks after the plan slide (as in deck v4); v5 adds tech-critic fixes, v6 adds round-2 fixes (survivorship, recall sample, D5 metrics, Gate 2 overrun). Rules slide precedence line and plan row 'koeajo alkaa vk 6' live in the full deck v5",
+  "subtitle": "Two slides: architecture after 'Tavoitteet ja tausta', gates and risks after the plan slide (as in deck v4); v5 adds tech-critic fixes, v6 adds round-2 fixes (survivorship, recall sample, D5 metrics, Gate 2 overrun); v7 adds round-3 fixes (10-rule list and creation-time check, review-queue and approver sizing, ERP merge windows, name normalisation, precision example). Rules slide precedence line and plan row 'koeajo alkaa vk 6' live in the full deck v5",
   "slides": [
     {
       "title": "Suositeltu tekninen ratkaisu: hyväksytyt ja peruttavat yhdistämiset",
@@ -10,7 +10,9 @@
         "**Yhdistäminen ja palautus:** pääietue valitaan sovitulla säännöllä, viitteet (avoimet tilaukset, hinnastot, toimittajasopimukset) ohjataan pääietueeseen, vanha avain säilyy passiivisena. Palautus palauttaa auditointitaulun ennen-arvot; testataan pilotissa. Auditointitaulu tallentaa myös siirretyt viitteet; palautus siirtää viitteet takaisin ja ohittaa viitteet, joita on luotu yhdistämisen jälkeen (käsin tarkistukseen).",
         "**Validointi on lukevaa:** virhe tuottaa ilmoituksen ja poikkeamalistan, ei muuta dataa eikä pysäytä latausta. Siksi hyväksyntä tarvitaan vain yhdistämisille.",
         "**Tietosuoja:** toimittajien IBAN- ja osoitetiedot käsitellään vain Alkon ympäristössä Alkon pääsynhallinnalla, ei kopioita ulos.",
-        "**Pääietue ja tyhjät arvot:** attribuuttikohtainen voittosääntö (esim. aktiivinen ennen passiivista, täydempi tietue, uusin muutos) kirjataan sääntökirjaan portilla 1. Jos pakkauskoko tai vahvuus-% puuttuu, pari menee tarkistusjonoon, ei varmaksi ehdokkaaksi."
+        "**Pääietue ja tyhjät arvot:** attribuuttikohtainen voittosääntö (esim. aktiivinen ennen passiivista, täydempi tietue, uusin muutos) kirjataan sääntökirjaan portilla 1. Jos pakkauskoko tai vahvuus-% puuttuu, pari menee tarkistusjonoon, ei varmaksi ehdokkaaksi.",
+        "**Säännöt ja uudet tietueet:** Lista 10 validointisäännöstä sovitaan portilla 1 auditoinnin löydösten mukaan; kunnes se on sovittu, esimerkit (EAN-tarkiste, Y-tunnus) ovat luonnos. Vähintään yksi säännöistä ajaa T1/T2-haun uusille tietueille ja ilmoittaa mahdollisen kaksoiskappaleen luontihetken jälkeen (ei estä tallennusta), jotta kaksoiskappaleet eivät palaa.",
+        "**Normalisointi ja tarkkuus:** isot/pienet kirjaimet, ä/ö, välimerkit, lyhenteet ja vuosikerran muoto kirjataan sääntökirjaan ja testataan 300 merkityllä parilla; varmojen sääntöjen tarkkuustavoite esim. vähintään 99 %, sovitaan portilla 1."
       ],
       "diagram": {
         "columns": [
@@ -65,7 +67,7 @@
         [
           "1 · Laajuus",
           "vk 2",
-          "Kaksoiskappaleaste rekistereittäin; varmojen (T1, T2, S1) ja tarkistusjonon osuus; ERP:n yhdistämisreitti vahvistettu; vähintään 300 merkittyä ehdokaspariä (Alkon asiantuntija merkitsee, noin 0,5 pv); varmojen sääntöjen tarkkuustavoite sovitaan ja vahvistetaan ennen yhtään yhdistämistä. Alko päättää laajuuden ja raja-arvot. Löydettyjen kaksoiskappaleiden kattavuus arvioidaan käsin tarkistetusta satunnaisotoksesta (esim. 200 riviä), ja puuttuvien osuus raportoidaan D1:ssä."
+          "Kaksoiskappaleaste rekistereittäin; varmojen (T1, T2, S1) ja tarkistusjonon osuus; ERP:n yhdistämisreitti vahvistettu; vähintään 300 merkittyä ehdokaspariä (Alkon asiantuntija merkitsee, noin 0,5 pv); varmojen sääntöjen tarkkuustavoite sovitaan ja vahvistetaan ennen yhtään yhdistämistä. Alko päättää laajuuden ja raja-arvot. Tarkistusjonon koko ja arvioitu hyväksyjän työmäärä (rivit/pv) raportoidaan D1:ssä; Alko nimeää hyväksyjän ja varahyväksyjän. Yhdistämisten ajoikkunat sovitaan ERP-ylläpidon kanssa niin, ettei avoimia tilauksia tai hinnastokierrosta häiritä. 10 validointisäännön lista sovitaan. Löydettyjen kaksoiskappaleiden kattavuus arvioidaan käsin tarkistetusta satunnaisotoksesta (esim. 200 riviä), ja puuttuvien osuus raportoidaan D1:ssä."
         ],
         [
           "2 · Pilotti",

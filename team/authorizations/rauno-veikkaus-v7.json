@@ -5,18 +5,20 @@
   "human_instruction": "käytä sitä; sit ala vaan painaa tarjouksia sisään ohjeiden mukaisesti",
   "buyer_id": "veikkaus",
   "project_id": "veikkaus-architecture-or-tool-assessment",
-  "version": 7,
+  "version": "rauno-alternative-v1",
   "price_eur": 13440,
   "allowed_kinds": [
     "proposal"
   ],
-  "pdf_source": "team/decks/veikkaus/veikkaus-architecture-or-tool-assessment-v7.pdf",
+  "pdf_source": "team/decks/veikkaus/veikkaus-architecture-or-tool-assessment-rauno-alternative-v1.pdf",
   "pdf_sha256": "a8769706e5a3e64413ce0ac808e1f2d5e3d6861aae496267ca42d432d5803eb6",
   "review": "Buyer feedback addressed; technical-owner latest fixes preserved. Scope/effort and 8-hour rate arithmetic checked; PDFs visually checked; no named consultant or verified availability invented.",
-  "status": "active",
+  "status": "inactive: project lost; no further sends",
   "control_change_explicitly_approved": true,
   "control_approval_at": "2026-10-29T12:05:35.305152+00:00",
   "control_approval_human_reply": "anna mennä (reply to explicit approval-control change and exact three-offer question)",
   "derived_from_authorization": "team/authorizations/rauno-veikkaus-v5.json",
-  "revision_basis": "Buyer-feedback correction under the ongoing human instruction to update and submit these three offers; explicit chat-control approval retained. This is agent-delegated revision, not a claim of new human PDF-by-PDF review."
+  "revision_basis": "Buyer-feedback correction under the ongoing human instruction to update and submit these three offers; explicit chat-control approval retained. This is agent-delegated revision, not a claim of new human PDF-by-PDF review.",
+  "note": "Unsent response-led alternative. Same version number had independently been used upstream; upstream file preserved unchanged.",
+  "closed_observed_at": "2026-10-29T12:14:14.667129+00:00"
 }

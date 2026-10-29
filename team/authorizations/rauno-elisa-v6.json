@@ -14,8 +14,9 @@
   "pdf_source": "team/decks/elisa/elisa-data-platform-architecture-and-tool-selection-as-v6.pdf",
   "pdf_sha256": "30f9f4b57f222f9a491572ab5cff8a3b0c70c771d50ae1cc5ceacb08dcee5823",
   "review": "Three-player contributions present in signoffs; latest technical and staffing revisions integrated. No named consultant availability asserted. Live API provided no consultants field.",
-  "status": "active",
+  "status": "inactive: project won; no further sends",
   "control_change_explicitly_approved": true,
   "control_approval_at": "2026-10-29T12:05:35.303363+00:00",
-  "control_approval_human_reply": "anna mennä (reply to explicit approval-control change and exact three-offer question)"
+  "control_approval_human_reply": "anna mennä (reply to explicit approval-control change and exact three-offer question)",
+  "closed_observed_at": "2026-10-29T12:14:14.667129+00:00"
 }
