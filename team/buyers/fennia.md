@@ -1,9 +1,3 @@
-# Sami Westerlund, Fennia
 
-<!-- replies:auto -->
-## Buyer replies (auto, from the game API; do not edit inside the markers)
-
-### fennia-first-data-platform-phase
-- 2026-10-29T08:47 · **no_reply** · deck `fennia-first-data-platform-phase-v1.pdf` (unknown) · price signal: **no reply**
-  > No reply.
-<!-- /replies:auto -->
+## C-batch draft (2026-10-29)
+- v2 proposal draft written, 34 pd, EUR 31280 excl. VAT. Not sent. Open: certifications and references are placeholders to verify against roster; no VDE (not Snowflake).

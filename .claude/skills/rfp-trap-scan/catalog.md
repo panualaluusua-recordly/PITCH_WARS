@@ -91,3 +91,8 @@ Evidence tags: **[won]**, **[lost]**, **[hint]** = seen in our own replies. Unta
 - **Stage/milestone payments beat calendar billing** (UPM, Valmet): pay per accepted stage.
 - **Q1 change freezes apply even when the RFP doesn't say so** for industrial buyers (Valmet).
 - **US-headquartered platforms** (Snowflake) count against buyers who flag jurisdiction; don't build the pitch on them there.
+
+## Lessons from C-batch proposals (2026-10-29)
+- Finance/reporting RFPs: include a business or finance analyst role, not only architects and engineers **[lost: Fingrid, price excellent]**
+- AI governance RFPs: answer explicitly how automated decision-making vs human oversight works per business line (policies, claims, pensions) **[lost: Mandatum, price excellent]**
+- Healthcare assessments: budget < €17k **[lost: Terveystalo at €17.5k]**
