@@ -69,7 +69,7 @@ Fixed scope boundary: if priorities change, we swap use cases in the backlog. **
 | Henna Kallio, ML engineer, 3 days/week × 6 months | 78 days × €960 | €74,880 |
 | Tuomas Rantanen, architect and governance | 6 days × €960 | €5,760 |
 | Virtual Data Engineer, months 4–6 | 3 months × €9,000 flat | €27,000 |
-| **Fixed total** | | **€107,640 (VAT 0%)** |
+| **Fixed total** | | **€107,640 (excl. VAT)** |
 
 - Invoiced monthly: **6 × €17,940**. No hourly billing, no timesheets.
 - Snowflake AI credits used by the agents are billed by Snowflake on UPM's account. We report them monthly.
