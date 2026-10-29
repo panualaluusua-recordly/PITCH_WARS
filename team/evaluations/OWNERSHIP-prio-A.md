@@ -21,3 +21,15 @@ Savings Banks v2 (€45,080, human-led, VDE optional) is in `team/decks/savings-
 | upm | MLOps v1 fb | €56,960 | (after cooldown) | adds assistants and staff-time table, stage payments |
 | vr-group | automation build v1 fb | €43,560 (incl. VDE 3 mo) | (after cooldown) | VDE: PRs only, human approves; fixed price vs billed boilerplate hours |
 | valmet | exploration v1 fb | €24,480 | (after cooldown) | client time ≤ 4 h/week, demo on real data at week 3, explainable flags |
+
+### Results after round 3 (12:08 UTC)
+| Buyer · project | Price | Result | Why |
+|---|---|---|---|
+| kemira · platform migration | €55,200 | **WON** (price excellent) | lean, existing Azure/Datasphere, human-started LLM reloads |
+| s-group · ticket→MR agent | €21,400 | **WON** | Azure-only, reuse existing blueprints, minimal developer drain |
+| valmet · machine data exploration | €24,480 | **WON** (all excellent) | in Snowflake, plain-language flags, no techs pulled off shift, milestones |
+| upm · MLOps | €56,960 max | LOST (price good) | missing: model confidence scoring + source lineage |
+| vr-group · automation build | €18,400 cap | LOST (price fair) | budget very small even at €18k |
+| s-group · AI/MCP hackathon | €9,400 | LOST (price excellent) | customer service AI not addressed |
+
+Open now: kemira data platform phase 1 (fb pending), valmet 100-day roadmap €16,880, upm 100-day roadmap €16,920, vr-group data catalogue €10,120 cap, s-group lead data architect (drafting).
