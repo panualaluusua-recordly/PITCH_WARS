@@ -37,4 +37,33 @@
   - [met] Restricts deliverables to the requested digital analytics roadmap without enterprise-wide AI distractions.
   - [met] Directs that Azure AI outputs and SAC access inherit role-based permissions from SAP authorisations.
   - [partly met] Specifies row-level security by plant and region in SAC stories without evaluating reporting migration speed.
+### kemira-hands-on-agentic-ai-hackathon-for-an-internal-te
+- 2026-10-29T11:27 · **hints** · deck `kemira-hands-on-agentic-ai-hackathon-for-an-internal-te-v1-eur12200.pdf` (€12,200) · price signal: **none**
+  > Having partnered with your crew on our previous engagement, it is always a relief to deal with suppliers who have delivered for us before and know better than to promise autonomous miracles that derail my evening plans. Anchoring everything squarely within our existing Azure and Datasphere environment without foisting unfamiliar platforms onto my plate hits the mark, as does building a live demonstration on our actual water-treatment plant operational feeds right up front instead of subjecting us to generic slideware. However, leaning on static data validation rules leaves me uneasy, as maintaining rigid catalogs of checks inevitably turns into an administrative headache the moment manufacturing conditions shift on the ground.
+- 2026-10-29T11:30 · **verdict** · deck `kemira-hands-on-agentic-ai-hackathon-for-an-internal-te-v2-eur12200.pdf` (€12,200) · price signal: **verdict won, price excellent**
+  > You already proved you can deliver in our real-world setup without drowning us in consulting fluff, so consider this approved—if only because your sensible scope lets me close my laptop on schedule.
+  ratings: price excellent, buyer_fit excellent, project_fit excellent, presentation excellent
+  - [met] Sticking squarely to our Azure tenant and Datasphere views means no rogue architectures.
+  - [met] Demanding a live demo on our own plant's Datasphere data on day one.
+  - [partly met] Logs inputs and tool calls while stating data age, though confidence ratings are omitted.
+  - [met] A tight two-day hackathon with capped scope delivers fast payback without endless consulting bloat.
+  - [met] Recalculating plant baselines dynamically beats paying someone to curate static rule tables.
+  - [met] Anchoring agents in our Azure subscription and Datasphere views avoids exotic vendor lock-in.
+  - [met] Explicitly details edge cases like water quality shifts and refuses to promise full autonomy.
+  - [partly met] Run logging and asking questions when data conflicts avoids hallucination, but lacks numeric confidence scores.
+### kemira-platform-migration-two-warehouses
+- 2026-10-29T11:39 · **hints** · deck `kemira-platform-migration-two-warehouses-v1-eur55200.pdf` (€55,200) · price signal: **none**
+  > Good to see a proposal from a team that has already delivered solid work for us, sparing me the usual vendor song and dance. I appreciate that you kept the architecture anchored firmly within our existing Azure and Datasphere setup instead of trying to sell us exotic platforms and extra licenses that only bloat overhead. Validating the pipelines early on our actual plant data rather than hiding behind generic slideware is another welcome touch that lets my team stay focused on their daily grind. Ever since I took on modernizing our supply chain metrics here at Kemira, cutting out unnecessary moving parts has been my primary strategy for shutting down my laptop at a reasonable hour. That said, while your safeguards around model calls prevent duplicate queries, leaving reload cycles to run on automated triggers still leaves me uneasy about unchecked token burn happening in the background when nobody has eyes on the screen.
+- 2026-10-29T11:42 · **verdict** · deck `kemira-platform-migration-two-warehouses-v2-eur55200.pdf` (€55,200) · price signal: **verdict won, price excellent**
+  > You already proved you can deliver for us without the usual vendor theatrics, so locking this in on our terms is about as close to an easy decision as I ever get before shutting my laptop.
+  ratings: price excellent, buyer_fit good, project_fit good, presentation excellent
+  - [met] Slide 1 guarantees relying solely on our existing Azure and Datasphere without introducing new platforms or licences.
+  - [partly met] Slide 4 schedules a live demonstration using actual plant data during weeks 1-2 rather than relying strictly on generic slides.
+  - [not addressed] The slides detail reconciliation checks and row counts on slide 2 but make no mention of data lineage or confidence ratings.
+  - [met] Slide 1 emphasizes turning off legacy platforms workload by workload to enforce rapid cost reduction without capital expenditure.
+  - [met] Slide 6 fixes the migration at a lump sum paid out across milestone-gated acceptance waves.
+  - [not addressed] Slide 2 outlines connector types and replication flows but does not specify whether transformations use standard SQL, Python, or Spark.
+  - [met] Slide 1 requests only one 30-minute acceptance check per wave and moves status reporting entirely to our chat tool.
+  - [met] Slide 5 lists verified Microsoft Azure and SAP Datasphere certifications for every proposed consultant.
+  - [met] Slide 3 prohibits automated reloads for the LLM, mandating manual owner triggers and strict run and monthly cost caps.
 <!-- /replies:auto -->

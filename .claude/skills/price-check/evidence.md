@@ -20,6 +20,10 @@ Teammates' prices: decks sent with `send.sh` carry the price in the uploaded fil
 | aktia | DW consolidation, 11 months, regulated bank | €88,000 | proposal | LOST, price "good" (lost on an ML add-on) |
 | city-of-helsinki | SME reporting platform, 4 months | €61,100 | feedback | "flat out above the budget"; also disliked "monolithic fixed sum" |
 | enfuce | staff aug: 1 senior FT + part-time dev, 6 months | €93,600 | proposal | **WON** (teammate), price "excellent" after 5 feedback rounds |
+| aktia | ticket-to-merge agent, team productivity | €61,080 | proposal | LOST, price "over budget" ("commercial expectations ... far beyond what this department is prepared to underwrite") |
+| alko | master data quality and duplicate cleanup | €35,280 | feedback | "total price ... above our budget"; over-soft, Finnish delivery praised |
+| fingrid | finance and margin reporting, 21 person-days | €19,320 | proposal | LOST, price "excellent"; lost because team had no finance/business role |
+| mandatum | AI Act readiness and governance | €24,840 | proposal | LOST, price "excellent"; lost because human oversight/automated-decision boundaries were missing |
 
 ## Verdicts with unknown price (context only, not usable for anchors)
 

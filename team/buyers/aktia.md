@@ -35,4 +35,16 @@
   - [partly met] Slide 10 details binding staffing substitution terms and financial penalties, though explicit IP buy-out clauses remain implicit.
   - [met] Slide 4 and 6 dictate that all code, pipelines, and CI/CD live strictly inside Aktia's cloud perimeter and repositories.
   - [met] Slide 2 and 5 replace spot-checking with automated full-population reconciliation across every historical account balance.
+### aktia-ticket-to-merge-request-developer-or-analytics-a
+- 2026-10-29T12:02 · **verdict** · deck `aktia-ticket-to-merge-request-developer-or-analytics-a-v6-eur61080.pdf` (€61,080) · price signal: **verdict lost, price over budget**
+  > While your operational controls look considerably sharper than in your previous bid, your commercial expectations are still orbiting a reality far beyond what this department is prepared to underwrite.
+  ratings: price over budget, buyer_fit excellent, project_fit good, presentation excellent
+  - [met] Audit logs are append-only in our log store, each PR includes reasoning, and controls map directly to FIN-FSA, EBA, and DORA.
+  - [met] All three named engineers speak Finnish and runbooks, control matrices, and training are explicitly delivered in Finnish and Swedish.
+  - [partly met] They kill off status meetings in favor of bi-weekly written updates, though they fail to specify delivering them via our internal chat tool.
+  - [met] The entire scope is targeted squarely at internal analytics engineer developer productivity and pull request workflows.
+  - [met] Hard branch protections ensure only human reviewers can merge, while the agent is strictly sandboxed from committing to production.
+  - [met] Slide 4 explicitly evaluates an EU-headquartered provider and tenant-hosted open-weight models against hyperscalers with exit testing.
+  - [against] The architecture provisions dedicated agent identities with a kill switch rather than inheriting individual developer credentials.
+  - [met] Staffing consists exclusively of three senior specialists with no junior consulting pyramid or subcontractors.
 <!-- /replies:auto -->
