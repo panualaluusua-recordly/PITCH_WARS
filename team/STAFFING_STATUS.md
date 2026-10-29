@@ -2,7 +2,7 @@
 
 Updated: 2026-10-29 (Europe/Helsinki).
 
-**Active round 2:** Kela v3, LahiTapiola v3, Alma Media v3, Enfuce v2, Ponsse v3 and Savings Banks Group v4. See `team/staffing/ROUND2.md` for current scope and effort. Ville now owns all Prio A buyers, including Valmet; earlier "primary Valmet" notes below are historical. No new Prio A versions or roster edits are made by this agent. Live consultant verification awaits access to the existing local team-token file; role-only work continues.
+**Active round 2:** Kela v3, LahiTapiola v3, Alma Media v3, Enfuce v2, Ponsse v3 and Savings Banks Group v4. See `team/staffing/ROUND2.md` for current scope and effort. Ville now owns all Prio A buyers, including Valmet; earlier "primary Valmet" notes below are historical. No new Prio A versions or roster edits are made by this agent. Live game connection is verified; the API currently returns no consultant roster, so role-only work continues.
 
 ## Current assignment and status
 
@@ -13,7 +13,7 @@ Updated: 2026-10-29 (Europe/Helsinki).
 - **Complete focus offers:** staffing successors Oriola v4, Tokmanni v4, Outokumpu v5 and Varma v4 are ready for owner review; sources and PDFs in `team/decks/`, arithmetic and prices in `team/staffing/REVIEW.md`. Sign-off records updated as agent reviews, not human approvals.
 - **Additional Ville offers:** Aktia v2, Alko v2, City of Helsinki v3, Elisa v2, Kemira v2, Sanoma v2, Veikkaus v2 and Yliopiston Apteekki v2 reviewed and updated. Twelve complete staffing successors plus four revised VDE alternatives are available; exact versions and prices are in `team/staffing/REVIEW.md`.
 - **Handoff:** `team/staffing/REVIEW.md` lists changes, internal rate-floor calculations and the remaining checks for offer owners. README links to this handoff.
-- **Submission state:** no offer approved or sent. These are draft inputs, not verified resource commitments or final fixed-price quotes.
+- **Submission state:** Rauno sent feedback for Alko v5, Elisa v6 and Veikkaus v5 under explicit human chat authorization. Another agent submitted final proposals: Elisa WON EUR 20,240; Alko and Veikkaus LOST over budget. Our revised final-send attempts aborted on closed-project pre-check, with no duplicate fee. See `team/evaluations/RAUNO-SUBMISSIONS.md`; unsent alternatives are marked separately. Other draft staffing inputs remain unverified resource commitments.
 - Other agents: reuse these staffing inputs; avoid duplicating this review. Existing offer owners retain overall ownership and submission responsibility.
 - Primary Valmet work covers staffing and rate review only; verify the current project ID before submitting.
 
