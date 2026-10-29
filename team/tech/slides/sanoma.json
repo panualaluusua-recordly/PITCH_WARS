@@ -46,17 +46,37 @@
             ]
           }
         ],
-        "band": "In your repository and cloud tenant: branch protection, no agent merge right, no production credentials, run log and cost cap per ticket, pause switch"
+        "band": "In your repository and cloud tenant: branch protection, no agent merge right, no production credentials, run log and cost cap per ticket, pause switch. Model runs in your cloud tenant on your credits; tickets and code leave it nowhere. Retry cap 3 attempts per ticket; cost cap per ticket proposed on day 2 from the hackathon runs"
       }
     },
     {
       "title": "Technical gates: you decide at each one, on numbers from your own tickets",
       "table": [
-        ["Gate", "When", "Pass criterion"],
-        ["Access ready", "Before hackathon day 1", "Repository and merge-request access, a dev schema, 5-8 sample tickets; masking rules agreed if ticket or data samples hold personal data"],
-        ["Hackathon go/no-go", "Week 1, day 2", "Feasibility note: stack fit, routine share of the sample, edge cases found, access gaps, baseline lead time. Sanoma decides"],
-        ["Setup gate", "End of week 3", "Agent scored on 30-50 of your closed tickets, incl. the ones that \"always go wrong\"; pass share agreed with you after the first run, not before"],
-        ["Pilot, weekly", "Weeks 4-16", "Approved without rework, rejected and why, wrong passes, review minutes, lead time vs baseline. Any prompt, model or convention change replays the test set first"]
+        [
+          "Gate",
+          "When",
+          "Pass criterion"
+        ],
+        [
+          "Access ready",
+          "Before hackathon day 1",
+          "Repository and merge-request access, a dev schema, 5-8 sample tickets; masking rules agreed if ticket or data samples hold personal data"
+        ],
+        [
+          "Hackathon go/no-go",
+          "Week 1, day 2",
+          "Feasibility note: stack fit, routine share of the sample, edge cases found, access gaps, baseline lead time. Sanoma decides. Port check on day 1 (<= 2 h): repo and CI access, a dev schema, a model change built and tested by hand. If any fails we say so and the plan stops there"
+        ],
+        [
+          "Setup gate",
+          "End of week 3",
+          "Agent scored on 30-50 of your closed tickets, incl. the ones that \"always go wrong\"; pass share agreed with you after the first run, not before"
+        ],
+        [
+          "Pilot, weekly",
+          "Weeks 4-16",
+          "Approved without rework, rejected and why, wrong passes, review minutes, lead time vs baseline. Any prompt, model or convention change replays the test set first"
+        ]
       ],
       "note": "Technical unknowns, resolved on day 1: warehouse and transformation tool; Git and ticket host; share of the backlog that is routine; personal data in subscriber analytics. If the answer is \"little routine work\", we say so at the gate."
     }
