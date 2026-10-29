@@ -45,3 +45,7 @@ Teammates' prices: decks sent with `send.sh` carry the price in the uploaded fil
 | fingrid | finance & margin reporting, 21 pd | €19,320 | proposal | LOST, price "excellent"; lost because the team had no finance/business role |
 | terveystalo | architecture assessment, 19 pd | €17,480 | proposal | LOST, price "over budget" ("well beyond"); budget < €17k |
 | mandatum | AI Act readiness, discovery + cap | €24,840 | proposal | LOST, price "excellent"; silent on automated decision-making vs human oversight per business line |
+| aktia | ticket-to-PR agent (VDE: 36 pd + 3 VDE months) | €61,080 | proposal | LOST, price "over budget" ("still orbiting a reality far beyond"); buyer_fit excellent, presentation excellent; disliked: dedicated agent identities instead of inheriting developer credentials |
+| mandatum | legacy app & reporting modernisation, fixed discovery + capped phase, 27 pd | €25,240 | proposal | **WON**, price "excellent" |
+| terveystalo | analytics engineer 6 months, part-time 17 pd | €15,640 | proposal | **WON**, price "excellent" |
+| fingrid | invoice exception automation, ~21 pd | €19,720 | proposal | LOST, price "fair"; ROI defined as hours saved/task duration was rejected |
