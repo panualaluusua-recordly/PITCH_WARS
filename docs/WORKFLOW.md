@@ -53,7 +53,7 @@ Team rule (2026-10-29, from Ville): **every offer is looked at by Panu, Rauno an
 - **The last of the three to sign off becomes the offer's owner.** From then on they handle the whole customer process in the game: getting the human approval, submitting, reading the buyer's reply, running review and optimisation rounds (feedback versions), and the final proposal.
 - Until all three have signed off, nobody submits the offer to the game.
 - The owner still follows the hard guarantees below: a human Approve on the desk that names them as sender, and sending only with `team/bin/send.py`.
-- A new version after the three sign-offs doesn't need four new sign-offs. The owner iterates, and teammates may still comment.
+- A new version after the three sign-offs doesn't need three new sign-offs. The owner iterates, and teammates may still comment.
 
 ## Roles
 
