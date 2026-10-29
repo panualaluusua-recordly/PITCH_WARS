@@ -7,7 +7,7 @@
       "title": "Reports move to the cloud behind stable data contracts, so the new ERP rollout does not break them",
       "bullets": [
         "Today's data setup and the new ERP feed one integration layer with a contract per business object. Dashboards read a modelled reporting layer in the public cloud, not the ERP directly.",
-        "Legacy applications are replaced one at a time, in parallel until proven."
+        "Discovery ranks legacy apps by ROI; we replace only those where the saving exceeds the cost, top one first, in parallel until proven."
       ],
       "diagram": {
         "columns": [
@@ -22,7 +22,7 @@
           {
             "title": "Integration layer",
             "boxes": [
-              "Data contract per object",
+              "Light data contract per key object",
               "ERP changes absorbed here",
               "Daily reconciliation"
             ]
@@ -44,7 +44,7 @@
             ]
           }
         ],
-        "band": "Q1: build and test only, no production change. Go-live from April with rollback"
+        "band": "Q1: build and test only, no production change. Go-live after Q1, date agreed against the ERP rollout plan, with rollback"
       }
     },
     {
@@ -81,7 +81,10 @@
           "With the ERP plan"
         ]
       ],
-      "note": "Technical unknowns: new ERP timeline and APIs, the target public cloud, current data volumes. The ranking comes from the discovery you have already held with us."
+      "note": "Technical unknowns: new ERP timeline and APIs, the target public cloud, current data volumes. The ranking comes from the discovery you have already held with us.",
+      "bullets": [
+        "Each commit references a backlog item and its benefit measure (hours or €), visible in your repo."
+      ]
     }
   ],
   "subtitle": "Two slides for deck-writer to insert after the answer-first slide"

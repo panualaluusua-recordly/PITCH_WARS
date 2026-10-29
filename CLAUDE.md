@@ -54,6 +54,8 @@ The full design is in `docs/WORKFLOW.md`; desk mechanics are in the `pitch-desk`
 
 ## Team coordination (four players, one token)
 
+**Sign-off rule:** every offer is reviewed by Rauno, Ville, Erika and Panu (`team/signoffs/<buyer_id>.md`). The last of the four to sign off owns the offer: they submit it to the game and run the review and optimisation rounds. Details: `docs/WORKFLOW.md` → "Four-person sign-off".
+
 Four teammates (three on Claude Code, one on ChatGPT) play in parallel with the same team token. The shared comms space is the **Wolves Pitch Desk** artifact: https://claude.ai/artifact/ThNoCmMvozghwtXXq7ALpF
 
 - Session start: read `meta/protocol` from the desk with the `ArtifactData` tool and follow it. It overrides this section.

@@ -7,7 +7,8 @@
       "title": "Cost visibility per member bank and workload, with guardrails inside your own Snowflake and Azure",
       "bullets": [
         "Snowflake usage, Azure cost data and Power BI capacity are combined in one cost model, tagged by member bank and workload. Guardrails stop runaway spend before the invoice.",
-        "Everything runs in your tenant in the EU. No data goes to non-European AI toolchains."
+        "Everything runs in your tenant in the EU. No data goes to non-European AI toolchains.",
+        "DORA: an ICT-risk register entry per tool, an exit plan, and an audit log of every guardrail change."
       ],
       "diagram": {
         "columns": [
@@ -16,7 +17,8 @@
             "boxes": [
               "Snowflake account usage",
               "Azure cost management",
-              "Power BI capacity metrics"
+              "Power BI capacity metrics",
+              "Temenos feeds via your Snowflake loads"
             ]
           },
           {
@@ -55,6 +57,10 @@
           "How it is measured or proven"
         ],
         [
+          "AI-driven example: Recordly's Virtual Data Engineer",
+          "Agents in your Snowflake propose cost and performance fixes as pull requests; your change board approves each one"
+        ],
+        [
           "Warehouse right-sizing and auto-suspend",
           "Credits per workload before and after"
         ],
@@ -83,7 +89,7 @@
         420,
         444
       ],
-      "note": "Savings targets are set after the baseline. We do not quote % savings before measuring. AI-driven cost management example: Recordly's Virtual Data Engineer does cost and performance optimisation inside Snowflake (see team/vde); use only the facts in vde-facts.md."
+      "note": "Phases: definition = baseline + toolchain inventory; delivery = guardrails and optimisation; ongoing = monthly review. Savings targets are set after the baseline; we do not quote % savings before measuring."
     }
   ],
   "subtitle": "Two slides for deck-writer to insert after the answer-first slide"

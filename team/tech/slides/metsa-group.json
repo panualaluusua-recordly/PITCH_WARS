@@ -7,7 +7,8 @@
       "title": "Forecasts run on your Azure Databricks and SAP feeds, with a proven library rather than bespoke algorithms",
       "bullets": [
         "SAP S/4HANA demand, stock and production data feed Databricks, which runs established open-source forecasting methods. Planners see forecasts and inventory recommendations in your BI tool.",
-        "Anomalies such as kiln incidents are flagged for planners, not modelled one by one."
+        "Kiln-type anomalies are flagged for planners, never modelled case by case.",
+        "Timeline: weeks 1-2 buy-vs-build check and data audit; weeks 3-8 pilot on one product line and two hubs; scale only if the error beats today's plan."
       ],
       "diagram": {
         "columns": [
@@ -31,7 +32,6 @@
             "title": "Inventory logic",
             "boxes": [
               "Safety stock per hub",
-              "Reorder suggestions",
               "Anomaly flags for planners"
             ]
           },
@@ -39,8 +39,7 @@
             "title": "BI dashboards",
             "boxes": [
               "Planner view per hub",
-              "Forecast accuracy trend",
-              "Inventory value at risk"
+              "Forecast accuracy vs. plan"
             ]
           }
         ],
@@ -56,7 +55,7 @@
           "Our view now"
         ],
         [
-          "Commercial planning package (e.g. SAP's planning suite)",
+          "A commercial forecasting package, if one is already licensed",
           "You already license it, or planners need its workflows",
           "Checked first in week 1"
         ],

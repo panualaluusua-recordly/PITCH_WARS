@@ -86,3 +86,8 @@ From the clean-context `deck-critic` runs (full list with delivery items: `team/
   only a few in production). Add a leadership-facing quick-win metric (lead time from model to production).
 - **Tokmanni:** the tech slides hold up. The deck is one slide over the limit, so merge slides 4 and 5 or move the
   deliverables line into the architecture slide.
+
+**Done 2026-10-29 ~13:10 (tech-critic pass):** oriola v3, tokmanni v3, outokumpu v4 and varma v3 apply the
+tech-only improvements: no unstated tools, measured gates, a week-1 technical probe, explicit unknowns, rollback and
+parallel-run rules, and an honest lineage claim. Batch-2 tech slides were updated in place the same way
+(`team/tech/batch2.md`).
