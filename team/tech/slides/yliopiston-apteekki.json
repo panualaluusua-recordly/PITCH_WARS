@@ -57,17 +57,17 @@
         [
           "Nykytilakartta",
           "vk 2",
-          "ERP, BI, pilvi ja verkkoapteekin tietovirrat nimetty; nykyiset selaintunnisteet listattu havaintoina (emme poista niitä)"
+          "ERP, BI, pilvi ja verkkoapteekin tietovirrat nimetty; nykyiset selaintunnisteet listattu havaintoina (emme poista niitä). Jos tunnistehallintaa ei ole, tunnisteet listataan sivuston lähdekoodin ja verkkopyyntöjen läpikäynnillä lukuoikeuksin; löydökset raportoidaan vain havaintoina"
         ],
         [
           "Portti 1: kriteerit",
           "vk 3",
-          "Hyväksytte kriteerit ja painot ennen pisteytystä; tietosuojavastaava on nähnyt poissulkevan ehdon, EU/ETA-ehdon ja oikeusperustekysymykset"
+          "Hyväksytte kriteerit ja painot ennen pisteytystä; tietosuojavastaava on nähnyt poissulkevan ehdon, EU/ETA-ehdon ja oikeusperustekysymykset. Pisteytys: asteikko 1–5 kriteeriä kohti, painot sovitaan portilla 1; 0,5 pisteen sääntö lasketaan painotetusta keskiarvosta"
         ],
         [
           "Pistokoe",
           "vk 4–5",
-          "Pistokoe läpäisty vaihtoehdolle, kun sama ERP-virta ja sama verkkoapteekin tapahtuma saapuvat perille ilman selainpuolen skriptiä; viive ja ajokustannus mitataan ja raportoidaan vaihtoehdoittain; epäonnistuminen kirjataan pisteisiin. Data on synteettistä tai anonymisoitua, ei asiakas- tai reseptitason tietoja"
+          "Pistokoe läpäisty vaihtoehdolle, kun sama ERP-virta ja sama verkkoapteekin tapahtuma saapuvat perille ilman selainpuolen skriptiä; viive ja ajokustannus mitataan ja raportoidaan vaihtoehdoittain; epäonnistuminen kirjataan pisteisiin. Data on synteettistä tai anonymisoitua, ei asiakas- tai reseptitason tietoja. Todiste: selaimen verkkoliikenteen tallenne (ei kolmannen osapuolen kutsuja) ja ajoloki. Jos esimerkkidataa ei ole vk 3, pilotoidaan kaksi virtaa vaihtoehdoille A ja B; C kuvataan luonnoksena, ei pilotoida"
         ],
         [
           "Päätös",
