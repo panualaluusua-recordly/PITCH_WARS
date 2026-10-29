@@ -123,3 +123,22 @@ Learning rule: a pattern becomes a rule after two independent buyers confirm it;
   rendered with `team/bin/deck.py` (white + teal) got *weak* (Enfuce, Terveystalo). The deck theme should
   change.
 - `explanatory_visuals` rewards diagrams, which is our job (T1).
+
+## 7. Updates, 2026-10-29 afternoon
+
+**Second batch done:** `team/tech/batch2.md` and `team/tech/slides/{vr-group,upm,metsa-group,savings-banks-group,vahterus}.json`.
+
+**New anti-patterns from the clean-context reviews of the focus offers** (`team/delivery/focus5-review.md`):
+
+| Anti-pattern | Seen in | Rule |
+| --- | --- | --- |
+| Naming tools the buyer never mentioned as if they were their stack (Unity Catalog, Asset Bundles, Power BI) | outokumpu v2 | Name only the stack stated in the RFP or bio; everything else is "proposed" or "if you use it" |
+| Hard gate metrics fixed before any measurement (reconciliation ≥ 99.9%, ≥ 80% config-only) | oriola v1 | State them as target values confirmed with the buyer after the first measurement |
+| Overstating the RFP's numbers ("replaces twenty one-off scripts" when the RFP says about twenty experiments) | varma v1 | Quote the RFP's own wording |
+
+**VDE fit (from `vde-check`):** our architectures for Snowflake buyers (vr-group, upm, savings-banks-group, valmet)
+should leave room for Ville's VDE variant: work in the buyer's own Snowflake, every change through a pull request
+approved by a person. Do not put the VDE into Databricks-only or unnamed-cloud architectures.
+
+**Rate floors (`team/STAFFING_STATUS.md`) affect T7:** our effort basis now feeds a price that has to respect the
+floors or shrink scope. Smaller first phases (P4) are the tech lever for that. See `team/delivery/pricing-floor-check.md`.

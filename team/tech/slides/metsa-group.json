@@ -1,0 +1,78 @@
+{
+  "client": "Metsä Group",
+  "title": "Tech & architecture slides for the Metsä Group deck",
+  "footer": "Recordly | Metsä Group | Demand and inventory forecasting",
+  "slides": [
+    {
+      "title": "Forecasts run on your Azure Databricks and SAP feeds, with a proven library rather than bespoke algorithms",
+      "bullets": [
+        "SAP S/4HANA demand, stock and production data feed Databricks, which runs established open-source forecasting methods. Planners see forecasts and inventory recommendations in your BI tool.",
+        "Anomalies such as kiln incidents are flagged for planners, not modelled one by one."
+      ],
+      "diagram": {
+        "columns": [
+          {
+            "title": "SAP S/4HANA",
+            "boxes": [
+              "Sales orders & deliveries",
+              "Stock per hub",
+              "Production plans"
+            ]
+          },
+          {
+            "title": "Azure Databricks",
+            "boxes": [
+              "Feature tables per product line",
+              "Proven forecasting library",
+              "Accuracy tracked vs. today's plan"
+            ]
+          },
+          {
+            "title": "Inventory logic",
+            "boxes": [
+              "Safety stock per hub",
+              "Reorder suggestions",
+              "Anomaly flags for planners"
+            ]
+          },
+          {
+            "title": "BI dashboards",
+            "boxes": [
+              "Planner view per hub",
+              "Forecast accuracy trend",
+              "Inventory value at risk"
+            ]
+          }
+        ],
+        "band": "Pilot first: one product line, two hubs. Scale only when forecast error beats the current plan"
+      }
+    },
+    {
+      "title": "Buy before build: we check commercial packages first and say which wins",
+      "table": [
+        [
+          "Option",
+          "When it wins",
+          "Our view now"
+        ],
+        [
+          "Commercial planning package (e.g. SAP's planning suite)",
+          "You already license it, or planners need its workflows",
+          "Checked first in week 1"
+        ],
+        [
+          "Open-source forecasting library on Databricks",
+          "Fits your stack, no new licence, low upkeep",
+          "Our default"
+        ],
+        [
+          "Bespoke algorithms",
+          "Only for a gap the others cannot cover",
+          "Not proposed"
+        ]
+      ],
+      "note": "Technical unknowns: data history depth per product line, hub master data quality, existing planning licences. The effort and price come from our own calculation, not from published figures."
+    }
+  ],
+  "subtitle": "Two slides for deck-writer to insert after the answer-first slide"
+}
