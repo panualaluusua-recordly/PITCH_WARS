@@ -1,0 +1,61 @@
+{
+  "client": "Yliopiston Apteekki",
+  "title": "Tekniikka- ja arkkitehtuuridiat, Yliopiston Apteekki",
+  "subtitle": "Kaksi diaa deck-writerille: arkkitehtuuri lähestymistavan jälkeen, portit ja riskit vaiheiden jälkeen",
+  "footer": "Recordly | Yliopiston Apteekki | Tietoalustan arkkitehtuuri ja työkaluvalinta",
+  "slides": [
+    {
+      "title": "Yksi kuva nykytilasta ja kolmesta vaihtoehdosta: tieto tulee järjestelmistä, ei selaimesta",
+      "bullets": [
+        "**Poissulkeva ehto:** vaihtoehto ei saa vaatia selaimeen skriptejä, pikseleitä tai tunnisteita. Palvelinpuolinen keruu voi silti olla henkilötietojen käsittelyä: oikeusperusteen arvioi tietosuojavastaavanne, me listaamme kysymykset.",
+        "**Nykyinen siistittynä (A) on aito vaihtoehto:** muutosta suositellaan vain, jos se voittaa A:n vähintään 0,5 pisteellä.",
+        "**Jokaisesta vaihtoehdosta raportoidaan** lisenssit (säilyy, tulee, poistuu), datan sijainti (EU/ETA) ja kuka sitä ylläpitää."
+      ],
+      "diagram": {
+        "columns": [
+          {
+            "title": "Lähteet",
+            "boxes": [
+              "ERP (vahvistetaan vk 1)",
+              "Verkkoapteekin palvelin: tilaukset ja tapahtumat",
+              "Myymälät ja muut kanavat"
+            ]
+          },
+          {
+            "title": "Keruu",
+            "boxes": [
+              "Järjestelmistä ja palvelimilta: eräajo tai rajapinta",
+              "Ei selainskriptejä, pikseleitä eikä tunnisteita"
+            ]
+          },
+          {
+            "title": "Tallennus, julkinen pilvi",
+            "boxes": [
+              "Nykyinen dataratkaisu (EU/ETA, vahvistetaan vk 1)",
+              "A siistitty · B yksi osa lisätään tai vaihdetaan · C suurempi muutos"
+            ]
+          },
+          {
+            "title": "Raportointi",
+            "boxes": [
+              "Nykyinen BI-työkalu",
+              "Pääsynhallinta ja lokitus arvioidaan joka vaihtoehdossa"
+            ]
+          }
+        ],
+        "band": "Arviointi tehdään lukuoikeuksin ja nykyisillä lisensseillä. Tuotantoon ei kosketa, apteekkien arki jatkuu ennallaan."
+      }
+    },
+    {
+      "title": "Neljä tarkistuspistettä: te hyväksytte kriteerit ennen pisteytystä, ja pistokoe tehdään ilman asiakastietoja",
+      "table": [
+        ["Tarkistuspiste", "Milloin", "Läpäisyehto"],
+        ["Nykytilakartta", "vk 2", "ERP, BI, pilvi ja verkkoapteekin tietovirrat nimetty; nykyiset selaintunnisteet listattu havaintoina (emme poista niitä)"],
+        ["Portti 1: kriteerit", "vk 3", "Hyväksytte kriteerit ja painot ennen pisteytystä; tietosuojavastaava on nähnyt poissulkevan ehdon, EU/ETA-ehdon ja oikeusperustekysymykset"],
+        ["Pistokoe", "vk 4–5", "1 ERP-virta ja 1 verkkoapteekin tapahtumavirta jokaisen vaihtoehdon läpi synteettisellä tai anonymisoidulla datalla; ei asiakas- tai reseptitason tietoja"],
+        ["Päätös", "vk 6", "Vaihtoehto valittu (myös A on sallittu); 12 kk:n tiekartta tarkistuspisteineen kuukausina 3 ja 6"]
+      ],
+      "note": "Tuntemattomat: ERP, BI ja pilvi nimetään vk 1 (vaihtoehdot riippuvat niistä); lisenssiluettelo vk 2, ilman sitä kustannus on vain suunta; esimerkkidata ilman henkilötietoja vk 3, ilman sitä pistokoe on dokumenttitarkistus ja pisteet merkitään epävarmemmiksi. Emme tee: toteutusta, migraatiota, tunnisteiden poistoa, oikeudellista arviota emmekä tekoälyä."
+    }
+  ]
+}
