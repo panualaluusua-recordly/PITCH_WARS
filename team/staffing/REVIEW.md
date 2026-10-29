@@ -1,5 +1,22 @@
 # Staffing review and handoff - Rauno / Codex
 
+## Ville's additional eight drafts (snapshot: upstream 82c98ea)
+
+Staffing successors are ready in the same buyer folders; original versions remain for history. These use **8 hours/day**. They keep role profiles, mark credentials/languages/availability as requirements pending verification, and do not assign people merely because their names appear in the roster.
+
+| Buyer | Staffing successor | Draft price | Staffing change |
+| --- | --- | --- | --- |
+| Aktia | v2 | EUR 61,080 | 36 days: AI architect 16, DE 12, AI engineer 8; architect premium included. Definition EUR 7,680, delivery EUR 23,520, run EUR 29,880. |
+| Alko | v2 | EUR 35,280 unchanged | Architect 10, DE 24, DA 4 days; rate arithmetic passes. Unverified personal experience removed. |
+| City of Helsinki | v3 | EUR 43,440 cap unchanged | DE 30, DA 14, architect 2 days; staffing provides team on-site coverage, not an impossible promise that every member attends all 20 on-site days. Four-slide target retained. |
+| Elisa | v2 | EUR 20,240 unchanged | Architect 13, DE 9 days; rate arithmetic passes; confirmed-start claim removed. |
+| Kemira | v2 | EUR 12,280 | AI engineer 6, DE 5, AI-review architect 2 days; architect AI premium included. |
+| Sanoma | v2 | EUR 54,440 | 29 human days: AI architect 14 (hackathon 3 + setup 8 + run review 3), DE 10, AI engineer 5; 3-month VDE fee unchanged. |
+| Veikkaus | v2 | EUR 19,200 | Architect 12 + MLOps DE 8 days at proposed AI rate EUR 120/h; the EUR 5/h premium covers AI-platform assessment expertise, not extra AI features. |
+| Yliopiston Apteekki | v2 | EUR 16,560 unchanged | Architect 11, DE 7 days; 11 architect days across six weeks instead of promising 12. Unsupported references marked for verification. |
+
+Architect base EUR 115/h in these drafts is a proposed rate, not a user-supplied company minimum. New roles are not booked. Scope, exact working calendar, candidate evidence and fixed-price risk assumptions still need confirmation. Technical owners retain platform-fit and compliance responsibilities. Staffing agent reviews are recorded in each buyer's sign-off file; no human approval was written.
+
 ## Latest complete offer revisions (snapshot: upstream 3eaabe2)
 
 The newly arrived complete focus offers now have staffing-corrected successors. **Use these versions for further review; earlier prices for the same allocations are superseded.** They retain the technical owner's architecture. All are draft capacity prices, not verified-resource commitments or human approvals.
