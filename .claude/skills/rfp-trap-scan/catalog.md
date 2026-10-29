@@ -84,3 +84,10 @@ Evidence tags: **[won]**, **[lost]**, **[hint]** = seen in our own replies. Unta
 - "process/compliance first, cautious" → standard terms, proven patterns, no experiments
 - "cynical about contractors" → enablement, internal ownership, short engagement
 - "reviews every query/commit" → transparency and access to everything we do
+
+## Lessons from Prio A round (2026-10-29, Ville)
+- **Buyers hold ~8 preferences, half of them NOT in the RFP or bio** (UPM: corporate chatbots/conversational tooling; VR: automated messaging with human-reviewed drafts, diagnostic bots, build-vs-buy for telemetry, tendering vs direct award; Valmet: working demos on real data, training format, industrial process modelling). A feedback round is the only way to surface them, so **don't propose after a no-reply**: VR and Valmet were lost that way.
+- **Pairing from week 1 is not universal.** Valmet marked continuous co-building "against": cap client staff involvement (e.g. half a day a week) unless the buyer asks for co-build.
+- **Stage/milestone payments beat calendar billing** (UPM, Valmet): pay per accepted stage.
+- **Q1 change freezes apply even when the RFP doesn't say so** for industrial buyers (Valmet).
+- **US-headquartered platforms** (Snowflake) count against buyers who flag jurisdiction; don't build the pitch on them there.

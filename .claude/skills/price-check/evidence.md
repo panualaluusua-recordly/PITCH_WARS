@@ -1,7 +1,7 @@
 # Price evidence log
 
 Append one row per reply that says anything about price, **only when the deck price is known**. Key: buyer + project + kind + price, never duplicated. Newest last.
-Teammates' prices: name the PDF with the price (`…-eur84000.pdf`) so it is visible in each conversation entry's `deck` field.
+Teammates' prices: decks sent with `send.sh` carry the price in the uploaded filename (`…-eur84000.pdf`), visible in each conversation entry's `deck` field.
 
 | Buyer | Project type | Price sent | Kind | Verdict (quote) |
 |---|---|---|---|---|
@@ -28,3 +28,8 @@ Teammates' prices: name the PDF with the price (`…-eur84000.pdf`) so it is vis
 | terveystalo | agent-accelerated migration pilot | unknown (v2) | feedback | "seems quite high, though it might still be within budget" (over-soft) |
 | terveystalo | agent-accelerated migration pilot | unknown | proposal | LOST (teammate), price "good"; lost on missing patient-facing AI |
 | fingrid | finance/margin reporting automation (Databricks+D365), scope small | unknown (teammate v1) | feedback | "plainly above our approved budget", "cannot advance an engagement that exceeds our authorized expenditure limits" |
+| kemira | agentic AI hackathon, 13 pd | €12,200 | proposal | **WON**, price "excellent" (all four ratings excellent) |
+| s-group | 1 FTE × 3 months call-off, 60 pd × €920 | €55,200 | proposal | **WON**, price "excellent" |
+| upm | 1 ML engineer ~50% × 6 months + coordinator | €107,400 → €75,480 → €68,800 | fb, fb, proposal | over budget → "quite high, might be within outer bounds" → LOST, price "good" (hidden preference: chatbots/conversational tooling) |
+| vr-group | analytics engineer ~60% × 6 months | €109,800 → €73,600 cap | fb, proposal | "flat-out above budget" → no reply → LOST, price "fair" |
+| valmet | senior DE ~60% × 6 months | €73,600 cap | fb (no reply), proposal | LOST, price "fair" (wanted client staff time capped at half a day a week, Q1 freeze, EU jurisdiction) |
