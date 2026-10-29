@@ -14,6 +14,17 @@
 ### alko-master-data-quality-and-duplicate-cleanup
 - 2026-10-29T12:07 · **hints** · deck `alko-master-data-quality-and-duplicate-cleanup-v5-eur35280.pdf` (€35,280) · price signal: **over-soft**
   > First and foremost, the total price presented in this deck is above our budget, which stands as the primary obstacle to moving forward with the proposal. On a positive note, I appreciate the absolute commitment to conducting all workshops and documentation in Finnish, which prevents the operational friction that so often stalls retail rollouts. However, having our internal specialists tied up in continuous side-by-side working sessions from the opening week threatens to drain our daily capacity on basic execution when our staff is already fully committed to maintaining ongoing operations. When I integrated our ERP system with our BI tool upon joining Alko, I learned exactly how sensitive our catalog integrity is, and I still review every query parameter myself to ensure nothing subpar ever reaches the executive table.
+- 2026-10-29T12:09 · **verdict** · deck `alko-master-data-quality-and-duplicate-cleanup-v7-eur35280.pdf` (€35,280) · price signal: **verdict lost, price over budget**
+  > This proposal cannot proceed because the overall commercial commitment stretches past the financial boundary I am willing to justify to executive leadership.
+  ratings: price over budget, buyer_fit fair, project_fit fair, presentation excellent
+  - [not addressed] Kalvoilla ei käsitellä katteeseen tai konversioon kytkettyjä kaupallisia pilotteja.
+  - [met] Kalvoilla 2 ja 7 vaaditaan suomen kieli työpajoihin, dokumentaatioon ja kaikille asiantuntijoille.
+  - [met] Kalvoilla 3 ja 4 koodi ja säännöt sijoitetaan Alkon repoon ilman uusia lisenssejä tai suljettuja laatikoita.
+  - [not addressed] Tarjous ei ota kantaa hinnoittelu- tai valikoima-algoritmeihin.
+  - [against] Kalvo 5 edellyttää Alkon asiantuntijoiden työskentelyä rinnalla heti viikosta 1 alkaen.
+  - [met] Kalvoilla 3 ja 8 ratkaisu rajataan Alkon nykyiseen ympäristöön ilman uusia SaaS- tai pilvilisenssejä.
+  - [not addressed] Esityksessä ei mainita ennustavaa inventaariota tai täydennysmalleja.
+  - [met] Kalvoilla 3 ja 4 esitellään sääntöpohjainen malli, auditointitaulu ja täysin peruttavat yhdistämiset.
 <!-- /replies:auto -->
 
 ## Rauno / Codex feedback round 2026-10-29

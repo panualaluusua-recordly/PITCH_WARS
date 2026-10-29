@@ -8,6 +8,7 @@
 | aktia | aktia-data-warehouse-consolidation | verdict | unknown | verdict lost, price good |
 | aktia | aktia-ticket-to-merge-request-developer-or-analy | verdict | €61,080 | verdict lost, price over budget |
 | alko | alko-master-data-quality-and-duplicate-cleanup | hints | €35,280 | over-soft |
+| alko | alko-master-data-quality-and-duplicate-cleanup | verdict | €35,280 | verdict lost, price over budget |
 | alma-media | alma-media-from-ai-prototypes-to-production-mlop | hints | unknown | none |
 | atria | atria-ai-readiness-assessment-or-roadmap | no_reply | unknown | no reply |
 | city-of-helsinki | city-of-helsinki-two-person-data-engineering-squ | hints | unknown | over-hard |
@@ -16,6 +17,7 @@
 | city-of-helsinki | city-of-helsinki-two-person-data-engineering-squ | verdict | unknown | verdict won, price excellent |
 | city-of-helsinki | city-of-helsinki-sme-reporting-platform | hints | unknown | over-hard |
 | elisa | elisa-data-platform-architecture-and-tool-select | hints | €20,240 | none |
+| elisa | elisa-data-platform-architecture-and-tool-select | verdict | €20,240 | verdict won, price good |
 | enfuce | enfuce-staff-augmentation | hints | unknown | over-soft |
 | enfuce | enfuce-staff-augmentation | hints | unknown | none |
 | enfuce | enfuce-staff-augmentation | hints | unknown | none |
@@ -26,6 +28,7 @@
 | fennia | fennia-first-data-platform-phase | hints | unknown | none |
 | fingrid | fingrid-financial-and-margin-reporting-automatio | hints | unknown | over-soft |
 | fingrid | fingrid-financial-and-margin-reporting-automatio | verdict | €19,320 | verdict lost, price excellent |
+| fingrid | fingrid-invoice-exception-automation | verdict | €19,720 | verdict lost, price fair |
 | helen | helen-semantic-model-and-self-service-setup | hints | unknown | over-hard |
 | kela | kela-cloud-data-platform-cost-and-finops-cleanup | hints | unknown | none |
 | kemira | kemira-first-100-days-data-and-ai-roadmap-for-a- | hints | unknown | over-hard |
@@ -37,10 +40,13 @@
 | kemira | kemira-hands-on-agentic-ai-hackathon-for-an-inte | verdict | €12,200 | verdict won, price excellent |
 | kemira | kemira-platform-migration-two-warehouses | hints | €55,200 | none |
 | kemira | kemira-platform-migration-two-warehouses | verdict | €55,200 | verdict won, price excellent |
+| kemira | kemira-first-data-platform-phase | hints | €36,800 | none |
+| kemira | kemira-first-data-platform-phase | verdict | €40,480 | verdict lost, price excellent |
 | kesko | kesko-ai-readiness-assessment-or-roadmap | hints | unknown | over-soft |
 | lahitapiola | lahitapiola-first-100-days-data-and-ai-roadmap-f | hints | unknown | over-hard |
 | mandatum | mandatum-ai-governance-and-eu-ai-act-readiness | hints | unknown | over-hard |
 | mandatum | mandatum-ai-governance-and-eu-ai-act-readiness | verdict | €24,840 | verdict lost, price excellent |
+| mandatum | mandatum-legacy-application-and-reporting-modern | verdict | €25,240 | verdict won, price excellent |
 | pirha | pirha-operational-and-sensor-data-failure-predic | hints | unknown | none |
 | ponsse | ponsse-sme-cpq-reporting | hints | unknown | over-hard |
 | posti | posti-streaming-and-event-ingestion-pipeline-bui | hints | unknown | over-hard |
@@ -53,10 +59,12 @@
 | s-group | s-group-ticket-to-merge-request-developer-or-ana | verdict | €21,400 | verdict won, price good |
 | s-group | s-group-ai-or-mcp-hackathon-1-2-days | hints | €9,400 | none |
 | s-group | s-group-ai-or-mcp-hackathon-1-2-days | verdict | €9,400 | verdict lost, price excellent |
+| sanoma | sanoma-analytics-backlog-agent | verdict | €54,440 | verdict lost, price over budget |
 | terveystalo | terveystalo-agent-accelerated-migration | hints | unknown | over-soft |
 | terveystalo | terveystalo-agent-accelerated-migration | verdict | unknown | verdict lost, price good |
 | terveystalo | terveystalo-architecture-or-tool-assessment | no_reply | unknown | no reply |
 | terveystalo | terveystalo-architecture-or-tool-assessment | verdict | €17,480 | verdict lost, price over budget |
+| terveystalo | terveystalo-analytics-engineer-for-6-months | verdict | €15,640 | verdict won, price excellent |
 | upm | upm-forward-deployed-ai-engineer-for-6-months | hints | €107,400 | over-soft |
 | upm | upm-forward-deployed-ai-engineer-for-6-months | hints | €75,480 | over-soft |
 | upm | upm-forward-deployed-ai-engineer-for-6-months | verdict | €68,800 | verdict lost, price good |
@@ -68,10 +76,13 @@
 | valmet | valmet-machine-data-exploration | hints | €24,480 | none |
 | valmet | valmet-machine-data-exploration | verdict | €24,480 | verdict won, price excellent |
 | valmet | valmet-first-100-days-data-and-ai-roadmap-for-a- | hints | €16,880 | none |
+| valmet | valmet-first-100-days-data-and-ai-roadmap-for-a- | verdict | €16,880 | verdict won, price excellent |
 | veikkaus | veikkaus-architecture-or-tool-assessment | hints | €19,200 | over-soft |
+| veikkaus | veikkaus-architecture-or-tool-assessment | verdict | €19,200 | verdict lost, price over budget |
 | vr-group | vr-group-analytics-engineer-for-6-months | hints | €109,800 | over-soft |
 | vr-group | vr-group-analytics-engineer-for-6-months | no_reply | €73,600 | no reply |
 | vr-group | vr-group-analytics-engineer-for-6-months | verdict | €73,600 | verdict lost, price fair |
 | vr-group | vr-group-small-automation-build | hints | €43,560 | over-soft |
 | vr-group | vr-group-small-automation-build | hints | €32,520 | over-soft |
 | vr-group | vr-group-small-automation-build | verdict | €18,400 | verdict lost, price fair |
+| yliopiston-apteekki | yliopiston-apteekki-data-platform-architecture-a | verdict | €16,560 | verdict lost, price good |

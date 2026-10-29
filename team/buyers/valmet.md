@@ -34,4 +34,15 @@
 ### valmet-first-100-days-data-and-ai-roadmap-for-a-new-lea
 - 2026-10-29T12:08 · **hints** · deck `valmet-first-100-days-data-and-ai-roadmap-for-a-new-lea-v1-eur16880.pdf` (€16,880) · price signal: **none**
   > Given the results you delivered on our prior initiative, I value our working history and know you respect Valmet’s operational standards. This proposal is moving in the right direction, particularly by grounding the scope directly in our existing Snowflake and Infor CloudSuite architecture with transparent models, and ensuring we validate progress through a tangible, working data trace early on rather than theoretical slideware. Ever since I took charge of expanding our Snowflake footprint across global operations, establishing strict control and driving executive visibility have been my core priorities. That said, the proposal is not quite where it needs to be yet. Forcing my engineers into recurring status meetings creates unnecessary calendar drag and disrupts delivery flow when operational progress and visibility should be handled continuously without pulling people into scheduled sit-downs. Tighten that coordination structure so we keep execution moving without administrative friction.
+- 2026-10-29T12:10 · **verdict** · deck `valmet-first-100-days-data-and-ai-roadmap-for-a-new-lea-v2-eur16880.pdf` (€16,880) · price signal: **verdict won, price excellent**
+  > You have already proven your ability to execute in our environment, and this disciplined, milestone-controlled roadmap provides the exact operational rigor and executive visibility I demand.
+  ratings: price excellent, buyer_fit excellent, project_fit good, presentation excellent
+  - [met] Slide 2 commits to a working demo on real Infor-to-reporting data at the week-3 gate.
+  - [partly met] Slide 4 specifies knowledge transfer via SQL and notes staying directly in Snowflake without classroom sessions.
+  - [met] Slide 2 mandates transparent baselines and rules first, adding statistical models only where proven.
+  - [met] Slide 6 locks invoicing strictly to three milestone deliverables at a fixed total price.
+  - [met] Slide 2 insists on reading existing Snowflake and Infor CloudSuite data with zero new tool sprawl.
+  - [met] Slide 3 eliminates recurring status meetings in favour of asynchronous chat updates and a live progress page.
+  - [met] Slide 4 schedules a tangible working end-to-end data demo by week 3.
+  - [leans against] Slide 4 kicks off with an inventory and interviews instead of a hands-on hackathon, explicitly ruling out team pairing on slide 3.
 <!-- /replies:auto -->

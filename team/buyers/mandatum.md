@@ -21,4 +21,16 @@ Deck decks/mandatum/mandatum-ai-governance-and-eu-ai-act-readiness-v1.pdf, 6 sli
   - [not addressed] The deck makes no mention of LLM API consumption limits, cost guardrails, or model evaluation budgets.
   - [partly met] Slide 6 lists senior consulting day rates at €920, reflecting competitive boutique market pricing without brand premium markups.
   - [not addressed] Slide 2 mentions defining risk and governance roles but does not cover insurance and asset management permission inheritance.
+### mandatum-legacy-application-and-reporting-modernisation
+- 2026-10-29T12:12 · **verdict** · deck `mandatum-legacy-application-and-reporting-modernisation-v1-eur25240.pdf` (€25,240) · price signal: **verdict won, price excellent**
+  > You have clearly taken our earlier feedback to heart regarding strict governance gates and building our own internal capability rather than selling an endless advisory retainer, so I will advance this into formal procurement—though rest assured I will be keeping a very close eye on your checkpoints.
+  ratings: price excellent, buyer_fit excellent, project_fit weak, presentation excellent
+  - [met] Slide 3 confirms automation recommends and checks while policies, claims, and pension approvals remain strictly with human approvers.
+  - [met] Slide 2 and slide 6 provide native Finnish consultants, Finnish runbooks, and bilingual documentation.
+  - [met] Slide 4 explicitly avoids a rigid lump sum, establishing a capped phase billed on actual days alongside discovery.
+  - [met] Slide 4 states Mandatum's team pairs with consultants from week one and co-writes documents.
+  - [not addressed] The slides do not mention prioritizing the top two reconciliation exception types over edge cases.
+  - [met] Slide 3 prohibits direct write access to live pipelines and routes changes through reviewed change requests.
+  - [not addressed] The deck does not specify whether code repositories and CI/CD pipelines remain in Mandatum's own repositories.
+  - [not addressed] The slides do not detail early prototype engagement with portfolio managers and reporting end users.
 <!-- /replies:auto -->

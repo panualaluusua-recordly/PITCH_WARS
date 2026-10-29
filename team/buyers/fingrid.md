@@ -65,4 +65,16 @@ Deck decks/fingrid/fingrid-financial-and-margin-reporting-automation-v2.pdf, 6 s
   - [met] Slide 4 establishes Phase 0 to match records and eliminate duplicates before any reporting build begins.
   - [against] Slide 5 fields only technical delivery roles and omits a dedicated, named project manager.
   - [met] Slide 2 and Slide 3 plainly detail why continuous real-time streaming breaks accounting reconciliation.
+### fingrid-invoice-exception-automation
+- 2026-10-29T12:12 · **verdict** · deck `fingrid-invoice-exception-automation-v1-eur19720.pdf` (€19,720) · price signal: **verdict lost, price fair**
+  > In accordance with our standard procurement evaluation framework, the steering group has decided not to advance this proposal, primarily due to the monitoring criteria defining operational return around hours saved and task duration.
+  ratings: price fair, buyer_fit excellent, project_fit fair, presentation excellent
+  - [met] Slide 2 specifies no new software licences and executes entirely on existing Databricks compute.
+  - [met] Slide 5 confirms native Finnish language for all named roles as well as Finnish documentation.
+  - [met] Slide 3 explicitly declines speculative auto-resolve claims, requiring baselined precision and recall metrics.
+  - [partly met] Slide 2 mandates deterministic rules, Unity Catalog lineage, and formal data contracts under the data-mesh model.
+  - [partly met] Slide 4 and Slide 6 outline a 21-day phased implementation with gate approvals across approximately four weeks.
+  - [against] Slide 3 defines the business benefit metric specifically as hours saved rather than euros saved.
+  - [met] Slides 2 and 4 state that all code and IaC remain in the customer tenant and internal engineers run it.
+  - [met] Slide 5 assigns native Finnish-speaking experts to interface directly with the billing process owners.
 <!-- /replies:auto -->

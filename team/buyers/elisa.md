@@ -13,6 +13,17 @@
 ### elisa-data-platform-architecture-and-tool-selection-as
 - 2026-10-29T12:07 · **hints** · deck `elisa-data-platform-architecture-and-tool-selection-as-v6-eur20240.pdf` (€20,240) · price signal: **none**
   > The proposed gating structure prior to finalizing broader project commitments provides a solid basis for governance, and ensuring that our internal engineering personnel are spared from extensive interactive sessions will be appreciated across the department. When we carried out our migration to BigQuery and Cloud Composer, disciplined adherence to operational reality was what ultimately kept executive management supportive. However, framing the engagement strictly around an isolated assessment exercise creates an informational gap, as steering committees typically require clear visibility into the ongoing operational platform commitments and internal engineering upkeep required over a multi-year horizon. While the submission moves in a constructive direction, we would need these extended operational implications addressed before presenting an unassailable case to leadership.
+- 2026-10-29T12:09 · **verdict** · deck `elisa-data-platform-architecture-and-tool-selection-as-v8-eur20240.pdf` (€20,240) · price signal: **verdict won, price good**
+  > Subject to the formal alignment of the steering committee, the staged gate structure and measured operational demands present a sufficiently controlled baseline that departmental leadership can endorse for progression.
+  ratings: price good, buyer_fit good, project_fit fair, presentation excellent
+  - [partly met] Slide 2 credits unused days if automation accelerates delivery, though generative AI productivity is not explicitly specified.
+  - [partly met] Slide 2 offers fixed pricing per deliverable with half of unused days credited when automated work finishes early.
+  - [met] Slide 2 and Slide 5 restrict internal platform engineering demands to a total of three hours across asynchronous channels.
+  - [met] Slide 3 and Slide 7 explicitly exclude new platform licenses or speculative tooling in favor of existing platform optimization.
+  - [met] Slide 3 and Slide 4 itemize Google Cloud data components alongside explicit operational assumptions and testing criteria.
+  - [partly met] Slide 3 and Slide 5 maintain code within internal repositories and commit target architecture blueprints to internal ownership.
+  - [against] Slide 7 outlines an isolated assessment fee without presenting a three-year total cost of ownership calculation.
+  - [met] Slide 2, Slide 5, and Slide 7 establish an initial four-day scoping sprint with a formal off-ramp before full assessment commitment.
 <!-- /replies:auto -->
 
 ## Rauno / Codex feedback round 2026-10-29

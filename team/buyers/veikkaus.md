@@ -14,6 +14,17 @@
 ### veikkaus-architecture-or-tool-assessment
 - 2026-10-29T12:07 · **hints** · deck `veikkaus-architecture-or-tool-assessment-v5-eur19200.pdf` (€19,200) · price signal: **over-soft**
   > The main issue here is commercial: the proposed price is clearly above our budget, and that cost overage is our primary concern before we can consider moving forward. On the technical side, I do appreciate that their methodology anchors the debt register directly in task log failure counts and run durations rather than subjective maturity frameworks. Still, relying on standard platform access toggles and out-of-the-box compliance configurations leaves me uneasy, especially since our past consolidation of legacy operational metrics onto the cloud data platform with our in-house AI platform proved that generic baseline settings leave far too many visibility gaps during regulatory audits.
+- 2026-10-29T12:10 · **verdict** · deck `veikkaus-architecture-or-tool-assessment-v7-eur19200.pdf` (€19,200) · price signal: **verdict lost, price over budget**
+  > While the task-log evidence checks and deliverable breakdown are technically well-structured, the bottom-line commercial total on the pricing slide simply exceeds our available expenditure envelope.
+  ratings: price over budget, buyer_fit good, project_fit good, presentation excellent
+  - [partly met] Slides 2 and 4 apply a compliance and governance pass-fail gate to all findings and architectural options.
+  - [met] Slides 1, 2, and 5 guarantee deliverables in Finnish and confirm Finnish language fluency across the team.
+  - [met] Slide 2 commits to native Swedish review of all project deliverables and establishing a trilingual glossary in week 1.
+  - [not addressed] Slide 3 reviews pipeline failure rates and lineage gaps without addressing managed SQL services versus custom orchestration.
+  - [partly met] Slides 1 and 6 place the team at Recordly Oy in Helsinki and explicitly include Helsinki travel in the scope.
+  - [met] Slide 2 establishes a licence-utilisation baseline first and explicitly rules out introducing net-new tools by default.
+  - [not addressed] Slide 3 inspects access-grant lists and audit logs without evaluating bespoke access controls against default platform settings.
+  - [met] Slide 5 lists specific cloud vendor badges including Azure Solutions Architect, Databricks Data Engineer, and SnowPro Core.
 <!-- /replies:auto -->
 
 ## Rauno / Codex feedback round 2026-10-29

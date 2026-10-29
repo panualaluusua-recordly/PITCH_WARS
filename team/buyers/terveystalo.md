@@ -62,4 +62,16 @@ Deck decks/terveystalo/terveystalo-architecture-or-tool-assessment-v2.pdf, 6 sli
   - [leans against] Kalvolla 3 katsaukset on sovittu kahden viikon välein eikä viikoittaisina hands-on-tarkistuspisteinä.
   - [against] Koko 19 työpäivän kokonaisuus myydään yhdellä kerralla ilman kevyttä aloitusauditoinnin vaihetta.
   - [against] Kokonaishinta 17 480 euroa ylittää suoraan tähän työhön varattavan raamin.
+### terveystalo-analytics-engineer-for-6-months
+- 2026-10-29T12:14 · **verdict** · deck `terveystalo-analytics-engineer-for-6-months-v1-eur15640.pdf` (€15,640) · price signal: **verdict won, price excellent**
+  > We can proceed with this proposal as it sticks to our established setup without unnecessary noise, though I expect absolute discipline around our boundaries once work begins.
+  ratings: price excellent, buyer_fit good, project_fit fair, presentation excellent
+  - [met] Sivuilla 3 ja 4 rajataan kehitys ja testaus nimenomaisesti vain maskattuun tai synteettiseen dataan.
+  - [met] Sivuilla 2 ja 5 luvataan työ, dokumentaatio ja koodikommentit suomeksi äidinkielen tasolla.
+  - [met] Sivuilla 2 ja 5 vahvistetaan, että työ tehdään meidän nykyisessä Databricksissämme ilman uusia alustoja tai lisenssejä.
+  - [not addressed] Sivuilla 2 ja 4 tekoäly ja ajanvarausassistentti kuitataan vain rajauksen ulkopuolisiksi ilman kantaa toteutustapaan.
+  - [met] Kansilehdellä on heti suora tiivistelmä ehdotuksesta ja hinnasta ilman turhaa yritysesittelyä.
+  - [not addressed] Sivulla 3 esitellään nopea aloituskartoitus ja aalloissa rakentaminen, mutta datakontrakteista tai tarkoista etukäteisspesifikaatioista ei puhuta mitään.
+  - [met] Sivuilla 2 ja 3 kieltäydytään suoraan lupaamasta kaikkia lähteitä ja vaaditaan karsintaa ennen tekemistä.
+  - [not addressed] Sivulla 4 mainitaan chat-työkalun viikkopäivitykset, mutta sisäisen tiimin perehdytyksen koulutusmuotoja ei käsitellä.
 <!-- /replies:auto -->

@@ -66,4 +66,18 @@
   - [met] Slide 1 requests only one 30-minute acceptance check per wave and moves status reporting entirely to our chat tool.
   - [met] Slide 5 lists verified Microsoft Azure and SAP Datasphere certifications for every proposed consultant.
   - [met] Slide 3 prohibits automated reloads for the LLM, mandating manual owner triggers and strict run and monthly cost caps.
+### kemira-first-data-platform-phase
+- 2026-10-29T12:11 · **hints** · deck `kemira-first-data-platform-phase-v1-eur36800.pdf` (€36,800) · price signal: **none**
+  > It is always a relief to see Recordly in the mix after how cleanly you delivered on our previous project, sparing me my usual afternoon sport of picking apart consultant fluff. I appreciate that our in-house engineers are set up to pair on the pipelines and run them independently rather than being handed another vendor black box, and anchoring the work directly to our existing SAP Datasphere and Azure footprint keeps things refreshingly grounded. That said, committing to the full implementation run straight out of the gate feels like a blind leap of faith before we have properly pressure-tested the architectural blueprint and scoping together in a dedicated preliminary stage, so we will need to address that before I can shut down my laptop with any peace of mind.
+- 2026-10-29T12:13 · **verdict** · deck `kemira-first-data-platform-phase-v2-eur40480.pdf` (€40,480) · price signal: **verdict lost, price excellent**
+  > You know I always value working with a team that has already delivered solid results for us, but relying on static slides that push all tangible proof out into distant project milestones just doesn't get this across the line.
+  ratings: price excellent, buyer_fit fair, project_fit fair, presentation excellent
+  - [met] Replicates core S/4HANA objects straight into Datasphere and SAC on our existing Azure setup with zero new licences.
+  - [leans against] Delivered five slides of text and tables rather than walking us through a live demo on our actual water-treatment supply chain data.
+  - [partly met] Commits to visible data lineage in Datasphere and quality checks, though confidence ratings are not explicitly detailed.
+  - [met] Keeps Azure spend strictly to what Datasphere requires with no new licences and a tightly capped fixed price.
+  - [met] Splits out a two-week scoping blueprint as a separate order with a firm go/no-go gate before any implementation starts.
+  - [met] Explicitly makes our in-house engineers' ability to inspect, modify, and rerun pipelines without external help the primary acceptance test.
+  - [leans against] Breaks commercial pricing down by project stages and consultant roles rather than splitting out Azure and SAP Datasphere components.
+  - [not addressed] No mention of Terraform, Azure DevOps, or proprietary deployment scripts anywhere in the deck.
 <!-- /replies:auto -->
