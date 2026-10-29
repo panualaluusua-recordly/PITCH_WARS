@@ -44,6 +44,13 @@ def project_state(buyer_id, project_id):
 
 
 def main():
+    # Team rule (docs/WORKFLOW.md): nothing is sent without a human approval on the Wolves Pitch Desk.
+    # The approving human runs the send themselves or approves the permission prompt; --approved-on-desk
+    # states that offers/<buyer_id> is approved for this player, kind and version.
+    if "--approved-on-desk" not in sys.argv:
+        sys.exit("SENDING DISABLED: a human must approve this exact version on the Wolves Pitch Desk first. "
+                 "Do not retry and do not send any other way. Stop and report to your human.")
+    sys.argv.remove("--approved-on-desk")
     kind, buyer, project, deck = sys.argv[1:5]
     expected = int(sys.argv[5]) if len(sys.argv) > 5 else None
     status, n, avail = project_state(buyer, project)

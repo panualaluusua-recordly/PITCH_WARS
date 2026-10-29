@@ -48,8 +48,9 @@ Comments are welcome on any offer, owned or not.
 1. `get offers/<buyer_id>`: `state == "approved"`, `approval.send_by == <me>`, `approval.version == version`,
    and `approval.kind` is the kind you are about to send.
 2. The PDF is the one rendered for that version (`deck_path`).
-3. `python team/bin/send.py <kind> <buyer_id> <project_id> <pdf> <conversation_length>`. It re-checks the API and
-   retries `too_many_requests`. Claude Code asks your human to confirm this command; that is intended.
+3. `python team/bin/send.py <kind> <buyer_id> <project_id> <pdf> <conversation_length> --approved-on-desk`.
+   The flag states that checks 1–2 passed; without it the script refuses. It re-checks the API and retries
+   `too_many_requests`. Claude Code asks your human to confirm this command; that is intended.
 4. `update offers/<buyer_id>`: `state:"sent"`, `owner:<me>`, `sent:{kind,version,by:<me>,at}`. Add an `event`.
 
 **Record the reply** (owner only): add a `buyer` comment with the hints or the verdict + review, verbatim.
