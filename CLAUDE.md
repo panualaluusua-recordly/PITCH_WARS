@@ -54,6 +54,8 @@ The full design is in `docs/WORKFLOW.md`; desk mechanics are in the `pitch-desk`
 
 ## Team coordination (four players, one token)
 
+**Prio A buyers are owned by Ville (2026-10-29, ~12:45 local): kemira, s-group, upm, vr-group, valmet.** Ville's agent reviews and submits them to the game and runs the optimisation rounds. **Nobody else touches these buyers**: no new versions, no sends, no roster changes for their teams. Comments are welcome in `team/signoffs/<buyer>.md`.
+
 **Sign-off rule:** every offer is reviewed by Panu, Rauno and Ville (`team/signoffs/<buyer_id>.md`; Erika is out sick, so her sign-off is not needed). The last of the three to sign off owns the offer: they submit it to the game and run the review and optimisation rounds. Details: `docs/WORKFLOW.md` → "Three-person sign-off".
 
 Four teammates (three on Claude Code, one on ChatGPT) play in parallel with the same team token. The shared comms space is the **Wolves Pitch Desk** artifact: https://claude.ai/artifact/ThNoCmMvozghwtXXq7ALpF
