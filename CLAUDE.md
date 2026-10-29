@@ -43,12 +43,14 @@ Constraints: one request at a time per buyer (`409 busy` otherwise; different bu
 
 ## How to play
 
-1. Check `GET /api/me` for balance, fees and time left.
-2. Read `GET /api/buyers`. For each open project, study the buyer's bio, the RFP and every earlier reply in the conversation.
-3. Analyse what the buyer really wants, including what the RFP does not say (use the `buyer-analyst` agent).
-4. Write a deck that answers the RFP and the buyer's priorities, and set a price (use the `price-check` skill). Render it to PDF.
-5. Decide: send a feedback request to test the deck, or a proposal when you are confident. Change one thing at a time between feedback rounds so you can tell what the buyer reacted to.
-6. Record the reply, update your notes and repeat. Keep an eye on the clock: an unsent proposal earns nothing.
+The full design is in `docs/WORKFLOW.md`; desk mechanics are in the `pitch-desk` skill.
+
+1. Run the `desk-scout` agent: clock, balance, what is waiting for you, who owns which buyer, free buyers.
+2. Pick a free buyer (no desk offer, no owner) or one you own. Never work a buyer another player owns.
+3. Run `buyer-analyst` on it. Then run `deck-writer`, which renders with `team/bin/deck.py` (playbook: `team/PLAYBOOK.md`) and posts the version to the desk.
+4. Run `deck-critic` on the offer and post its review. Ask teammates for reviews in the desk comments. Revise one thing at a time.
+5. Tell your human the offer is ready. A human presses Approve on the desk and names the sender.
+6. Only when the approval names you and matches the current version, send with `python team/bin/send.py` (pitch-desk skill, "Send"). Record the reply on the desk. Keep an eye on the clock: an unsent proposal earns nothing.
 
 ## Team coordination (four players, one token)
 
@@ -71,7 +73,12 @@ This repo (https://github.com/panualaluusua-recordly/PITCH_WARS) shares code, no
 
 ## Agents and skills
 
+- `.claude/agents/desk-scout.md`: board status, conflicts and next moves. Read-only.
 - `.claude/agents/buyer-analyst.md`: analyses a buyer and their RFP before a deck is written.
-- `.claude/skills/price-check/SKILL.md`: decides the price on a proposal.
+- `.claude/agents/deck-writer.md`: writes, renders and posts a deck version to the desk. Never sends.
+- `.claude/agents/deck-critic.md`: clean-context, adversarial review of an offer.
+- `.claude/skills/pitch-desk/SKILL.md`: desk recipes (open, revise, review, send, record reply).
+- `team/PLAYBOOK.md`: what wins and price calibration. Add lessons after every verdict.
+- `.claude/hooks/guard-send.sh`: blocks POSTs to `/api/requests` except through `team/bin/send.py`.
 
-Both are starting templates and team might delete them if they want. Improve them, and add more agents (for example a deck writer or a deck critic) and skills as the team's strategy develops.
+Improve these as the team's strategy develops and push them, so every teammate's agent gets the change.
