@@ -13,4 +13,15 @@
 ### lahitapiola-first-100-days-data-and-ai-roadmap-for-a-new-lea
 - 2026-10-29T08:51 · **hints** · deck `lahitapiola-first-100-days-data-and-ai-roadmap-for-a-new-lea-v1.pdf` (unknown) · price signal: **over-hard**
   > Having the advisory team on site in Espoo delivering the engagement entirely in Finnish is a solid approach that will keep cross-department workshops moving without unnecessary friction. That said, rushing straight into use-case prioritization and launching quick wins while our underlying policy and claims records still suffer from discrepancies makes me uneasy, as scaling on unverified foundational data will only generate operational headaches. Furthermore, letting early initiatives drift toward automated operational determinations on policy and claims handling will run straight into pushback from our risk and supervisory committees. When we migrated our core reporting onto Snowflake on Azure a few years back, we saw firsthand how quickly data initiatives stall if they fall out of alignment with our ongoing insurance-system renewal. On the commercial front, procurement will certainly want to benchmark this package against competing offers on the table before any committee approval, so we will need them to sharpen their terms.
+- 2026-10-29T12:21 · **verdict** · deck `lahitapiola-first-100-days-data-and-ai-roadmap-for-a-new-lea-v3-eur17040.pdf` (€17,040) · price signal: **verdict won, price good**
+  > Anchoring the work directly on our Snowflake foundation with strict governance and local delivery aligns with our committee protocols, so let us move briskly ahead to the interview stage.
+  ratings: price good, buyer_fit good, project_fit good, presentation excellent
+  - [met] Slide 2 specifies AI supports people and never decides on a policy or claim, echoed on slide 3.
+  - [met] Slides 1, 4, 5, 6, and 7 commit to all workshops and deliverables entirely in Finnish on site in Espoo.
+  - [partly met] Slide 3 notes that future Virtual Data Engineer work requires staff approval for every change.
+  - [not addressed] Motor insurance pricing analytics tooling is not mentioned in the proposal.
+  - [met] Slide 2 mandates every analytical workload runs on Snowflake and sets a retirement plan for shadow stacks.
+  - [met] Slide 2 and slide 4 enforce reconciling policy and claims records in phase 1 before any use case is ranked.
+  - [met] Slide 2 and slide 3 offer EU-hosted endpoints and exit options to avoid single-origin offshore cloud lock-in.
+  - [not addressed] The deck does not discuss choosing vanilla SQL and Python over complex custom frameworks.
 <!-- /replies:auto -->

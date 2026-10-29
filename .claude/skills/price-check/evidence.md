@@ -39,6 +39,26 @@ Teammates' prices: decks sent with `send.sh` carry the price in the uploaded fil
 | veikkaus | architecture and tool assessment | €19,200 | proposal | LOST, price "over budget" |
 | vr-group | ingestion automation build | €18,400 | proposal | LOST, price "fair" |
 | yliopiston-apteekki | data platform architecture assessment | €16,560 | proposal | LOST, price "good" |
+| alma-media | prototype-to-production MLOps, 40 person-days | €37,600 | proposal | LOST, price "excellent" |
+| atria | AI readiness assessment and roadmap | €16,760 | proposal | LOST, price "excellent" |
+| city-of-helsinki | SME reporting platform, 46 person-days | €43,440 | proposal | LOST, price "fair" |
+| elisa | operational and sensor data failure prediction | €16,960 | proposal | LOST, price "excellent" |
+| enfuce | architecture and tool assessment, 22 person-days | €20,240 | proposal | LOST, price "over budget" |
+| fennia | first data platform phase | €31,280 | proposal | LOST, price "excellent" |
+| helen | semantic model and self-service setup, 28 person-days | €26,880 | proposal | LOST, price "fair" |
+| kela | cloud data platform cost and FinOps cleanup | €23,920 | proposal | **WON**, price "excellent" |
+| kesko | AI readiness assessment and roadmap | €16,760 | proposal | LOST, price "excellent" |
+| lahitapiola | first 100 days data and AI roadmap | €17,040 | proposal | **WON**, price "good" |
+| metsa-group | demand and inventory forecasting analytics, 46 person-days | €43,200 | proposal | LOST, price "fair" |
+| outokumpu | staffing, 6–12 months | €37,875 | proposal | LOST, price "fair" |
+| ponsse | SME CPQ reporting | €20,800 | proposal | LOST, price "excellent" |
+| posti | streaming and event ingestion pipeline | €43,240 | proposal | **WON**, price "excellent" |
+| savings-banks-group | cloud data platform cost and FinOps cleanup | €9,000 | proposal | LOST, price "over budget" |
+| tokmanni | legacy application and reporting modernisation | €218,625 | proposal | LOST, price "over budget" |
+| upm | first 100 days data and AI roadmap | €16,920 | proposal | **WON**, price "good" |
+| varma | lab-to-production MLOps | €66,450 | proposal | LOST, price "fair" |
+| valmet | first phase greenfield lakehouse platform | €33,120 | feedback | no price complaint |
+
 
 ## Verdicts with unknown price (context only, not usable for anchors)
 

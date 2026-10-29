@@ -33,4 +33,18 @@
   - [met] Slide 7 structures the commercial model as a fixed validation phase followed by unit-priced individual pipeline transitions.
   - [not addressed] The proposal does not address mill yield breakthrough claims or baseline discovery expectations.
   - [not addressed] There is no mention of Microsoft 365 or Power BI licensing.
+### upm-first-100-days-data-and-ai-roadmap-for-a-new-lea
+- 2026-10-29T12:17 · **hints** · deck `upm-first-100-days-data-and-ai-roadmap-for-a-new-lea-v1-eur16920.pdf` (€16,920) · price signal: **none**
+  > Thank you for sharing this revised perspective, and while we had to pass on your previous submission, I appreciate that this iteration reflects a much more grounded posture toward our operating reality. Structuring your advisory cadence so as to respect our delicate financial closing periods shows commendable operational awareness, and ranking focused mill-floor decision support ahead of broad corporate conversational tooling fits our manufacturing ethos. Having guided our information architecture through multiple corporate transformations since establishing our consolidated reporting estate, I remain exceptionally mindful of maintaining steady executive steering and institutional predictability. To that end, allowing platform processing consumption to sit as an undifferentiated aggregate across our central cloud accounts leaves me somewhat uneasy, as lacking a clear mechanism to map those operational computational expenses back to each discrete business undertaking will inevitably raise governance questions with our oversight committees. We will need to see that accountability tightened before any formal next steps can be entertained.
+- 2026-10-29T12:22 · **verdict** · deck `upm-first-100-days-data-and-ai-roadmap-for-a-new-lea-v1-eur16920.pdf` (€16,920) · price signal: **verdict won, price good**
+  > While we will maintain rigorous executive oversight across every phase, this framework demonstrates sufficient governance discipline and respect for our operational stability to warrant moving forward together in a measured manner.
+  ratings: price good, buyer_fit excellent, project_fit good, presentation excellent
+  - [met] Out of scope states no new platforms or licences and focuses exclusively on the existing stack.
+  - [met] The capability assessment and lineage explicitly anchor to SAP S/4HANA, Snowflake models, and dbt.
+  - [met] Reference calls with process-manufacturing clients are offered at shortlist stage alongside staff profiles.
+  - [met] Frontline mill assistants for operators are prioritised first over broad corporate office chat.
+  - [met] Mill staff time is capped at about 4 hours per mill with central liaison limited to half a day per week.
+  - [partly met] Work is strictly read-only on existing systems with consumption kept entirely on existing accounts.
+  - [not addressed] FinOps cost attribution per use case across Snowflake and Databricks is not addressed.
+  - [met] Every milestone gate requires leadership acceptance and sign-off while maintaining a supporting coordination role.
 <!-- /replies:auto -->

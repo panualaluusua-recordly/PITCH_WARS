@@ -45,4 +45,7 @@
   - [met] Slide 3 eliminates recurring status meetings in favour of asynchronous chat updates and a live progress page.
   - [met] Slide 4 schedules a tangible working end-to-end data demo by week 3.
   - [leans against] Slide 4 kicks off with an inventory and interviews instead of a hands-on hackathon, explicitly ruling out team pairing on slide 3.
+### valmet-first-phase-of-a-greenfield-lakehouse-platform
+- 2026-10-29T12:16 · **hints** · deck `valmet-first-phase-of-a-greenfield-lakehouse-platform-v1-eur33120.pdf` (€33,120) · price signal: **none**
+  > You delivered solid results on our previous engagement, so I appreciate that you already respect our standards and accepted our governance terms without pushing back. Committing straight away to an operational pipeline slice on our actual ERP data under strict milestone gates is precisely the practical discipline I look for from partners who have proven themselves with us before. That said, the proposed output is currently too bogged down in dense engineering blueprints and technical decision logs. Handing purely technical architecture documentation to my leadership does not demonstrate strategic momentum, and if these deliverables cannot function as effective communication instruments that clearly showcase organizational value up the chain of command, you are creating an administrative barrier for me. Shift that focus so we can consider moving this forward.
 <!-- /replies:auto -->

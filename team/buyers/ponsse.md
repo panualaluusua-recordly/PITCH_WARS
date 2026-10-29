@@ -19,4 +19,15 @@ Open risks: v1 price unknown so the size of the reset is a guess (if still over 
 ### ponsse-sme-cpq-reporting
 - 2026-10-29T08:48 · **hints** · deck `ponsse-sme-cpq-reporting-v1.pdf` (unknown) · price signal: **over-hard**
   > Credit where it's due: tackling automated reconciliation between machine metrics and group ledger definitions so controllers stop escalating discrepancies during month-end close addresses a genuine headache. That focus hits home, especially after dealing with finance breathing down our necks ever since we kicked off modernizing our operational analytics. However, jumping straight into a massive, multi-phase delivery roadmap feels bloated while our quote and contract feeds remain an unmapped mess; committing to an entire implementation package from day zero rather than de-risking the data through a sharp, focused preliminary assessment leaves me deeply uneasy. Most critically, the commercial fee is flat-out above our budget, making this scope completely unviable unless there is a radical reset.
+- 2026-10-29T12:23 · **verdict** · deck `ponsse-sme-cpq-reporting-v3-eur20800.pdf` (€20,800) · price signal: **verdict lost, price excellent**
+  > We are passing on this proposal because bringing in an agency based out of Helsinki creates an operational disconnect we simply cannot afford.
+  ratings: price excellent, buyer_fit excellent, project_fit weak, presentation excellent
+  - [met] Phase 0 profiles real quote, contract, and machine feeds to deliver a working BI dashboard rather than architecture binders.
+  - [met] Slide 5 requires Finnish-language delivery and guarantees code, models, and documentation in Finnish.
+  - [met] Phase 0 and step 3 run validation directly on actual machine and delivery feeds instead of conceptual slideware.
+  - [met] Slide 3 explicitly matches machine production figures to group-ledger postings so controllers catch differences before month-end close.
+  - [against] Slide 1 states Recordly Oy is based in Helsinki.
+  - [leans against] Proposes a €6,600 Phase 0 assessment paired with an overall €20,800 package rather than a standalone €5,000 CPQ pre-study.
+  - [against] Slide 2 and slide 5 build explicitly on existing cloud data setup and require Microsoft cloud certifications.
+  - [mixed] Slide 2 avoids new tech stacks, but slide 5 pairs directly with Ponsse's person from week 1.
 <!-- /replies:auto -->

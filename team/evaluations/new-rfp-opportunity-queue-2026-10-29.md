@@ -1,23 +1,30 @@
-# New RFP queue (live cache refreshed 2026-10-29 14:08)
+# New RFP queue (live cache refreshed 2026-10-29; 110 replies, 34 buyers)
 
-Zero-conversation open projects only. “Clear” below means no request in this project; it does **not** establish desk ownership. Before any new offer/version, reconcile the current desk owner. Exclude Prio A buyers owned by Ville and buyers with an earlier sent project owned by another teammate.
+Queue is based on the latest `work/buyers_now.json`. Zero conversation on a project does not establish buyer ownership or Desk availability. Confirm the current offer owner and project state on the Desk before drafting, revising or sending. Do not work the five Prio A buyers owned by Ville.
 
-| Rank | Buyer · project | Opportunity | Ownership / existing work | Gate before drafting |
+## Highest-potential candidates to reconcile on the Desk
+
+| Rank | Buyer / project | Why it is promising | Ownership / collision check | Next step |
 |---|---|---|---|---|
-| 1 | **Yliopiston Apteekki** · `yliopiston-apteekki-customer-churn-and-pricing-analytics` | Core analytics fit; clear commercial pain around predictable spend and handoffs. The omnichannel requirement directly answers the past failure of generic retail models. | No conversation on this project. Existing architecture-assessment offer versions are in progress; buyer owner and whether the new project is reserved are **unknown**. | Check desk owner. Ask for at least two verifiable references only if the reference bank supports them; otherwise do not bid. Accept 60-day terms, 3%/week delay penalty (10% cap), and 7-day termination explicitly. Phase-gate model and no unbounded monthly hours. |
-| 2 | **Veikkaus** · `veikkaus-operational-and-sensor-data-failure-prediction-s` | Core ML/analytics capability; bounded study can leverage existing platform and binding design, with measurable failure-risk evaluation. | No conversation on this project. Veikkaus has recent architecture-assessment drafts/reviews by teammates; buyer ownership is **unknown**. | Check desk owner and obtain binding design attachments. Respect Q1 production freeze; no redesign, standalone workbench or unverified accuracy claims. |
-| 3 | **Elisa** · `elisa-operational-and-sensor-data-failure-prediction-s` | Existing GCP/BigQuery/Composer experience and a bounded anomaly-evaluation scope make this a plausible extension. | No conversation on this project. Elisa architecture-assessment v8 is actively being revised; buyer owner/reservation is **unknown**. | Check desk owner. Verify labels, telemetry and operational decision boundary; reuse existing stack and quantify latency/false-alarm trade-offs only after baseline. |
-| 4 | **Terveystalo** · `terveystalo-ai-or-mcp-hackathon-1-2-days` | Strong healthcare GenAI/hackathon fit, but commercial and evidence risk is high. | No conversation on this project. Prior Terveystalo projects have teammate activity and unresolved ownership; **treat as reserved until desk confirms**. | Confirm owner first. RFP requires 3 comparable enterprise references with contacts and AMS transition; do not proceed without verified references and named handover. Avoid per-seat licence growth. |
-| 5 | **Sanoma** · `sanoma-from-ai-prototypes-to-production-mlops` | Strong MLOps fit and Finnish delivery; media/learning lifecycle can be a strong differentiator. | No conversation on this project. Sanoma backlog-agent v7 is under active review; likely buyer reservation/owner conflict. | Check desk owner before any work. Need two relevant verifiable references and Finnish-speaking team; do not recycle heavy manufacturing/banking examples as directly comparable. |
+| 1 | Savings Banks Group / `savings-banks-group-financial-crime-ai-rfi` | Strong financial-services and AI capability fit; potentially high value if the scope is a bounded RFI response. | No conversation on this project. Earlier FinOps offer exists; buyer-level owner and whether this RFI is reserved are unknown. | Desk owner check first. Then scope an evidence-led RFI response around data readiness, human review and measurable detection outcomes; no accuracy guarantees. |
+| 2 | Yliopiston Apteekki / `yliopiston-apteekki-customer-churn-and-pricing-analytics` | Core analytics fit with a clear commercial outcome and direct omnichannel relevance. | No conversation on this project. Architecture assessment v8-v9 work exists; new-project reservation and buyer owner are unknown. | Desk owner check. Verify at least two comparable references, 60-day terms, delay cap and 7-day termination before deciding bid/no-bid. |
+| 3 | Veikkaus / `veikkaus-operational-and-sensor-data-failure-prediction-s` | Good ML and analytics fit; can be framed as a bounded feasibility study with human-reviewed alerts. | No conversation on this project. Architecture assessment v7 was recently developed and sent; treat buyer as reserved until Desk says otherwise. | Owner check and obtain the binding design. If authorized, propose a read-only study with baseline, false-alarm trade-off and Q1 production freeze. |
+| 4 | Elisa / `elisa-legacy-application-and-reporting-modernisation` | Existing Google Cloud, BigQuery and Composer context gives credible stack fit. | No conversation on this project. Architecture assessment v8 was recently won; same-buyer follow-on belongs to its owner. | Do not draft until the Desk confirms transfer or owner authorization. If authorized, align to existing platform and bound one reporting flow. |
+| 5 | Terveystalo / `terveystalo-ai-or-mcp-hackathon-1-2-days` | Strong healthcare AI and workshop fit; a short co-build could be easy to buy. | No conversation on this project. Prior Terveystalo analytics-engineering work was won by another teammate; treat buyer as reserved. | Desk owner check. Do not proceed without the RFP's three verified references and AMS handover evidence. |
 
-## Hold / do not pick in this pass
+## Additional open projects: hold pending owner and RFP review
 
-- **Aktia streaming**: buyer is explicitly owned by Ville from prior submissions (`team/evaluations/handover-status.md`).
-- **Alko lead architect**: the previous master-data proposal is now closed/lost and this new project has no game conversation yet. The buyer-level owner is still unknown; reconcile the desk before drafting or sending.
-- **Fingrid assessment**: previous Fingrid work was sent by an unknown teammate; ownership is not cleared.
-- **Enfuce assessment**: previous project was won by a teammate; follow-on ownership stays with that player.
-- **Kemira, S Group, Valmet**: Ville owns these buyers (Prio A); hands off.
-- **Mandatum Excel chaos**: Ville sent a prior proposal to Mandatum; buyer ownership is not cleared.
-- **Metsa and Oulu**: complete offer drafts already exist in Git; continue through their existing owners/review path rather than opening duplicate offers.
+| Buyer / project | Reason to hold |
+|---|---|
+| Alko / `alko-lead-data-architect-for-platform-ramp-up` | Previous Alko project is closed; follow-on ownership is unknown. Do not reuse the master-data proposal for this staffing RFP. |
+| Fingrid / `fingrid-architecture-or-tool-assessment` | Previous Fingrid invoice project was submitted by another teammate and lost; ownership is not cleared. |
+| Enfuce / `enfuce-customer-service-reply-copilot` | Previous project was won by a teammate; follow-on ownership remains with that player. |
+| Mandatum / `mandatum-excel-chaos-platform` | Mandatum's prior reporting project was won by Ville; buyer is reserved. |
+| Kemira, S Group, UPM, VR Group, Valmet | Explicit Prio A ownership by Ville. Hands off. |
+| Metsa Group / `metsa-group-small-automation-build`; Oulu Energia / `oulun-energia-spreadsheet-chaos-to-shared-data-platform` | Complete offer drafts already exist; continue through their current review and owner path. |
+| Sanoma / `sanoma-from-ai-prototypes-to-production-mlops` | Backlog-agent v7-v8 is under active review; new-project ownership is unknown. |
+| City of Helsinki, Atria, Alma Media, Fennia, Helen, Kela, Kesko, LahiTapiola, Oriola, Outokumpu, Pirha, Ponsse, Posti, Tokmanni, Vahterus, Varma | Current open project has no new conversation, but existing buyer activity or offer history requires Desk owner reconciliation before any work. |
 
-No request has been sent. This queue ranks fit, not expected value: budget, owner and live desk reservations must be confirmed before spend.
+## Operating rule
+
+This list ranks fit, not expected value: budget, deliverability, owner, live Desk reservation and request fees remain gates. The Desk connector is not available in this runtime, so unknown ownership stays a hold. Re-run after each win/loss or new reply; send only after the exact offer version is approved on the Desk and the sender matches that approval.

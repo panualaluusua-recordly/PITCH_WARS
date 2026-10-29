@@ -38,4 +38,15 @@
 ### city-of-helsinki-sme-reporting-platform
 - 2026-10-29T08:35 · **hints** · deck `city-of-helsinki-sme-reporting-platform-v1.pdf` (unknown) · price signal: **over-hard**
   > Look, you already know your way around our infrastructure and delivered solid work for us previously, so having your squad back on our municipal data setup is genuinely welcome. That said, municipal procurement red tape is already giving me a massive headache, and your proposal hits an immediate wall: the price is flat out above the budget. On top of that, locking the entire delivery into an inflexible, monolithic fixed sum makes me uneasy when dealing with enterprise municipal data; legacy pipeline quirks crop up constantly once you start touching raw tables, and committing to an unyielding lump total feels far too rigid when discovery shifts the work. Having dragged this city through our massive SAP cloud migration while council auditors breathed down my neck, I would honestly rather abandon civilization to raise geese in peace than try to justify these financials to the board.
+- 2026-10-29T12:19 · **verdict** · deck `city-of-helsinki-sme-reporting-platform-v4-eur43440.pdf` (€43,440) · price signal: **verdict lost, price fair**
+  > We already know your squad can ship solid code from our last engagement together, but the commercial weight of this proposal simply sits too far past what I am comfortable greenlighting.
+  ratings: price fair, buyer_fit excellent, project_fit fair, presentation excellent
+  - [met] Commits to the City's standard purchase agreement with zero deviations, strict audit reconciliations, and repo-stored runbooks on slides 1, 2, and 4.
+  - [met] Mandates Finnish KPI definitions, Finnish catalog descriptions, and Finnish runbooks on slides 2 and 3 with a Finnish-speaking team.
+  - [met] Delivers the entire technical and commercial proposal in exactly four slides.
+  - [met] Builds a structured metadata catalog with SAP lineage on slide 2 while explicitly throwing AI features out of scope.
+  - [not addressed] Makes no mention of flat-rate versus usage-based cloud analytics expenses.
+  - [met] Explicitly counters agency markup scrutiny on slide 1 with direct public-sector day rates of 920 to 1000 euros on slide 4.
+  - [met] Sets up a capped build on actual days where unused time is not billed instead of a rigid lump sum on slides 1 and 4.
+  - [not addressed] Does not discuss descriptive statistical metrics versus deep learning models for municipal reporting.
 <!-- /replies:auto -->

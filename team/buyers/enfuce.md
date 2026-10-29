@@ -35,4 +35,16 @@
   - [met] Slides 2 and 8 confirm both named engineers are ready to start on the first of next month.
   - [met] Slides 2 and 12 place the consultants on-site at the Espoo office three days per week.
   - [met] Slide 4 specifies building the Snowflake history core with Data Vault hubs, links, and satellites.
+### enfuce-architecture-or-tool-assessment
+- 2026-10-29T12:19 · **verdict** · deck `enfuce-architecture-or-tool-assessment-v2-eur20240.pdf` (€20,240) · price signal: **verdict lost, price over budget**
+  > I like running with a crew that has already proven they can deliver for us, but your commercial ask is simply way too steep for me to greenlight.
+  ratings: price over budget, buyer_fit good, project_fit weak, presentation excellent
+  - [not addressed] Zero mention of regulatory audit trails or black-box model trade-offs anywhere in the deck.
+  - [met] Puts the identity layer and duplicate cardholder profiles right at the top of the measurement backlog.
+  - [met] Demands repeatable Terraform modules and CI/CD checks over handcrafted pipeline junk.
+  - [met] Splits domain ownership across squads with explicit data contracts instead of a central bottleneck.
+  - [leans against] Demands squad whiteboard sessions and on-site presence in Espoo three days a week.
+  - [against] Bluntly admits having zero card-issuing platform experience and relies on our internal experts.
+  - [met] Focuses strictly on handoff delays and sign-off friction while kicking new tools out of scope.
+  - [not addressed] Skips abstract maturity models completely but does not provide concrete architectural implementation playbooks.
 <!-- /replies:auto -->

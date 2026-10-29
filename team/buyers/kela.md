@@ -13,4 +13,15 @@
 ### kela-cloud-data-platform-cost-and-finops-cleanup
 - 2026-10-29T08:51 · **hints** · deck `kela-cloud-data-platform-cost-and-finops-cleanup-v1.pdf` (unknown) · price signal: **none**
   > I am relieved to see that they respect our administrative paranoia by holding all development behind formal group security sign-off, and their explicit commitment to establishing a complete resource register with mandatory tagging so nothing runs unmonitored in the shadows gives my audit anxiety a brief pause. If I intend to keep my building pass active through another legislative cycle, having partners who understand that uncataloged systems are a career hazard is an absolute necessity after everything we have survived across our data landscape. That said, working through the submission left me uneasy because the narrative felt disjointed and unfinished from one section to the next, creating an uneven impression that made it surprisingly difficult to take their operational rigor seriously. We need them to tighten that presentation up before this goes anywhere near an oversight committee.
+- 2026-10-29T12:22 · **verdict** · deck `kela-cloud-data-platform-cost-and-finops-cleanup-v3-eur23920.pdf` (€23,920) · price signal: **verdict won, price excellent**
+  > A plan that refuses to touch our environment until group security signs off on the paperwork and mandates that every workload be formally cataloged is about the only thing keeping my security badge safe from the next audit.
+  ratings: price excellent, buyer_fit good, project_fit fair, presentation excellent
+  - [met] Delivery is gated with security sign-offs, visible backlog approval, and acceptance of standard procurement terms.
+  - [met] Slide 4 and 5 confirm Finnish delivery, documentation, and operational runbooks.
+  - [not addressed] The slides detail read-only cloud extraction but do not address citizen data guardrails or vendor model safety settings.
+  - [met] The proposal mandates a complete resource register where untagged or unlisted items are cataloged or flagged.
+  - [not addressed] Slide 6 explicitly notes that public-sector references are not evidenced in this draft.
+  - [met] The engagement is structured as an eight-week FinOps review and cost cleanup phase without a platform rebuild.
+  - [not addressed] The deck does not discuss Data Vault or dimensional modelling approaches.
+  - [met] Slide 7 proposes a low fixed price of 23,920 euros and emphasizes single modest rates without consulting markups.
 <!-- /replies:auto -->

@@ -24,6 +24,18 @@
   - [partly met] Slide 3 and Slide 5 maintain code within internal repositories and commit target architecture blueprints to internal ownership.
   - [against] Slide 7 outlines an isolated assessment fee without presenting a three-year total cost of ownership calculation.
   - [met] Slide 2, Slide 5, and Slide 7 establish an initial four-day scoping sprint with a formal off-ramp before full assessment commitment.
+### elisa-operational-and-sensor-data-failure-prediction-s
+- 2026-10-29T12:16 · **verdict** · deck `elisa-operational-and-sensor-data-failure-prediction-s-v1-eur16960.pdf` (€16,960) · price signal: **verdict lost, price excellent**
+  > While our platform steering group always values engaging with partners who have already demonstrated reliable delivery within our environment, consolidating the commercial framework solely across overarching consultant role allocations made it difficult to secure the administrative consensus required by our governance protocols.
+  ratings: price excellent, buyer_fit fair, project_fit fair, presentation excellent
+  - [not addressed] The proposal does not address artificial intelligence delivery efficiency gains translating to adjusted pricing.
+  - [not addressed] No mention is made regarding project cost reductions resulting from automated delivery workflows.
+  - [met] Slide 4 caps internal engineer commitments to at most three one-hour sessions with remaining coordination handled asynchronously.
+  - [partly met] Slide 1 and slide 3 prioritize existing platform assets with explicit commitment to no new tool procurement.
+  - [met] Slide 4 incorporates an early exit option at Gate 1 after weeks 1–2 of the study before broader spend occurs.
+  - [leans against] Slide 4 items fees by role-based daily allocations rather than distinct telemetry and modeling workstreams.
+  - [partly met] Slide 1 designates Recordly Oy as an entity based in Helsinki rather than a multinational consultancy, though language proficiency is not detailed.
+  - [met] Slide 3 and slide 4 outline a phased progression starting with anomaly baselines before advancing conditionally to degradation scoring across gated stages.
 <!-- /replies:auto -->
 
 ## Rauno / Codex feedback round 2026-10-29

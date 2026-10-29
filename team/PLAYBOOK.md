@@ -71,3 +71,8 @@ scope (person-days) to the budget instead; see the max-person-days table in `pri
   exclusively around technical architecture and engineering specialists" and the review flagged no dedicated
   project manager. When the RFP expects accountable delivery, name that role and allocate its effort. (Fingrid,
   margin-reporting automation v2; candidate from one verdict.)
+- **Translate technical outputs into an executive-useful decision instrument.** Valmet's greenfield platform
+  buyer accepted the practical ERP-data pilot and governance, but said technical documentation alone did not
+  demonstrate "strategic momentum" or "organizational value" to leadership. Pair architecture and decision logs
+  with an executive-facing value readout tied to the pilot evidence. (Valmet, greenfield lakehouse phase 1 v1;
+  candidate from one feedback reply.)
