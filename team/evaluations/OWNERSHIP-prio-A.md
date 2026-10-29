@@ -16,3 +16,8 @@ From 2026-10-29 ~10:45 UTC, **Ville owns kemira, s-group, upm, vr-group and valm
 | valmet | — | — | (applied UPM/VR lessons first) | v3 capped at €73,600 sent as feedback |
 
 Savings Banks v2 (€45,080, human-led, VDE optional) is in `team/decks/savings-banks-group/` for the B-priority owners; it isn't Prio A.
+| kemira | migration v1 fb | €55,200 | (pending) | new project kemira-platform-migration-two-warehouses |
+| s-group | ticket→MR agent v1 fb | €42,880 | (pending) | new project after the win |
+| upm | MLOps v1 fb | €56,960 | (after cooldown) | adds assistants and staff-time table, stage payments |
+| vr-group | automation build v1 fb | €43,560 (incl. VDE 3 mo) | (after cooldown) | VDE: PRs only, human approves; fixed price vs billed boilerplate hours |
+| valmet | exploration v1 fb | €24,480 | (after cooldown) | client time ≤ 4 h/week, demo on real data at week 3, explainable flags |
