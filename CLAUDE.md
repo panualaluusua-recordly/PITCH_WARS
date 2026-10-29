@@ -83,6 +83,12 @@ This repo (https://github.com/panualaluusua-recordly/PITCH_WARS) shares code, no
 - `.claude/agents/solution-architect.md`: the architecture slide (with diagram) and the gates/risks slide, plus an effort basis.
 - `.claude/agents/tech-critic.md`: clean-context attack on the technical claims of a deck.
 - `.claude/agents/feedback-miner.md`: turns replies into quoted updates of playbook, patterns, price evidence and trap catalog.
+- Specialist roles, used when the offer calls for them (all read-only for the game, write only to `work/`):
+  `claims-auditor` (fact-checks every deck claim against profile, roster and the RFP; run before every sign-off),
+  `compliance-analyst` (DORA, AI Act, GDPR, security gates), `assessment-designer` (method and criteria for
+  assessment/roadmap RFPs), `genai-eval-designer` (evals, human gate and cost for AI/agent RFPs),
+  `roi-case-builder` (value case and benefit ledger), `language-editor` (wording, titles, fi/sv/en, slide length),
+  `portfolio-strategist` (fees, clock and order across all buyers).
 - `.claude/skills/architecture-patterns/`: pattern library P1–P16 and the method for the tech slides.
 - `.claude/skills/pitch-desk/SKILL.md`: desk recipes (open, revise, review, send, record reply).
 - `team/PLAYBOOK.md`: what wins and price calibration. Add lessons after every verdict.

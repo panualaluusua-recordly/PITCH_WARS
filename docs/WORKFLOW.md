@@ -68,6 +68,10 @@ Team rule (2026-10-29, from Ville): **every offer is looked at by all four playe
 | `solution-architect` | Architecture slide with diagram, gates and risks slide, effort basis | Sets the price, sends |
 | `deck-critic` | Clean-context review of any offer; tries to find why it would lose | Edits the deck |
 | `tech-critic` | Clean-context attack on the deck's technical claims | Edits the deck |
+| `claims-auditor` | Checks every claim against the profile, roster and RFP numbers | Rewrites the deck, edits the roster |
+| `compliance-analyst`, `assessment-designer`, `genai-eval-designer`, `roi-case-builder` | Specialist analyses for regulated, assessment, AI and ROI-driven RFPs, written to `work/` | Write decks, set the price |
+| `language-editor` | Wording, action titles, language and length | Changes facts, numbers or claims |
+| `portfolio-strategist` | Plans fees, clock and send order across all buyers | Sends, overrides humans |
 | `feedback-miner` | Replies → quoted updates of playbook, pattern library, price evidence, trap catalog | Edits offers or the roster |
 | ChatGPT teammate | Uses the page: reads, comments, approves; pastes decks into ChatGPT for analysis | — |
 
