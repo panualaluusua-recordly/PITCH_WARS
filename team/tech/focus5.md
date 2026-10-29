@@ -73,3 +73,16 @@ the buyer's spec after the answer-first slide. `deck.py` now renders the `diagra
   without one down on `explanatory_visuals`.
 - Certifications named on our slides are placeholders until a consultant roster exists, so as not to over-promise.
 - Visual theme (dark charcoal + lime is scored as `recordly_style`) belongs to the deck owners. `deck.py` is still light.
+
+## Review findings to fix in the next versions (tech items, 2026-10-29)
+
+From the clean-context `deck-critic` runs (full list with delivery items: `team/delivery/focus5-review.md`):
+
+- **Oriola:** phrase the gate metrics (reconciliation ≥ 99.9%, ≥ 80% interfaces config-only) as targets agreed after
+  the first pilot measurement, not fixed promises.
+- **Outokumpu v2:** the bio confirms only Azure Databricks + SAP. Say "Unity Catalog lineage if enabled, otherwise
+  documented lineage", drop Asset Bundles and the Power BI name, and say "your BI tool".
+- **Varma:** replace "replaces twenty one-off deployment scripts" with the RFP's own framing (about twenty experiments,
+  only a few in production). Add a leadership-facing quick-win metric (lead time from model to production).
+- **Tokmanni:** the tech slides hold up. The deck is one slide over the limit, so merge slides 4 and 5 or move the
+  deliverables line into the architecture slide.
