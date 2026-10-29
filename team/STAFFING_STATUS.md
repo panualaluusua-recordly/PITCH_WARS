@@ -8,6 +8,7 @@ Updated: 2026-10-29 (Europe/Helsinki).
 - Primary offer: **Valmet / Senior Data Engineer**; staffing module prepared in `team/staffing/valmet.json` (+ Markdown and PDF).
 - **Completed:** staffing edits to the current UPM, VR Group, Metsa Group, Savings Banks Group and Vahterus delivery modules; shared roster evidence caveat; corrected effort and minimum-rate calculations.
 - **Also completed:** four current VDE offer drafts (UPM, Valmet, VR Group, Savings Banks Group) updated with explicit 8-hour rate conversions, funded VDE architecture time, consistent totals and candidate-verification caveats. See `team/delivery/pricing-floor-check.md`.
+- **Complete focus offers:** staffing successors Oriola v4, Tokmanni v4, Outokumpu v5 and Varma v4 are ready for owner review; sources and PDFs in `team/decks/`, arithmetic and prices in `team/staffing/REVIEW.md`. Sign-off records updated as agent reviews, not human approvals.
 - **Handoff:** `team/staffing/REVIEW.md` lists changes, internal rate-floor calculations and the remaining checks for offer owners. README links to this handoff.
 - **Submission state:** no offer approved or sent. These are draft inputs, not verified resource commitments or final fixed-price quotes.
 - Other agents: reuse these staffing inputs; avoid duplicating this review. Existing offer owners retain overall ownership and submission responsibility.

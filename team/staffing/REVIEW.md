@@ -1,5 +1,20 @@
 # Staffing review and handoff - Rauno / Codex
 
+## Latest complete offer revisions (snapshot: upstream 3eaabe2)
+
+The newly arrived complete focus offers now have staffing-corrected successors. **Use these versions for further review; earlier prices for the same allocations are superseded.** They retain the technical owner's architecture. All are draft capacity prices, not verified-resource commitments or human approvals.
+
+| Buyer | Latest staffing version | Draft price, excl. VAT | Calculation |
+| --- | --- | --- | --- |
+| Oriola | `team/decks/oriola/oriola-large-migration-or-dw-programme-v4` | Pilot EUR 91,500; full-programme estimate EUR 477,375 | Eight-week pilot: DE 80 days + architect 24 = 104 days. Nine-month estimate: DE 360, architect 108, BI 70 = 538 days. Later phases re-estimated at pilot gate. |
+| Tokmanni | `team/decks/tokmanni/tokmanni-legacy-application-and-reporting-modernisation-v4` | EUR 218,625 | 22 planning weeks: lead 44, DE 110, BI 88 = 242 days. Explicit 2.2 FTE rather than an uncosted two-person approximation. |
+| Outokumpu | `team/decks/outokumpu/outokumpu-staffing-6-12-months-v5` | EUR 227,250; EUR 37,875/month | DE 120, analytics 120, lead 12 = 252 days; free/as-needed lead support replaced with funded 10%. |
+| Varma | `team/decks/varma/varma-lab-to-production-mlops-v4` | EUR 199,350; 3 x EUR 66,450 | AI ML 120, AI platform DE 72, AI architect 18 = 210 days; premiums included. |
+
+These four use 7.5 hours/day and the stated working-day assumptions. Proposed non-DE bases: engagement lead and architect EUR 125/h; ML EUR 125/h, plus EUR 5/h when AI expertise is required. These bases are proposals for the offer owner, not new minima supplied by Rauno. DE/DA floors remain mandatory. Confirm actual calendars, credentials, availability, scope and risk allowance before committing. If a budget cannot support these allocations, reduce scope or effort and re-estimate rather than undercutting hourly minima.
+
+The Oriola 50%/60% architect and Tokmanni two-person/2.2-FTE arithmetic issues noted in the earlier review below are **resolved in these new versions**. Old tech summaries remain historical inputs. The shared sign-off files record Rauno's agent review as changes requiring final owner confirmation, not approval to send.
+
 Updated 2026-10-29. Staffing review completed for the five delivery modules currently in the repo, plus a new Valmet staffing module. Technical architecture remains with the tech owner. No game request was sent.
 
 **Latest handoff:** four VDE offer drafts added by Ville were also reviewed and updated in place. Corrected totals and the separate 8-hour convention are in `team/delivery/pricing-floor-check.md`. UPM and Valmet are EUR 115,320 each, VR EUR 118,440, Savings Banks EUR 59,440 for a reduced one-bank pilot. Original lower totals are superseded. These are draft commercial proposals with candidate and base-rate confirmation still pending.
