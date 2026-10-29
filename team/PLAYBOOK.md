@@ -8,7 +8,8 @@ The proposal `review` rates `price`, `buyer_fit`, `project_fit`, `presentation`,
 
 Later reviews add two more presentation criteria: `explanatory_visuals` (needs a real diagram on the buyer's own
 stack; Aktia, Enfuce: "architectural diagram is conspicuously absent") and `recordly_style` (dark charcoal and lime;
-the white/teal render got *weak*). Slide limit: cover + 5 content slides by default; go beyond it only when the RFP
+the white/teal render got *weak*; `team/bin/deck.py` now renders dark/lime by default, `"theme": "light"` restores
+the old look). Slide limit: cover + 5 content slides by default; go beyond it only when the RFP
 itself asks for more sections.
 
 **Every "past problem" sentence in the RFP or bio is a hidden preference.** Answer each one explicitly,

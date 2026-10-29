@@ -98,8 +98,8 @@ Learning rule: a pattern becomes a rule after two independent buyers confirm it;
 ## 6. Cross-team findings to raise (not tech, but seen in the reviews)
 
 - **`recordly_style` is scored.** Reviews expect the "dark charcoal canvas, electric lime accents". Decks
-  rendered with `team/bin/deck.py` (white + teal) got *weak* (Enfuce, Terveystalo). The deck theme should
-  change.
+  rendered with `team/bin/deck.py` (white + teal) got *weak* (Enfuce, Terveystalo). Fixed 2026-10-29: `deck.py` now
+  renders dark charcoal + lime by default (`"theme": "light"` = old look). Re-render older specs to get it.
 - `explanatory_visuals` rewards diagrams, which is our job (T1).
 
 ## 7. Updates, 2026-10-29 afternoon
