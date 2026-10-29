@@ -1,0 +1,225 @@
+/* ==========================================================================
+   Recordly 2026 — stage CSS
+   Derived from reference/2026-tokens.json. Source units converted onto the
+   frontend-slides fixed 1920×1080 stage: ×2.667 for type (720 pt → 1920 px),
+   192 px per inch for geometry.
+
+   Copy into a generated Recordly deck AFTER viewport-base.css. Everything
+   here is design intent, not a starting suggestion — the values are measured
+   from 2026_template.pptx.
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800;900&display=swap");
+
+:root{
+  /* colour ------------------------------------------------------------- */
+  --rc-ink:#1B1B1B;        /* page ground — always with the grain overlay */
+  --rc-well:#000000;       /* card interiors ONLY, darker than the page   */
+  --rc-lime:#E3FF87;       /* Signal Lime — one carrier per slide         */
+  --rc-paper:#EFEFEF;      /* lead lines, axis lines, brightest step      */
+  --rc-grey-700:#434343;   /* first sequence step, .rc-ph fill            */
+  --rc-grey-600:#666666;   /* structural hairlines — NEVER text (3.0:1)   */
+  --rc-grey-400:#999999;   /* muted text, matrix fill                     */
+  --rc-grey-300:#B7B7B7;   /* default body copy on dark                   */
+  --rc-divider:#EEEEEE;    /* table/diagram dividers only                 */
+  --rc-tagline:#737373;    /* footer tagline chrome only                  */
+
+  /* type --------------------------------------------------------------- */
+  --rc-font:'Montserrat','Helvetica Neue',Arial,sans-serif;
+
+  --rc-h1:144px;           /* 54 pt — statement, cover                    */
+  --rc-h1-lead:96px;       /* 36 pt — title with a lead line under it     */
+  --rc-h2:91px;            /* 34 pt — standard content heading            */
+  --rc-h2-diagram:80px;    /* 30 pt — heading on a diagram slide          */
+  --rc-h3:64px;            /* 24 pt — two-column heading                  */
+  --rc-h4:37px;            /* 14 pt — three-column heading                */
+  --rc-h5:24px;            /*  9 pt — smallest tier, rare                 */
+  --rc-ingress:59px;       /* 22 pt — lime standfirst                     */
+  --rc-subtitle:53px;      /* 20 pt — lead line                           */
+  --rc-subtitle-cover:48px;/* 18 pt — cover subtitle                      */
+  --rc-body:43px;          /* 16 pt                                       */
+  --rc-body-sm:32px;       /* 12 pt                                       */
+  --rc-body-xs:21px;       /*  8 pt — captions, pagination                */
+  --rc-chip:27px;          /* 10 pt — chip / table header labels          */
+  --rc-diagram:21px;       /*  8 pt — chevron / pill / axis labels        */
+  --rc-tagline-size:14px;
+
+  --rc-lh-heading:0.7;     /* the signature move — a heading's OWN lines  */
+  --rc-lh-flat:1;
+  --rc-lh-body:1.35;
+
+  /* geometry ----------------------------------------------------------- */
+  --rc-margin:96px;        /* 0.5 in, all four sides                      */
+  --rc-content:1730px;
+  --rc-y-eyebrow:54px;
+  --rc-y-title:119px;
+  --rc-y-body:257px;
+  --rc-y-floor:979px;      /* nothing but furniture below this line       */
+  --rc-col-two:826px;   --rc-gutter-two:77px;
+  --rc-col-half:902px;
+  --rc-col-three:561px; --rc-gutter-three:19px;
+  --rc-inset:19px;
+  --rc-hairline:2px;       /* 0.75 pt — every rule in the system          */
+  --rc-radius:0;           /* square everywhere except .rc-pill           */
+}
+
+/* --------------------------------------------------------------------------
+   1. THE GRAIN. Most-missed detail. Without it the ground reads as flat
+   black and the deck stops looking like Recordly. Never a solid fill.
+   -------------------------------------------------------------------------- */
+.rc-slide{
+  position:relative; background:var(--rc-ink); color:var(--rc-grey-300);
+  font-family:var(--rc-font);
+}
+.rc-slide::before{
+  content:""; position:absolute; inset:0; pointer-events:none; z-index:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.055'/%3E%3C/svg%3E");
+}
+.rc-slide > *{position:relative; z-index:1}
+
+.rc-slide--light{background:var(--rc-paper); color:var(--rc-ink)}
+.rc-slide--lime{background:var(--rc-lime); color:var(--rc-ink)}
+.rc-slide--light::before,.rc-slide--lime::before{content:none}
+
+/* --------------------------------------------------------------------------
+   2. Type. Headings are lime, Black 900, ONE colour, 0.70 across their own
+   wrapped lines. 0.70 never applies to the gap below a heading.
+   -------------------------------------------------------------------------- */
+.rc-h1,.rc-h2,.rc-h3,.rc-h4,.rc-h5{
+  font-family:var(--rc-font); font-weight:900; line-height:var(--rc-lh-heading);
+  color:var(--rc-lime); margin:0;
+}
+.rc-h1{font-size:var(--rc-h1)}
+.rc-h1--lead{font-size:var(--rc-h1-lead)}
+.rc-h2{font-size:var(--rc-h2)}
+.rc-h2--diagram{font-size:var(--rc-h2-diagram)}
+.rc-h3{font-size:var(--rc-h3)}
+.rc-h4{font-size:var(--rc-h4)}
+.rc-h5{font-size:var(--rc-h5)}
+
+.rc-eyebrow{
+  font-size:var(--rc-diagram); font-weight:800; line-height:var(--rc-lh-flat);
+  letter-spacing:.1em; text-transform:uppercase; color:var(--rc-grey-300);
+  margin:0;
+}
+.rc-lead{                                    /* the hierarchy device */
+  font-size:var(--rc-subtitle); font-weight:300; line-height:var(--rc-lh-flat);
+  color:var(--rc-paper); margin:0;
+}
+.rc-lead--cover{font-size:var(--rc-subtitle-cover)}
+.rc-ingress{
+  font-size:var(--rc-ingress); font-weight:400; line-height:var(--rc-lh-flat);
+  color:var(--rc-lime); margin:0;
+}
+.rc-body{
+  font-size:var(--rc-body); font-weight:400; line-height:var(--rc-lh-body);
+  color:var(--rc-grey-300); margin:0;
+}
+.rc-body--sm{font-size:var(--rc-body-sm)}
+.rc-body--xs{font-size:var(--rc-body-xs)}
+.rc-num{font-variant-numeric:tabular-nums}   /* no mono face in this system */
+
+.rc-chip-label{
+  font-size:var(--rc-chip); font-weight:800; line-height:var(--rc-lh-flat);
+  text-transform:uppercase; color:var(--rc-ink); text-align:center;
+}
+.rc-diagram-label{
+  font-size:var(--rc-diagram); font-weight:800; line-height:var(--rc-lh-flat);
+  text-transform:uppercase;
+}
+
+.rc-list{margin:0; padding-left:96px; list-style:none}
+.rc-list > li{position:relative; margin-bottom:.5em}
+.rc-list > li::before{content:"\25CF"; position:absolute; left:-65px}
+.rc-list--l2 > li::before{content:"\25CB"}
+.rc-list--l3 > li::before{content:"\25A0"}
+
+/* --------------------------------------------------------------------------
+   3. Structure. Square, flat, 2px. Card interiors are BLACK — recessed,
+   not raised. No shadows, no gradients, no intermediate radius.
+   -------------------------------------------------------------------------- */
+.rc-card{
+  background:var(--rc-well); border:var(--rc-hairline) solid var(--rc-lime);
+  border-radius:var(--rc-radius); box-shadow:none;
+}
+.rc-card__header{
+  background:var(--rc-lime); height:83px;
+  display:flex; align-items:center; justify-content:center;
+}
+
+.rc-pill{                                    /* the only rounded component */
+  background:var(--rc-lime); border-radius:9999px;
+  width:1386px; height:221px;                /* a full-width bar, not a lozenge */
+}
+.rc-pill__disc{
+  background:var(--rc-ink); border-radius:50%; width:148px; height:148px;
+  display:flex; align-items:center; justify-content:center;
+}
+
+/* A border on a clip-path element is clipped away, leaving a diagonal
+   artifact. So the stroke is the parent's background and the fill is an
+   inset pseudo-element clipped to the same shape. */
+.rc-chevron{
+  position:relative; width:359px; height:467px;
+  background:var(--rc-grey-600);
+  clip-path:polygon(0 0,77% 0,100% 50%,77% 100%,0 100%,23% 50%);
+  display:flex; align-items:center; justify-content:center;
+}
+.rc-chevron::before{
+  content:""; position:absolute; inset:var(--rc-hairline);
+  clip-path:polygon(0 0,77% 0,100% 50%,77% 100%,0 100%,23% 50%);
+  background:var(--rc-chev-fill);
+}
+.rc-chevron > *{position:relative; z-index:1}
+.rc-chevron--1{--rc-chev-fill:var(--rc-grey-700); color:var(--rc-paper)}
+.rc-chevron--2{--rc-chev-fill:var(--rc-lime);     color:var(--rc-ink)}  /* carrier */
+.rc-chevron--3{--rc-chev-fill:var(--rc-grey-600); color:var(--rc-paper)}
+.rc-chevron--4{--rc-chev-fill:var(--rc-grey-300); color:var(--rc-ink)}
+.rc-chevron--5{--rc-chev-fill:var(--rc-paper);    color:var(--rc-ink)}
+
+.rc-table__header{background:var(--rc-lime); height:65px}
+.rc-table__row{background:var(--rc-grey-600); height:119px}
+.rc-table__divider{width:var(--rc-hairline); background:var(--rc-divider)}
+
+.rc-quad{border:var(--rc-hairline) solid var(--rc-ink); width:686px; height:338px}
+.rc-quad--a{background:var(--rc-grey-300)}
+.rc-quad--b{background:var(--rc-grey-400)}   /* no lime quadrant, ever */
+.rc-axis{background:var(--rc-paper)}
+
+.rc-photo{filter:grayscale(1)}               /* no exceptions in the system */
+.rc-photo--scrim{position:relative}
+.rc-photo--scrim::after{content:""; position:absolute; inset:0;
+  background:rgba(27,27,27,.72)}             /* down to the 15–35% band */
+
+.rc-ph{                                      /* named placeholder — never a
+                                                drawn or generated stand-in */
+  background:var(--rc-grey-700); border-radius:var(--rc-radius);
+  display:flex; align-items:flex-end; padding:var(--rc-inset);
+  font-size:var(--rc-body-xs); color:var(--rc-paper);
+}
+
+/* --------------------------------------------------------------------------
+   4. Furniture. Identical on every slide, matching the source master's
+   baked-in background. This is why nothing else sits below y 979px.
+   -------------------------------------------------------------------------- */
+.rc-furniture{position:absolute; inset:0; pointer-events:none; z-index:2}
+.rc-furniture__tab{                          /* flush to the top edge */
+  position:absolute; left:1864px; top:0; width:17px; height:61px;
+  background:var(--rc-lime);
+}
+.rc-furniture__wordmark{
+  position:absolute; left:36px; top:1027px; width:138px; height:auto;
+}
+.rc-furniture__tagline{
+  position:absolute; right:36px; top:1027px;
+  font-size:var(--rc-tagline-size); font-weight:800; letter-spacing:.22em;
+  text-transform:uppercase; color:var(--rc-tagline);
+}
+.rc-pagination{                              /* centred, not bottom-right */
+  position:absolute; left:902px; top:1027px; width:115px; text-align:center;
+  font-size:var(--rc-body-xs); color:var(--rc-grey-400);
+}
+
+@media (prefers-reduced-motion:reduce){
+  .rc-slide *{animation:none !important; transition:none !important}
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<title>S-ryhmä Neon — reference deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #0a100d; }
+  /* Atmospheric 1 of 2: the drifting ambient field. Cover, quote and closing only. */
+  .s-ambient { position: relative; isolation: isolate; overflow: hidden; }
+  .s-ambient::before {
+    content: ""; position: absolute; inset: -30%; z-index: -1;
+    background: radial-gradient(120% 90% at 12% 0%, rgba(0,240,98,0.10) 0%, rgba(0,224,255,0.06) 42%, rgba(255,255,255,0) 72%);
+    animation: drift 18s cubic-bezier(0.45,0,0.55,1) infinite alternate;
+  }
+  [data-theme="dark"] .s-ambient::before {
+    background: radial-gradient(120% 90% at 12% 0%, rgba(0,240,98,0.16) 0%, rgba(0,224,255,0.10) 40%, rgba(5,9,7,0) 70%);
+  }
+  @keyframes drift {
+    from { transform: translate3d(-4%, -3%, 0) scale(1); }
+    to   { transform: translate3d(5%, 4%, 0) scale(1.12); }
+  }
+  /* Chart bars grow from the baseline, staggered 60ms. */
+  @keyframes grow-up { from { transform: scaleY(0); opacity: 0 } to { transform: scaleY(1); opacity: 1 } }
+  /* Content emerges rather than appears. Stagger lists 45ms per item. */
+  @keyframes reveal-in {
+    from { opacity: 0; transform: translateY(10px); filter: blur(6px); }
+    to   { opacity: 1; transform: none; filter: blur(0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+  }
+</style>
+</head>
+<body>
+<deck-stage width="1920" height="1080">
+<section data-label="Otsikko" data-screen-label="01" data-speaker-notes="Avaus. Kolme tuotetta, yksi järjestelmä. Pilotti on takana, nyt päätetään laajennuksesta." class="s-ambient" style="background: #f7faf8; font-family: 'Archivo', sans-serif; display: flex; flex-direction: column; justify-content: center; padding: 108px 132px;">
+    <img src="assets/sok-logo-full.png" alt="SOK" style="height: 78px; align-self: flex-start; margin-bottom: 84px;">
+    <div style="font-size: 21px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #00aa46;">Myymäläoperaatiot 2026</div>
+    <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: 114px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 700; color: #131816; margin: 30px 0 0; max-width: 1350px;">Yksi näkymä koko myymälän arkeen</h1>
+    <p style="font-size: 33px; line-height: 1.4; color: #5f6b64; max-width: 960px; margin: 36px 0 0;">Saldot, keräily ja täydennys samassa järjestelmässä — reaaliaikaisesti, 1 812 toimipaikassa.</p>
+    <div style="position: absolute; left: 132px; right: 132px; bottom: 66px; display: flex; justify-content: space-between; font-size: 21px; color: #7f8c85;">
+      <span>SOK · Ketjuohjaus</span>
+      <span style="font-family: 'JetBrains Mono', monospace;">12.4.2026</span>
+    </div>
+  </section>
+
+  <section data-label="Lähtötilanne" data-screen-label="02" data-speaker-notes="Kolme lukua kertovat ongelman. Ei arvailua, mittausdataa 12 pilottimyymälästä." style="background: #f7faf8; font-family: 'Archivo', sans-serif; display: flex; flex-direction: column; padding: 108px 132px;">
+    <div style="font-size: 21px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #00aa46;">Lähtötilanne</div>
+    <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 72px; letter-spacing: -0.03em; font-weight: 700; color: #131816; margin: 21px 0 0;">Missä aika ja myynti valuvat</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; margin-top: 84px;">
+      <div style="background: #ffffff; border: 1px solid #e2e9e5; border-radius: 14px; box-shadow: 0 1px 2px rgba(9,16,13,0.06); padding: 45px;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 84px; letter-spacing: -0.03em; color: #131816;">2,4 %</div>
+        <div style="font-size: 27px; color: #313a35; margin-top: 21px; line-height: 1.35;">hyllypuutteita keskimäärin päivän aikana</div>
+      </div>
+      <div style="background: #ffffff; border: 1px solid #e2e9e5; border-radius: 14px; box-shadow: 0 1px 2px rgba(9,16,13,0.06); padding: 45px;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 84px; letter-spacing: -0.03em; color: #131816;">47 min</div>
+        <div style="font-size: 27px; color: #313a35; margin-top: 21px; line-height: 1.35;">saldojen tarkistamiseen käsin joka aamu</div>
+      </div>
+      <div style="background: #ffffff; border: 1px solid #e2e9e5; border-radius: 14px; box-shadow: 0 1px 2px rgba(9,16,13,0.06); padding: 45px;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 84px; letter-spacing: -0.03em; color: #131816;">3</div>
+        <div style="font-size: 27px; color: #313a35; margin-top: 21px; line-height: 1.35;">eri järjestelmää saman tiedon äärellä</div>
+      </div>
+    </div>
+    <p style="font-size: 27px; color: #5f6b64; margin-top: 60px; max-width: 1100px;">Luvut 12 pilottimyymälästä, kahdeksan viikon seurantajaksolta.</p>
+  </section>
+
+  <section data-label="Osio 02" data-screen-label="03" data-speaker-notes="Siirtymä. Tästä eteenpäin puhutaan ratkaisusta." data-theme="dark" style="background: #050907; font-family: 'Archivo', sans-serif; display: flex; flex-direction: column; justify-content: center; padding: 108px 132px; position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(0,240,98,0.05) 0 1px, transparent 1px 24px), repeating-linear-gradient(90deg, rgba(0,240,98,0.05) 0 1px, transparent 1px 24px); opacity: 0.5;"></div>
+    <div style="position: relative;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 180px; line-height: 1; color: #00f062; text-shadow: 0 0 60px rgba(0,240,98,0.45);">02</div>
+      <div style="width: 180px; height: 3px; background: #00f062; box-shadow: 0 0 12px rgba(0,240,98,0.55); margin: 48px 0;"></div>
+      <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 114px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 700; color: #f2f7f4; margin: 0; max-width: 1230px;">Täydennys ilman arvailua</h2>
+      <p style="font-size: 30px; color: #8d9b94; margin: 30px 0 0; max-width: 840px;">Menekkiin perustuva tilausehdotus jokaiselle hyllypaikalle.</p>
+    </div>
+  </section>
+
+  <section data-label="Kolme tuotetta" data-screen-label="04" data-speaker-notes="Sama järjestelmä kolmella pinnalla: myyjän puhelin, myymäläpäällikön kone, ketjuohjauksen näkymä." style="background: #f7faf8; font-family: 'Archivo', sans-serif; display: flex; flex-direction: column; padding: 108px 132px;">
+    <div style="font-size: 21px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #00aa46;">Ratkaisu</div>
+    <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 72px; letter-spacing: -0.03em; font-weight: 700; color: #131816; margin: 21px 0 0;">Kolme pintaa, yksi tietolähde</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; margin-top: 78px; flex: 1;">
+      <div style="background: #ffffff; border: 2px solid #00aa46; border-radius: 14px; box-shadow: 0 0 20px rgba(0,240,98,0.30), 0 2px 8px rgba(0,240,98,0.20); padding: 48px; display: flex; flex-direction: column;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 21px; color: #00aa46; letter-spacing: 0.1em;">01</div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 600; letter-spacing: -0.02em; color: #131816; margin-top: 24px;">Myyjän sovellus</div>
+        <div style="font-size: 26px; line-height: 1.45; color: #5f6b64; margin-top: 21px;">Vuoron tehtävät, keräily ja viivakoodiskanneri puhelimessa. Toimii myös katvealueella.</div>
+      </div>
+      <div style="background: #ffffff; border: 1px solid #e2e9e5; border-radius: 14px; box-shadow: 0 1px 2px rgba(9,16,13,0.06); padding: 48px; display: flex; flex-direction: column;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 21px; color: #7f8c85; letter-spacing: 0.1em;">02</div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 600; letter-spacing: -0.02em; color: #131816; margin-top: 24px;">Varastokonsoli</div>
+        <div style="font-size: 26px; line-height: 1.45; color: #5f6b64; margin-top: 21px;">Saatavuus osastoittain, tilausehdotukset ja hyllykartta myymäläpäällikölle.</div>
+      </div>
+      <div style="background: #ffffff; border: 1px solid #e2e9e5; border-radius: 14px; box-shadow: 0 1px 2px rgba(9,16,13,0.06); padding: 48px; display: flex; flex-direction: column;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 21px; color: #7f8c85; letter-spacing: 0.1em;">03</div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 600; letter-spacing: -0.02em; color: #131816; margin-top: 24px;">SOK Analytics</div>
+        <div style="font-size: 26px; line-height: 1.45; color: #5f6b64; margin-top: 21px;">Ketjupulssi, alueosuuskaupat ja asiakasomistajuus samassa näkymässä.</div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Tulokset" data-screen-label="05" data-speaker-notes="Pilotin tulokset. Hyllysaatavuus on tärkein luku — se näkyy suoraan myynnissä." style="background: #f7faf8; font-family: 'Archivo', sans-serif; display: flex; flex-direction: column; padding: 108px 132px;">
+    <div style="font-size: 21px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #00aa46;">Pilotti · 12 myymälää · 8 viikkoa</div>
+    <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 72px; letter-spacing: -0.03em; font-weight: 700; color: #131816; margin: 21px 0 0;">Tulokset ensimmäisestä vaiheesta</h2>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 36px; margin-top: 84px;">
+      <div style="background: #ffffff; border: 2px solid #00aa46; border-radius: 14px; box-shadow: 0 0 20px rgba(0,240,98,0.30), 0 2px 8px rgba(0,240,98,0.20); padding: 42px;">
+        <div style="font-size: 19px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #5f6b64;">Hyllysaatavuus</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 69px; letter-spacing: -0.03em; color: #131816; margin-top: 27px;">97,4 %</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 23px; color: #00913b; margin-top: 15px;">+2,1 pp</div>
+      </div>
+      <div style="background: #ffffff; border: 1px solid #e2e9e5; border-radius: 14px; box-shadow: 0 1px 2px rgba(9,16,13,0.06); padding: 42px;">
+        <div style="font-size: 19px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #5f6b64;">Hävikki</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 69px; letter-spacing: -0.03em; color: #131816; margin-top: 27px;">-8,2 %</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 23px; color: #5f6b64; margin-top: 15px;">vs. verrokki</div>
+      </div>
+      <div style="background: #ffffff; border: 1px solid #e2e9e5; border-radius: 14px; box-shadow: 0 1px 2px rgba(9,16,13,0.06); padding: 42px;">
+        <div style="font-size: 19px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #5f6b64;">Keräilyaika</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 69px; letter-spacing: -0.03em; color: #131816; margin-top: 27px;">-14 min</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 23px; color: #5f6b64; margin-top: 15px;">per kuorma</div>
+      </div>
+      <div style="background: #ffffff; border: 1px solid #e2e9e5; border-radius: 14px; box-shadow: 0 1px 2px rgba(9,16,13,0.06); padding: 42px;">
+        <div style="font-size: 19px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #5f6b64;">Käyttöaste</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 69px; letter-spacing: -0.03em; color: #131816; margin-top: 27px;">92 %</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 23px; color: #5f6b64; margin-top: 15px;">päivittäin</div>
+      </div>
+    </div>
+    <div style="position: absolute; left: 132px; right: 132px; bottom: 66px; display: flex; justify-content: space-between; font-size: 21px; color: #7f8c85;">
+      <span>SOK · Ketjuohjaus</span>
+      <span style="font-family: 'JetBrains Mono', monospace;">5 / 8</span>
+    </div>
+  </section>
+
+  <section data-label="Myynti ketjuittain" data-screen-label="06" data-speaker-notes="Prisma vetää, mutta S-market on volyymiltaan lähellä. ABC yllättää kasvulla." data-theme="dark" style="background: #050907; font-family: 'Archivo', sans-serif; display: flex; flex-direction: column; padding: 108px 132px; position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(0,240,98,0.05) 0 1px, transparent 1px 24px), repeating-linear-gradient(90deg, rgba(0,240,98,0.05) 0 1px, transparent 1px 24px); opacity: 0.45;"></div>
+    <div style="position: relative; display: flex; flex-direction: column; flex: 1;">
+      <div style="display: flex; align-items: center; gap: 18px;">
+        <span style="width: 12px; height: 12px; border-radius: 50%; background: #00f062; box-shadow: 0 0 12px rgba(0,240,98,0.55);"></span>
+        <span style="font-size: 21px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #00f062;">Reaaliaikainen kassadata</span>
+      </div>
+      <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 72px; letter-spacing: -0.03em; font-weight: 700; color: #f2f7f4; margin: 24px 0 0;">Myynti ketjuittain tänään</h2>
+      <div style="display: flex; align-items: flex-end; gap: 42px; margin-top: 90px; flex: 1; padding-bottom: 30px;">
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 24px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 30px; color: #f2f7f4;">4,21 M€</span>
+          <div style="width: 100%; height: 400px; border-radius: 12px 12px 3px 3px; background: #00f062; box-shadow: 0 0 20px rgba(0,240,98,0.30), 0 2px 8px rgba(0,240,98,0.20); transform-origin: bottom; animation: grow-up 600ms cubic-bezier(0.16,1,0.3,1) both;"></div>
+          <span style="font-size: 24px; color: #8d9b94;">Prisma</span>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 24px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 30px; color: #f2f7f4;">3,64 M€</span>
+          <div style="width: 100%; height: 346px; border-radius: 12px 12px 3px 3px; background: #1f2b26; border: 1px solid #2b3831; transform-origin: bottom; animation: grow-up 600ms 60ms cubic-bezier(0.16,1,0.3,1) both;"></div>
+          <span style="font-size: 24px; color: #8d9b94;">S-market</span>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 24px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 30px; color: #f2f7f4;">1,44 M€</span>
+          <div style="width: 100%; height: 137px; border-radius: 12px 12px 3px 3px; background: #1f2b26; border: 1px solid #2b3831; transform-origin: bottom; animation: grow-up 600ms 120ms cubic-bezier(0.16,1,0.3,1) both;"></div>
+          <span style="font-size: 24px; color: #8d9b94;">ABC</span>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 24px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 30px; color: #f2f7f4;">0,92 M€</span>
+          <div style="width: 100%; height: 87px; border-radius: 12px 12px 3px 3px; background: #1f2b26; border: 1px solid #2b3831; transform-origin: bottom; animation: grow-up 600ms 180ms cubic-bezier(0.16,1,0.3,1) both;"></div>
+          <span style="font-size: 24px; color: #8d9b94;">Sale</span>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 24px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 30px; color: #f2f7f4;">0,81 M€</span>
+          <div style="width: 100%; height: 77px; border-radius: 12px 12px 3px 3px; background: #1f2b26; border: 1px solid #2b3831; transform-origin: bottom; animation: grow-up 600ms 240ms cubic-bezier(0.16,1,0.3,1) both;"></div>
+          <span style="font-size: 24px; color: #8d9b94;">Alepa</span>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 24px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 30px; color: #f2f7f4;">0,38 M€</span>
+          <div style="width: 100%; height: 36px; border-radius: 12px 12px 3px 3px; background: #1f2b26; border: 1px solid #2b3831; transform-origin: bottom; animation: grow-up 600ms 300ms cubic-bezier(0.16,1,0.3,1) both;"></div>
+          <span style="font-size: 24px; color: #8d9b94;">Sokos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Sitaatti" data-screen-label="07" data-speaker-notes="Aino Prisma Kalevasta. Tämä on se muutos, jonka myyjä huomaa ensimmäisenä." class="s-ambient" style="background: #f7faf8; font-family: 'Archivo', sans-serif; display: flex; flex-direction: column; justify-content: center; padding: 108px 132px;">
+    <div style="font-family: 'Space Grotesk', sans-serif; font-size: 78px; line-height: 1.18; letter-spacing: -0.03em; font-weight: 600; color: #131816; max-width: 1410px; text-wrap: pretty;">&ldquo;Ennen kiersin osaston läpi kahdesti aamussa. Nyt puhelin kertoo, mikä on loppu.&rdquo;</div>
+    <div style="display: flex; align-items: center; gap: 24px; margin-top: 72px;">
+      <div style="width: 66px; height: 66px; border-radius: 50%; background: rgba(0,170,70,0.10); color: #00aa46; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 24px;">AV</div>
+      <div>
+        <div style="font-weight: 600; font-size: 27px; color: #131816;">Aino Virtanen</div>
+        <div style="font-size: 23px; color: #5f6b64; margin-top: 4px;">Myyjä, Prisma Kaleva</div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Seuraavat askeleet" data-screen-label="08" data-speaker-notes="Päätös tänään koskee Q2:ta: laajennus 60 myymälään. Muut vaiheet seuraavat siitä." data-theme="dark" style="background: #050907; font-family: 'Archivo', sans-serif; display: flex; flex-direction: column; justify-content: center; padding: 108px 132px; position: relative; overflow: hidden;">
+    <div class="s-ambient" style="position: absolute; inset: 0;"></div>
+    <div style="position: relative;">
+      <img src="assets/sok-logo-full-white.png" alt="SOK" style="height: 66px; margin-bottom: 72px;">
+      <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 114px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 700; color: #f2f7f4; margin: 0;">Seuraavat askeleet</h2>
+      <div style="display: flex; gap: 84px; margin-top: 66px;">
+        <div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 23px; color: #00f062; letter-spacing: 0.1em;">Q2</div>
+          <div style="font-size: 30px; line-height: 1.4; color: #d8e2dc; margin-top: 15px; max-width: 345px;">Pilotti 12 → 60 myymälään</div>
+        </div>
+        <div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 23px; color: #00f062; letter-spacing: 0.1em;">Q3</div>
+          <div style="font-size: 30px; line-height: 1.4; color: #d8e2dc; margin-top: 15px; max-width: 345px;">Täydennys automaattiseksi</div>
+        </div>
+        <div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 23px; color: #00f062; letter-spacing: 0.1em;">Q4</div>
+          <div style="font-size: 30px; line-height: 1.4; color: #d8e2dc; margin-top: 15px; max-width: 345px;">Käyttöönotto koko ketjussa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</deck-stage>
+<script src="deck-stage.js"></script>
+</body>
+</html>

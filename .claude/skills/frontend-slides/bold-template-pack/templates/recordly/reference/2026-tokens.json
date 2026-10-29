@@ -1,0 +1,739 @@
+{
+  "$name": "Recordly 2026 Slide Design System",
+  "$source": "2026_template.pptx (37 slides, 51 layouts, updated 28.5.2026)",
+  "$units": "Lengths in inches unless suffixed _pt. 1in = 72pt = 914400 EMU.",
+  "canvas": {
+    "aspect": "16:9",
+    "width_in": 10.0,
+    "height_in": 5.625,
+    "width_pt": 720,
+    "height_pt": 405,
+    "width_emu": 9144000,
+    "height_emu": 5143500
+  },
+  "color": {
+    "ink": {
+      "hex": "#1B1B1B",
+      "theme": [
+        "dk1",
+        "accent2"
+      ],
+      "role": "default background; text on lime"
+    },
+    "lime": {
+      "hex": "#E3FF87",
+      "theme": [
+        "dk2",
+        "accent1",
+        "hlink"
+      ],
+      "role": "headings, active state, fills, rules"
+    },
+    "paper": {
+      "hex": "#EFEFEF",
+      "theme": [
+        "lt1"
+      ],
+      "role": "primary text on dark; light background"
+    },
+    "grey-700": {
+      "hex": "#434343",
+      "theme": [
+        "accent3"
+      ],
+      "role": "first step in sequences"
+    },
+    "grey-600": {
+      "hex": "#666666",
+      "theme": [
+        "accent4"
+      ],
+      "role": "hairlines, table row bars; never body text"
+    },
+    "grey-400": {
+      "hex": "#999999",
+      "theme": [
+        "lt2",
+        "accent5"
+      ],
+      "role": "muted text, matrix fill"
+    },
+    "grey-300": {
+      "hex": "#B7B7B7",
+      "theme": [
+        "accent6"
+      ],
+      "role": "body copy on dark, matrix fill"
+    },
+    "teal": {
+      "hex": "#0097A7",
+      "theme": [
+        "folHlink"
+      ],
+      "role": "visited links only"
+    },
+    "well": {
+      "hex": "#000000",
+      "theme": [],
+      "role": "card interior fill"
+    },
+    "divider": {
+      "hex": "#EEEEEE",
+      "theme": [],
+      "role": "diagram divider lines"
+    }
+  },
+  "background": {
+    "dark": {
+      "base": "#1B1B1B",
+      "texture": "fine film grain",
+      "rendered_mean": "#242424",
+      "asset": "1920x1080 png",
+      "default": true
+    },
+    "light": {
+      "base": "#EFEFEF",
+      "texture": "none"
+    },
+    "lime": {
+      "base": "#E3FF87",
+      "texture": "none"
+    },
+    "photo": {
+      "colour": "greyscale",
+      "min_resolution": "1920x1080",
+      "mean_luminance_with_text": [
+        0.15,
+        0.35
+      ],
+      "mean_luminance_without_text": [
+        0.5,
+        0.65
+      ]
+    }
+  },
+  "font": {
+    "family": "Montserrat",
+    "fallbacks": [
+      "Helvetica Neue",
+      "Arial",
+      "sans-serif"
+    ],
+    "embedded": true,
+    "weights": {
+      "display": {
+        "name": "Montserrat Black",
+        "weight": 900,
+        "use": "H1-H5, all slide titles"
+      },
+      "label": {
+        "name": "Montserrat ExtraBold",
+        "weight": 800,
+        "use": "chip, card and diagram labels"
+      },
+      "light": {
+        "name": "Montserrat Light",
+        "weight": 300,
+        "use": "subtitles and lead lines"
+      },
+      "body": {
+        "name": "Montserrat",
+        "weight": 400,
+        "use": "ingress and body copy"
+      }
+    }
+  },
+  "type": {
+    "h1": {
+      "size_pt": 54,
+      "weight": 900,
+      "color": "lime",
+      "line_height": 0.7
+    },
+    "h2": {
+      "size_pt": 34,
+      "weight": 900,
+      "color": "lime",
+      "line_height": 0.7
+    },
+    "h3": {
+      "size_pt": 24,
+      "weight": 900,
+      "color": "lime",
+      "line_height": 0.7
+    },
+    "h4": {
+      "size_pt": 14,
+      "weight": 900,
+      "color": "lime",
+      "line_height": 0.7
+    },
+    "h5": {
+      "size_pt": 9,
+      "weight": 900,
+      "color": "lime",
+      "line_height": 0.7
+    },
+    "ingress": {
+      "size_pt": 22,
+      "weight": 400,
+      "color": "lime",
+      "line_height": 1.0
+    },
+    "subtitle": {
+      "size_pt": 20,
+      "size_pt_cover": 18,
+      "weight": 300,
+      "color": "paper",
+      "color_alt": "grey-300",
+      "line_height": 1.0
+    },
+    "body-01": {
+      "size_pt": 16,
+      "weight": 400,
+      "color": "grey-300",
+      "line_height": 1.0
+    },
+    "body-02": {
+      "size_pt": 12,
+      "weight": 400,
+      "color": "grey-300",
+      "line_height": 1.0
+    },
+    "body-03": {
+      "size_pt": 8,
+      "weight": 400,
+      "color": "grey-300",
+      "line_height": 1.0
+    },
+    "chip-label": {
+      "size_pt": 10,
+      "weight": 800,
+      "color": "ink",
+      "line_height": 1.0,
+      "align": "center"
+    },
+    "diagram-label": {
+      "size_pt": 8,
+      "weight": 800,
+      "color": "ink",
+      "color_alt": "paper",
+      "line_height": 1.0
+    },
+    "heading": {
+      "pattern": "one colour: lime. Black 900. line_height 0.70 across the heading's own wrapped lines only.",
+      "note": "the type-specimen slide's lime-line-over-paper-line pair labels each style and its point size; it is not a headline treatment"
+    },
+    "lead_line": {
+      "size_pt": 20,
+      "size_pt_cover": 18,
+      "weight": 300,
+      "color": "paper",
+      "line_height": 1.0,
+      "note": "sits directly beneath a heading, one tier smaller; hierarchy is the size and weight drop, not a colour split inside the heading"
+    }
+  },
+  "text_box": {
+    "inset_in": 0.1,
+    "inset_pt": 7.2,
+    "bullets": {
+      "level_1": "●",
+      "level_2": "○",
+      "level_3": "■",
+      "bullet_size_pt": 13,
+      "marL_in": 0.5,
+      "indent_in": -0.34
+    },
+    "paragraph_spacing_pt": {
+      "level_1_before": 0,
+      "level_1_after": 0,
+      "level_2plus_before": 6
+    }
+  },
+  "grid": {
+    "margin_in": 0.5,
+    "content": {
+      "x": 0.5,
+      "width": 9.01
+    },
+    "columns": {
+      "two": {
+        "x": [
+          0.5,
+          5.2
+        ],
+        "width": 4.3,
+        "gutter": 0.4
+      },
+      "half": {
+        "x": [
+          0.5,
+          5.2
+        ],
+        "width": 4.7
+      },
+      "three": {
+        "x": [
+          0.5,
+          3.54,
+          6.58
+        ],
+        "width": 2.92,
+        "gutter": 0.1,
+        "visual_gutter": 0.3
+      }
+    },
+    "rows": {
+      "eyebrow": {
+        "y": 0.28,
+        "height": 0.32
+      },
+      "title": {
+        "y": 0.62,
+        "height": 0.58
+      },
+      "body": {
+        "y": 1.34,
+        "height": 3.59,
+        "bottom": 4.93
+      },
+      "footer_floor": 5.1,
+      "slide_number": {
+        "x": 4.7,
+        "y": 5.35,
+        "width": 0.6,
+        "height": 0.23
+      }
+    },
+    "photo_panel": {
+      "x": 5.2,
+      "width": 4.8,
+      "full_bleed": true
+    },
+    "framed_image": {
+      "x": 5.76,
+      "y": 0.53,
+      "width": 3.68,
+      "height": 4.53
+    }
+  },
+  "furniture": {
+    "note": "baked into the master background image; do not re-create as shapes",
+    "corner_tab": {
+      "x": 9.71,
+      "y": 0.0,
+      "width": 0.09,
+      "height": 0.32,
+      "fill": "lime",
+      "content": "rotated ЯDLY"
+    },
+    "wordmark": {
+      "x": 0.19,
+      "y": 5.35,
+      "width": 0.72,
+      "height": 0.07
+    },
+    "tagline": {
+      "text": "THE BUSINESS DATA COMPANY",
+      "right_edge": 9.81,
+      "y": 5.35,
+      "width": 1.57,
+      "color": "#737373",
+      "transform": "uppercase",
+      "tracking": "wide"
+    }
+  },
+  "stroke": {
+    "hairline_pt": 0.75,
+    "note": "every rule, outline and divider in the template is 0.75pt"
+  },
+  "radius": {
+    "default": 0,
+    "pill": "full",
+    "note": "square corners everywhere; pill rows are the only rounded component"
+  },
+  "component": {
+    "card": {
+      "count": 3,
+      "size": {
+        "width": 2.78,
+        "height": 3.65
+      },
+      "x": [
+        0.38,
+        3.53,
+        6.66
+      ],
+      "y": 1.36,
+      "gutter": 0.37,
+      "fill": "well",
+      "stroke": {
+        "color": "lime",
+        "width_pt": 0.75
+      },
+      "header": {
+        "width": 2.78,
+        "height": 0.43,
+        "fill": "lime",
+        "label": "chip-label"
+      },
+      "body": {
+        "y": 2.81,
+        "size_pt": 10,
+        "align": "center"
+      }
+    },
+    "chevron_process": {
+      "steps": 5,
+      "size": {
+        "width": 1.87,
+        "height": 2.43
+      },
+      "x": [
+        1.76,
+        3.27,
+        4.79,
+        6.31,
+        7.83
+      ],
+      "y": 2.23,
+      "pitch": 1.52,
+      "overlap": 0.35,
+      "fills": [
+        "#434343",
+        "#E3FF87",
+        "#666666",
+        "#B7B7B7",
+        "#EFEFEF"
+      ],
+      "active_index": 1,
+      "stroke": {
+        "color": "grey-600",
+        "width_pt": 0.75
+      },
+      "input_block": {
+        "shape": "flowchart_offpage_connector",
+        "x": 0.12,
+        "y": 2.5,
+        "width": 2.43,
+        "height": 1.9,
+        "fill": "ink",
+        "stroke": "grey-600"
+      },
+      "leader_lines": {
+        "color": "paper",
+        "width_pt": 0.75
+      },
+      "labels": "diagram-label"
+    },
+    "pill_rows": {
+      "count": 3,
+      "size": {
+        "width": 7.22,
+        "height": 1.15
+      },
+      "x": 2.06,
+      "y": [
+        1.27,
+        2.66,
+        4.05
+      ],
+      "pitch": 1.39,
+      "fill": "lime",
+      "radius": "full",
+      "icon_disc": {
+        "diameter": 0.77,
+        "fill": "ink",
+        "inset": 0.16
+      },
+      "icon": {
+        "size": 0.44,
+        "color": "paper",
+        "style": "monoline"
+      },
+      "row_label": {
+        "x": 0.14,
+        "width": 1.79
+      }
+    },
+    "table": {
+      "header": {
+        "height": 0.34,
+        "fill": "lime",
+        "label": "chip-label",
+        "cells": [
+          {
+            "x": 0.38,
+            "width": 1.63
+          },
+          {
+            "x": 2.27,
+            "width": 4.22
+          },
+          {
+            "x": 6.74,
+            "width": 2.96
+          }
+        ]
+      },
+      "row": {
+        "height": 0.62,
+        "pitch": 0.66,
+        "fill": "grey-600"
+      },
+      "number_gutter": {
+        "x": 2.26,
+        "width": 0.46
+      },
+      "divider": {
+        "color": "divider",
+        "width_pt": 0.75,
+        "marker": "small triangle"
+      }
+    },
+    "matrix_2x2": {
+      "quadrant": {
+        "width": 3.57,
+        "height": 1.76
+      },
+      "x": [
+        2.06,
+        5.64
+      ],
+      "y": [
+        1.36,
+        3.13
+      ],
+      "fills": [
+        "#B7B7B7",
+        "#999999"
+      ],
+      "fill_pattern": "alternating diagonally",
+      "stroke": {
+        "color": "ink",
+        "width_pt": 0.75
+      },
+      "axes": {
+        "color": "paper",
+        "width_pt": 0.75,
+        "vertical_x": 1.96,
+        "horizontal_y": 4.97
+      },
+      "axis_labels": "diagram-label"
+    },
+    "icon_row": {
+      "count": 5,
+      "y": 2.66,
+      "x": [
+        0.91,
+        2.64,
+        4.6,
+        6.43,
+        8.32
+      ],
+      "size": {
+        "height": 0.6,
+        "width_range": [
+          0.6,
+          0.83
+        ]
+      },
+      "label_rows_y": [
+        1.83,
+        3.69
+      ]
+    },
+    "icons": {
+      "count_available": 43,
+      "style": "monoline, single stroke weight",
+      "color": "paper",
+      "box": 0.6
+    }
+  },
+  "layout_pattern": {
+    "cover": {
+      "layouts": [
+        2,
+        3,
+        15,
+        19,
+        20
+      ],
+      "title": {
+        "x": 1.52,
+        "y": 2.12,
+        "width": 6.96,
+        "align": "center"
+      },
+      "subtitle_pt": 18
+    },
+    "statement": {
+      "layouts": [
+        23,
+        24
+      ],
+      "title": {
+        "x": 0.5,
+        "y": 2.12,
+        "width": 7.04,
+        "size_pt": 54
+      }
+    },
+    "statement_offset": {
+      "layouts": [
+        25,
+        26
+      ],
+      "title": {
+        "x": 3.94,
+        "y": 2.12,
+        "width": 5.57
+      }
+    },
+    "statement_two_line": {
+      "layouts": [
+        27,
+        28
+      ],
+      "title_pt": 36,
+      "lead_pt": 20,
+      "y": [
+        1.53,
+        2.81
+      ]
+    },
+    "photo_text": {
+      "layouts": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        35,
+        36
+      ]
+    },
+    "text_framed_image": {
+      "layouts": [
+        21
+      ],
+      "title_pt": 36,
+      "lead_pt": 20
+    },
+    "content_full": {
+      "layouts": [
+        29,
+        30,
+        34
+      ],
+      "title_pt": 34
+    },
+    "content_two_col": {
+      "layouts": [
+        31,
+        32
+      ],
+      "title_pt": 24
+    },
+    "content_three_col": {
+      "layouts": [
+        33
+      ],
+      "title_pt": 14,
+      "body_pt": 16
+    },
+    "diagram": {
+      "chevron": 44,
+      "icon_row": 45,
+      "cards": 46,
+      "pills": 47,
+      "table": 48,
+      "matrix": 49,
+      "title_pt": 30
+    },
+    "reference": {
+      "type_specimen": 1,
+      "icons": 42,
+      "logo_sheet": [
+        50,
+        51
+      ],
+      "lockups": [
+        40,
+        41
+      ],
+      "blank": 43
+    }
+  },
+  "logo": {
+    "wordmark": "ЯECOЯDLY",
+    "detail": "first letter reversed; the R inside -RDLY set in lime",
+    "clear_space": "one wordmark height on all sides",
+    "variants": [
+      {
+        "name": "ink box",
+        "composition": "ink block, paper letters, lime Я",
+        "use": "over photography"
+      },
+      {
+        "name": "lime box",
+        "composition": "lime block, knockout letters",
+        "use": "emphasis, merchandise"
+      },
+      {
+        "name": "knockout",
+        "composition": "paper letters, lime Я, transparent",
+        "use": "dark backgrounds (default)"
+      },
+      {
+        "name": "positive",
+        "composition": "ink letters, grey Я, transparent",
+        "use": "light backgrounds"
+      },
+      {
+        "name": "ЯDLY tab",
+        "composition": "short lockup in ink box",
+        "use": "corner mark, small sizes"
+      },
+      {
+        "name": "Я mark",
+        "composition": "single glyph in ink box",
+        "use": "avatar, 1:1 crops"
+      }
+    ]
+  },
+  "rules": {
+    "do": [
+      "one lime element per slide",
+      "70% line height across a heading's own wrapped lines",
+      "a heading is one colour (lime); hierarchy comes from the off-white Light lead line beneath it",
+      "left-align body copy and lists; centre only cover titles and chip labels",
+      "hold the 0.5in margin and the 5.1in floor",
+      "0.75pt on every rule and outline",
+      "greyscale photography, darkened to match the text over it",
+      "only the sanctioned type sizes: 54/34/24/22/20/16/14/12/10/9/8"
+    ],
+    "dont": [
+      "tint the lime, add a second accent, or promote #0097A7 to a brand colour",
+      "round rectangle corners",
+      "set #666666 as body text on dark",
+      "rebuild the logo, tagline or corner tab as shapes",
+      "set headings in anything but Montserrat Black",
+      "replace the background noise with a flat fill",
+      "place content in the bottom 0.5in",
+      "split a heading across a lime line and an off-white line — that is the type specimen's labelling, not a brand pattern"
+    ]
+  },
+  "known_inconsistencies": [
+    "two left margins: CUSTOM_* layouts at 0.495in, BLANK_* diagram layouts at 0.38in",
+    "eyebrow y drifts between 0.01 and 0.28 across layouts",
+    "heading weight split: Black on the specimen slide, ExtraBold on the reference layout",
+    "stray #E46962 in layout 3 and a stray Manrope declaration in layout 48",
+    "all 51 layouts carry auto-generated CUSTOM_*/BLANK_* names",
+    "theme major/minor fonts still Arial while every style overrides to Montserrat",
+    "brand reference layouts sit in the same list as presentation layouts"
+  ]
+}
