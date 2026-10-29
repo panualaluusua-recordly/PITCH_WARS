@@ -47,7 +47,7 @@ The rebalancing preserves role totals and EUR 45,080. It is a proposed distribut
 
 The current public player guide was read directly from `/agents.md`. It says `GET /api/me` may provide `consultants` and `consultants_valid_until`; availability can change. A static repository roster does not replace that live evidence.
 
-The team token is held by Rauno and is not stored in GitHub. Rauno reported saving it, but `.env` is not present in this checkout; the file location in the other session is pending. No live consultant identity or availability has yet been verified. Continue role-only work meanwhile; do not register a new team or commit credentials.
+Live connection verified using Rauno's supplied token. Team: Wolves of Wall Text. At check: EUR 237,600 balance, 3,228 seconds remaining, game active. The current `/api/me` response does not include `consultants` or `consultants_valid_until`, so no live consultant availability can be verified from this response. Role-only proposals must preserve that limitation. The credential is in ignored local `.env` only.
 
 Before a named commitment: check live roster and validity time, actual role/language/certification evidence, date overlaps, absences and approved start. Do not invent a name or treat an old `offer` row as a verified booking.
 
