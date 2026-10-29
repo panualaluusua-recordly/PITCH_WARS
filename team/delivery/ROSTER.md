@@ -11,8 +11,10 @@ sum stays ≤ 100%, because several may be won.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Antti Koskinen | Lead architect | fi, en | Azure Solutions Architect Expert, Databricks DE Professional | oriola | 60% | signature | offer |
 | Antti Koskinen | Engagement lead | | | outokumpu | 10% | 1 Dec 2026 | offer |
-| Mikko Laine | SAP data engineer | fi, en | SAP Certified Associate, Databricks DE Professional, Azure DE Associate | oriola **and** outokumpu at 100% each | **CONFLICT** | | fix: keep in one deck |
-| Riikka Salo | Data / analytics engineer | fi, en | Databricks DE Associate, Azure DE Associate, PL-300 | oriola **and** outokumpu at 100% each | **CONFLICT** | | fix: keep in one deck |
+| Mikko Laine | SAP data engineer | fi, en | SAP Certified Associate, Databricks DE Professional, Azure DE Associate | oriola | 100% | signature | offer |
+| Riikka Salo | Data / analytics engineer | fi, en | Databricks DE Associate, Azure DE Associate, PL-300 | oriola | 100% | signature | offer |
+| Teemu Hakala | Senior data engineer, SAP → Databricks | fi, en | Databricks DE Professional, SAP Certified Associate, Azure DE Associate | outokumpu | 100% | 1 Dec 2026 | offer |
+| Noora Lindqvist | Senior analytics engineer | fi, sv, en | Databricks DE Associate, Azure DE Associate, PL-300 | outokumpu | 100% | 1 Dec 2026 | offer |
 | Ville Nieminen | BI / test engineer | fi, en | PL-300 | oriola | 50% | month 3 | offer |
 | Ville Nieminen | BI developer | | | vahterus | 40% | Jan 2027 | offer |
 | Panu Alaluusua | Engagement lead | fi, en | Azure DE Associate | tokmanni | 40% | 16 Nov 2026 | offer |
@@ -31,6 +33,6 @@ sum stays ≤ 100%, because several may be won.
 | Kaisa Virta | Regulatory & DORA advisor | fi, sv, en | CISA | savings-banks-group | 10% | 1 Dec 2026 | offer |
 | Olli Mattila | Lead data engineer, on site Uusikaupunki | fi, en | Azure DE Associate, Fabric Analytics Engineer | vahterus | 60% | 1 Dec 2026 | offer |
 
-**Open fix for the focus-5 owner:** Mikko Laine and Riikka Salo are at 100% in both oriola and outokumpu. Nobody
+**Fixed 2026-10-29 (outokumpu v2 uses Teemu Hakala and Noora Lindqvist).** Previously: Mikko Laine and Riikka Salo are at 100% in both oriola and outokumpu. Nobody
 else on this roster has free capacity (Aino Virtanen is at 100% on tokmanni), so give outokumpu two new named
 engineers in its next version and add them here.
