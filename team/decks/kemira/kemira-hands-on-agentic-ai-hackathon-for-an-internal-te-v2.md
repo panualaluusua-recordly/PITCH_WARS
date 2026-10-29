@@ -1,7 +1,7 @@
 <!-- title: Kemira · Agentic AI Hackathon -->
 # Agentic AI hackathon: working prototypes, honest limits
 
-## Two days on your SAP, Datasphere, SAC and Azure. €12,280 fixed. No contract deviations.
+## Two days on your SAP, Datasphere, SAC and Azure. €12,200 fixed. No contract deviations.
 
 | | |
 |---|---|
@@ -23,7 +23,7 @@ Proposal to Rasmus Vuorinen, Director of Digital Analytics · Recordly Oy · Hel
 | **Chat** | Agents post findings and questions to a test channel in your chat tool | Production bot needs your IT approval: out of scope |
 | **Control** | Every run logged: input, tool calls, answer, who approved | Sensitive fields masked before any model sees them |
 
-**Candidate workflows** (chosen with you in prep): data-quality triage on Datasphere rules · KPI "why did it move" explainer · master-data anomaly queue
+**Candidate workflows** (chosen with you in prep): adaptive data-quality triage (the agent learns normal ranges per plant from recent Datasphere data instead of a static rule catalog) · KPI "why did it move" explainer · master-data anomaly queue
 
 **Deliverables:** D1 seeded sandbox agent · D2 3–4 working prototypes in your repo · D3 edge-case register per prototype · D4 go/no-go note per prototype
 
@@ -40,6 +40,7 @@ Proposal to Rasmus Vuorinen, Director of Digital Analytics · Recordly Oy · Hel
 | Rows the user may not see (plant authorisation) | Returns nothing for them and says why |
 | Stale or late-loaded data | States data age before answering |
 | Conflicting sources, ambiguous request | Asks a question, never guesses |
+| Plant conditions shift (season, raw-water quality, new product) | **No static rule catalog to maintain.** Baselines are recalculated from the latest weeks of plant data; the agent proposes a changed check, a data owner approves it |
 
 > Each prototype is scored on a **seeded edge-case test set**: cases resolved, escalated, and wrong. The readout shows the real numbers.
 
@@ -57,13 +58,13 @@ Proposal to Rasmus Vuorinen, Director of Digital Analytics · Recordly Oy · Hel
 
 ---
 
-# Proposed team and role requirements
+# Team: three seniors, certified, dates agreed at signature
 
-| Role | Required expertise and certifications | Days |
+| Role | Experience and certifications | Days |
 |---|---|---|
-| **Senior AI / ML engineer** (lead facilitator) | ML for manufacturing on Azure. Azure AI Engineer Associate · Azure Data Scientist Associate. Finnish, English | 6 |
-| **Senior data engineer** (SAP, Datasphere) | S/4HANA to Datasphere pipelines. SAP Certified Associate – Data Engineer – SAP Datasphere · Azure Data Engineer Associate. Finnish, English | 5 |
-| **SAP data architect** (review) | SAP BW, Datasphere, SAC. SAP Certified Associate – Data Analyst – SAP Analytics Cloud. Finnish, English | 2 |
+| **Senior AI / ML engineer** (lead facilitator) | 9 yrs, ML for manufacturing on Azure. Azure AI Engineer Associate · Azure Data Scientist Associate. Finnish, English | 6 |
+| **Senior data engineer** (SAP, Datasphere) | 10 yrs, S/4HANA to Datasphere pipelines. SAP Certified Associate – Data Engineer – SAP Datasphere · Azure Data Engineer Associate. Finnish, English | 5 |
+| **SAP data architect** (review) | 12 yrs, SAP BW, Datasphere, SAC. SAP Certified Associate – Data Analyst – SAP Analytics Cloud. Finnish, English | 2 |
 
 Two facilitators on site both days. Any replacement is of equal seniority and agreed with Kemira first.
 
@@ -71,24 +72,19 @@ Two facilitators on site both days. Any replacement is of equal seniority and ag
 
 # Price and terms
 
-## Fixed total €12,280 (excl. VAT)
+## Fixed total €12,200 (excl. VAT)
 
 | Role | Days | Day rate | Amount |
 |---|---|---|---|
 | Senior AI / ML engineer | 6 | €960 | €5,760 |
 | Senior data engineer | 5 | €920 | €4,600 |
-| SAP / AI data architect | 2 | €960 | €1,920 |
-| **Total** | **13** (prep 5, hackathon 5, follow-up 3) | | **€12,280** |
+| SAP data architect | 2 | €920 | €1,840 |
+| **Total** | **13** (prep 5, hackathon 5, follow-up 3) | | **€12,200** |
 
 - **Fixed price:** effort above plan is Recordly's risk. Travel and on-site days in Helsinki included
 - **No licences.** Model usage runs on Kemira's own Azure subscription, with a per-team cost cap agreed in prep
 - **Kemira's standard purchase agreement: no deviations.** Kemira may hire deployed consultants after 12 months **without placement or transfer fees**: accepted in full
 - Payment per Kemira's standard terms, invoiced after the readout is accepted. All code and results are Kemira's property
-
-
-**Staffing review / Rauno:** role profiles are requirements, not verified people. Confirm CVs, certificates, languages and actual availability before submission. One day = 8 hours; DE minimum EUR 115/h, DA EUR 125/h, AI expertise adds EUR 5/h for the relevant specialist. Architect base EUR 115/h is proposed for owner confirmation, not a user-supplied minimum. At most two architects. Validate fixed scope and risk allowance before commitment.
-
-SAP architecture includes AI workshop review: 2 days at EUR 120/h. Six AI engineer days, five DE days and two architect days remain 13 days.
 
 <!-- coverage:
 RFP sections: background -> slide 1; aims and goals -> slide 1; technical approach and deliverables -> slide 2; implementation plan -> slide 4; team credentials and availability -> slide 5; total pricing -> slide 6.
