@@ -7,7 +7,7 @@ _VR Group: Delivery angle, for merging into the buyer deck_
 - Replacement at your request: equal seniority within 10 working days, 2-week overlap at our cost
 | Name | Role | Allocation | Certifications | Languages | Available |
 | --- | --- | --- | --- | --- | --- |
-| Jari Lehtonen | Senior analytics engineer | 100%, 6 months | SnowPro Advanced: Data Engineer; dbt Analytics Engineering; AWS Data Engineer Associate | Finnish (native), English | 1 Dec 2026, confirmed |
+| Jari Lehtonen | Senior analytics engineer | 100%, 6 months | SnowPro Advanced: Data Engineer; dbt Analytics Engineering; AWS Data Engineer Associate | Finnish (native), English | 1 Dec 2026 (planned; confirmed in writing at signature) |
 | Tuomas Rantanen | Solution architect, quality review | 10% | Azure Solutions Architect Expert | Finnish, English | 1 Dec 2026 |
 
 ## 3. Production changes only in December and from April: Q1 is build-and-test only

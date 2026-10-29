@@ -6,8 +6,8 @@ _Savings Banks Group: Delivery angle, for merging into the buyer deck_
 - Replacement only with your approval: equal seniority, 2-week overlap at our cost
 | Name | Role | Allocation | Certifications | Languages | Available |
 | --- | --- | --- | --- | --- | --- |
-| Johanna Berg | FinOps lead, 9 years in Nordic retail banking | 80% | FinOps Certified Practitioner; SnowPro Core | Finnish, Swedish, English | 1 Dec 2026, confirmed |
-| Markus Ek | Data engineer, Snowflake on Azure, Temenos feeds | 60% | SnowPro Core; Azure DE Associate | Swedish, Finnish, English | 1 Dec 2026, confirmed |
+| Johanna Berg | FinOps lead, 9 years in Nordic retail banking | 80% | FinOps Certified Practitioner; SnowPro Core | Finnish, Swedish, English | 1 Dec 2026 (planned; confirmed in writing at signature) |
+| Markus Ek | Data engineer, Snowflake on Azure, Temenos feeds | 60% | SnowPro Core; Azure DE Associate | Swedish, Finnish, English | 1 Dec 2026 (planned; confirmed in writing at signature) |
 | Kaisa Virta | Regulatory and DORA advisor | 10% | CISA | Finnish, Swedish, English | 1 Dec 2026 |
 
 ## 3. Delivery run the way your regulators expect: DORA terms built in, three priced phases

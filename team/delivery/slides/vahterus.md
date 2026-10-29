@@ -6,7 +6,7 @@ _Vahterus: Delivery angle, for merging into the buyer deck_
 - Monthly benefit report: realised vs. expected per item
 | Name | Role | Allocation | Certifications | Languages | Available |
 | --- | --- | --- | --- | --- | --- |
-| Olli Mattila | Lead data engineer, on site 2 days a week | 60% | Azure DE Associate; Fabric Analytics Engineer | Finnish, English | 1 Dec 2026, confirmed |
+| Olli Mattila | Lead data engineer, on site 2 days a week | 60% | Azure DE Associate; Fabric Analytics Engineer | Finnish, English | 1 Dec 2026 (planned; confirmed in writing at signature) |
 | Ville Nieminen | BI developer | 40% from Jan 2027 | PL-300 | Finnish, English | Jan 2027 |
 
 ## 3. No production changes in Q1: we build in Q1 and go live in April

@@ -1,13 +1,13 @@
 # Delivery input: demand and inventory forecasting
 _Metsä Group: Delivery angle, for merging into the buyer deck_
 
-## 2. A two-person core team with verified availability from 23 November, both at the shortlist presentation
+## 2. A two-person core team planned from 23 November, both at the shortlist presentation
 - **Contract deviations: none.** We accept your terms as is
-- Availability confirmed against our resourcing plan; the same people present at the shortlist session and deliver
+- Availability planned in our team roster and confirmed in writing at signature; the same people present at the shortlist session and deliver
 | Name | Role | Allocation | Certifications | Languages | Available |
 | --- | --- | --- | --- | --- | --- |
-| Petri Salonen | Lead forecasting data scientist | 80% | Databricks ML Associate; Azure Data Scientist Associate | Finnish, English | 23 Nov 2026, confirmed |
-| Emilia Nurmi | Data engineer, SAP S/4HANA to Databricks | 60% | Databricks DE Associate; Azure DE Associate | Finnish, English | 23 Nov 2026, confirmed |
+| Petri Salonen | Lead forecasting data scientist | 80% | Databricks ML Associate; Azure Data Scientist Associate | Finnish, English | 23 Nov 2026 (planned; confirmed in writing at signature) |
+| Emilia Nurmi | Data engineer, SAP S/4HANA to Databricks | 60% | Databricks DE Associate; Azure DE Associate | Finnish, English | 23 Nov 2026 (planned; confirmed in writing at signature) |
 | Tuomas Rantanen | Architect, delivery governance | 10% | Azure Solutions Architect Expert | Finnish, English | 23 Nov 2026 |
 
 ## 3. Priced from our own effort calculation, not from published figures

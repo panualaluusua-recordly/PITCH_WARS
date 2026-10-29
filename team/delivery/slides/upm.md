@@ -7,7 +7,7 @@ _UPM: Delivery angle, for merging into the buyer deck_
 - Works inside your repos and Databricks workspaces; nothing outside your tenant
 | Name | Role | Allocation | Certifications | Languages | Available |
 | --- | --- | --- | --- | --- | --- |
-| Henna Kallio | Forward-deployed ML engineer | 100%, 6 months | Databricks ML Professional; SnowPro Core; dbt Analytics Engineering | Finnish, English | 1 Dec 2026, confirmed |
+| Henna Kallio | Forward-deployed ML engineer | 100%, 6 months | Databricks ML Professional; SnowPro Core; dbt Analytics Engineering | Finnish, English | 1 Dec 2026 (planned; confirmed in writing at signature) |
 | Tuomas Rantanen | Architecture review, escalation | 5%, no extra cost | Azure Solutions Architect Expert | Finnish, English | 1 Dec 2026 |
 
 ## 3. A fixed monthly fee, so billing can never drift past the department estimate
