@@ -25,7 +25,8 @@
             "title": "Keruu",
             "boxes": [
               "Järjestelmistä ja palvelimilta: eräajo tai rajapinta",
-              "Ei selainskriptejä, pikseleitä eikä tunnisteita"
+              "Ei selainskriptejä, pikseleitä eikä tunnisteita",
+              "Palvelimelta ulos menevät yhteydet listataan ja sovitaan tietosuojavastaavan kanssa; pseudonymisointi lähteessä"
             ]
           },
           {
@@ -67,12 +68,12 @@
         [
           "Pistokoe",
           "vk 4–5",
-          "Pistokoe läpäisty vaihtoehdolle, kun sama ERP-virta ja sama verkkoapteekin tapahtuma saapuvat perille ilman selainpuolen skriptiä; viive mitataan minuutteina lähdetapahtumasta raporttiin ja ajokustannus mitataan, molemmat raportoidaan vaihtoehdoittain; lukuoikeudet ja irrotetut otteet pyydetään vk 1, ja jos ne puuttuvat vk 3, pistokoe korvataan dokumenttitarkistuksella ja pisteet merkitään epävarmoiksi; epäonnistuminen kirjataan pisteisiin. Data on synteettistä tai anonymisoitua, ei asiakas- tai reseptitason tietoja. Todiste: selaimen verkkoliikenteen tallenne (ei kolmannen osapuolen kutsuja) ja ajoloki. Jos esimerkkidataa ei ole vk 3, pilotoidaan kaksi virtaa vaihtoehdoille A ja B; C kuvataan luonnoksena, ei pilotoida"
+          "Pistokoe läpäisty vaihtoehdolle, kun sama ERP-virta ja sama verkkoapteekin tapahtuma saapuvat perille ilman selainpuolen skriptiä ja rivimäärät ja summa-arvot täsmäävät lähteeseen sovitulla toleranssilla (sovitaan portilla 1); poikkeamat kirjataan pisteisiin; viive mitataan minuutteina lähdetapahtumasta raporttiin ja ajokustannus mitataan, molemmat raportoidaan vaihtoehdoittain; lukuoikeudet ja irrotetut otteet pyydetään vk 1, ja jos ne puuttuvat vk 3, pistokoe korvataan dokumenttitarkistuksella ja pisteet merkitään epävarmoiksi; epäonnistuminen kirjataan pisteisiin. Data on synteettistä tai anonymisoitua, ei asiakas- tai reseptitason tietoja. Todiste: selaimen verkkoliikenteen tallenne (ei kolmannen osapuolen kutsuja) ja ajoloki. Palvelinpuolen ulosmenevät yhteydet (kohdeosoitteet) listataan ajolokista ja hyväksytään tietosuojavastaavan kanssa; tapahtumatiedot minimoidaan (ei suoria tunnisteita, pseudonymisointi lähteessä) ennen tallennusta. Jos esimerkkidataa ei ole vk 3, pilotoidaan kaksi virtaa vaihtoehdoille A ja B; C kuvataan luonnoksena, ei pilotoida"
         ],
         [
           "Päätös",
           "vk 6",
-          "Vaihtoehto valittu (myös A on sallittu); päätösmuistiossa jokaisesta vaihtoehdosta oma arkkitehtuurikuva, sanasto ja yhden sivun riskilista (tietosuoja, ylläpito, siirtymän vaikeus); 12 kk:n tiekartta tarkistuspisteineen kuukausina 3 ja 6"
+          "Vaihtoehto valittu (myös A on sallittu); päätösmuistiossa jokaisesta vaihtoehdosta oma arkkitehtuurikuva, sanasto ja yhden sivun riskilista (tietosuoja, ylläpito, siirtymän vaikeus). Jokaiselle vaihtoehdolle arvio siirtymän työmäärästä (haarukka, henkilöpäivinä), katko- ja paluusuunnitelma sekä ensimmäinen 90 päivän askel. 12 kk:n tiekartta tarkistuspisteineen kuukausina 3 ja 6"
         ]
       ],
       "note": "Tuntemattomat: ERP, BI ja pilvi nimetään vk 1 (vaihtoehdot riippuvat niistä); lisenssiluettelo vk 2, ilman sitä kustannus on vain suunta; esimerkkidata ilman henkilötietoja vk 3, ilman sitä pistokoe on dokumenttitarkistus ja pisteet merkitään epävarmemmiksi. Emme tee: toteutusta, migraatiota, tunnisteiden poistoa, oikeudellista arviota emmekä tekoälyä. Poissulkeva ehto todennetaan työkalukohtaisesti toimittajadokumentaation ja arkkitehtuurikuvauksen katselmuksella; selaintunnisteet inventoidaan sivuston tunnistehallinnan asetuksista (vaihe 1), ei lisäämällä seurantaa."
