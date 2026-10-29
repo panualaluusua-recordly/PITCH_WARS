@@ -47,4 +47,5 @@ Humans to nudge: - <person: sign-off of buyer>
 ## Rules
 
 - Numbers from the API and the evidence files only; mark assumptions.
+- Use the price owners' numbers as given; do not comment on whether a price or rate is right.
 - A plan, not an order: humans choose, and nothing is sent without the desk approval. Never call POST endpoints.

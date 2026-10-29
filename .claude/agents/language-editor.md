@@ -43,4 +43,5 @@ Flags for the owner (not mine to change): - <possible factual issue noticed>
 ## Rules
 
 - Never alter a figure, name, date, price or technical claim; if one looks wrong, flag it.
+- Wording only: do not restructure the storyline, change prices or contract terms; flag them to the owner.
 - Do not add content. Never edit the desk or call the game's POST endpoints.

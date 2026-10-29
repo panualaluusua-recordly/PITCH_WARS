@@ -88,7 +88,11 @@ This repo (https://github.com/panualaluusua-recordly/PITCH_WARS) shares code, no
   `compliance-analyst` (DORA, AI Act, GDPR, security gates), `assessment-designer` (method and criteria for
   assessment/roadmap RFPs), `genai-eval-designer` (evals, human gate and cost for AI/agent RFPs),
   `roi-case-builder` (value case and benefit ledger), `language-editor` (wording, titles, fi/sv/en, slide length),
-  `portfolio-strategist` (fees, clock and order across all buyers).
+  `portfolio-strategist` (fees, clock and order across all buyers), `roster-planner` (names, capacity and
+  start dates from `ROSTER.md`), `signoff-reviewer` (merges the panel's reports into a draft sign-off line).
+- `.claude/skills/signoff-panel/`: runs claims, tech, critic and mechanical checks in parallel before a sign-off.
+- `.claude/skills/reply-ingest/` + `team/bin/ingest_replies.py`: copies all buyer replies from the API into `team/buyers/` and `team/evaluations/reply-signals.md`.
+- `.claude/skills/reference-bank/`: verified customer cases for reference asks; no invented references.
 - `.claude/skills/architecture-patterns/`: pattern library P1–P16 and the method for the tech slides.
 - `.claude/skills/pitch-desk/SKILL.md`: desk recipes (open, revise, review, send, record reply).
 - `team/PLAYBOOK.md`: what wins and price calibration. Add lessons after every verdict.

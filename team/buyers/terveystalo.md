@@ -27,3 +27,22 @@ Not scored. Hard gates are the only thing evaluated.
 - The new RFP asks for at least two client references, licence cost implications and payment terms, and says "Shortlisted vendors will be invited to present". These are traps for rfp-trap-scan once the project is open.
 
 Open questions: what prices were sent with v2 and v3, and what was the project budget? Who is the teammate sending to Terveystalo, and do they plan to send on the new project at 09:13?
+
+<!-- replies:auto -->
+## Buyer replies (auto, from the game API; do not edit inside the markers)
+
+### terveystalo-agent-accelerated-migration
+- 2026-10-29T08:53 · **hints** · deck `terveystalo-agent-accelerated-migration-v2.pdf` (unknown) · price signal: **over-soft**
+  > I reviewed the submission. Requiring named senior engineers to personally inspect and approve every pipeline alteration is sound, as I have no interest in seeing unvetted code corrupting our reporting pipelines again. That said, working through the material was an aggravating exercise; it felt inconsistent and distinctly unfinished, which makes it hard to take seriously or defend upward. Beyond that, relying on English for delivery and documentation introduces pointless friction across our clinical operations where day-to-day work runs strictly in our local language. During our original Databricks rollout across the organization, we saw firsthand that rigid adherence to established reporting principles beats disruptive vendor experimentation every time. On the commercial side, the proposed fee for the trial seems quite high, though it might still be within budget, but I am certainly not committing to anything until these matters are resolved.
+- 2026-10-29T08:58 · **verdict** · deck `terveystalo-agent-accelerated-migration-v3.pdf` (unknown) · price signal: **verdict lost, price good**
+  > We are not moving forward with this proposal, not least because the entire matter of patient-facing conversational AI tools is conspicuously absent.
+  ratings: price good, buyer_fit good, project_fit excellent, presentation excellent
+  - [met] Slide 4 and slide 8 specify test environments with non-patient data only and EU-only processing.
+  - [met] Slide 2 and slide 7 commit to an all-native-Finnish delivery team, workshops, and documentation in Finnish.
+  - [met] Slide 2 and slide 4 explicitly state no new tools will be added besides Databricks inside our tenant.
+  - [not addressed] The slides focus strictly on ETL and reporting migration without addressing patient-facing conversational AI tools.
+  - [met] Slide 2 and slide 9 offer a fixed-price 5-week pilot with a strict decision gate before any broader commitment.
+  - [met] Slide 6 establishes empirical timing against a manual baseline with a firm gate requiring at least 40% measured time reduction.
+  - [met] Slide 9 sets clear unit prices per remaining ETL job and report rather than a lump-sum migration fee.
+  - [met] Slide 4 and slide 5 mandate branch protection requiring named senior engineer approval on every single pull request without auto-merges.
+<!-- /replies:auto -->

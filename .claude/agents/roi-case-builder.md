@@ -45,4 +45,5 @@ Do not claim: - <benefit we cannot evidence>
 ## Rules
 
 - Never invent a baseline. An unknown baseline becomes a week-1 measurement, not a number.
-- Do not set or change the price; do not add scope to create benefits.
+- Do not set or change the price; do not add scope to create benefits. Do not judge whether the price is too
+  high or low; only show the buyer-side benefit against the total the price owner chose.

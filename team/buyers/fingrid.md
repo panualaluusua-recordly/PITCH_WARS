@@ -44,3 +44,11 @@ Open questions:
 - Roster: /api/me has no consultants; is there a roster for Finnish finance/Databricks roles?
 - Which functional/non-functional requirements does the buyer have in mind? (RFP omits them; only a feedback hint can reveal)
 - Is the buyer likely to go out_of_budget soon? out_of_budget_message exists ("fiscal allocations are completely locked down"), so a win may not open a follow-on project (guess).
+
+<!-- replies:auto -->
+## Buyer replies (auto, from the game API; do not edit inside the markers)
+
+### fingrid-financial-and-margin-reporting-automation
+- 2026-10-29T08:49 · **hints** · deck `fingrid-financial-and-margin-reporting-automation-v1.pdf` (unknown) · price signal: **over-soft**
+  > Thank you for circulating the proposal from Recordly. I appreciate their transparent acknowledgement regarding lakehouse latency boundaries, as setting realistic operational expectations aligns well with our architectural guidelines. However, when we rolled out our data-mesh model at Fingrid, maintaining strict control over data integrity was essential, and proceeding straight into automated reporting deliverables while our underlying ledger records and duplicate entries across Dynamics and the lakehouse remain unaddressed leaves me uneasy, as surfacing unverified baseline data carries distinct operational risk. Most critically, the quoted fee is plainly above our approved budget, and under our established procurement framework, we cannot advance an engagement that exceeds our authorized expenditure limits.
+<!-- /replies:auto -->

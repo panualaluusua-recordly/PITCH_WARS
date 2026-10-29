@@ -13,3 +13,26 @@
 - Bets: (1) agent cannot merge own work, named Aktia reviewer = answers the review-bypass post-mortem; (2) EU/in-tenant model hosting options, no external APIs, exit plan = answers foreign-HQ AI dependency; (3) strict scope fence (no ML/anomaly add-ons, no Temenos changes) + FI/SV docs + key-person terms and written updates kept.
 - Honest unknowns on deck: stack not stated (VDE pattern is Snowflake + dbt; Definition week 1 confirms; stop after Definition), EU-model quality, ticket quality.
 - To verify before sending: supplier financial standing wording, team years/certs, Swedish native reviewer.
+
+<!-- replies:auto -->
+## Buyer replies (auto, from the game API; do not edit inside the markers)
+
+### aktia-data-warehouse-consolidation
+- 2026-10-29T08:28 · **hints** · deck `aktia-data-warehouse-consolidation-v2.pdf` (unknown) · price signal: **over-hard**
+  > While I appreciate that Recordly took my crusade against calendar-clogging status syncs to heart by leaning into written updates, we have an immediate commercial showstopper: their proposed price is completely above our budget. Years ago when I rebuilt our wealth analytics unit around Temenos Transact, I learned to appreciate ambitious architecture, but expecting Aktia to bankroll an engagement that sails entirely past what we can spend feels more like subsidizing a tech startup than contracting a delivery partner. Beyond that financial gulf, leaving our primary runbooks and architectural blueprints in English with only brief local summaries leaves me uneasy, as forcing our operational staff to parse foreign technical phrasing introduces needless friction during supervisory audits. Unless they can dramatically realign their commercial terms with what we can actually finance, this conversation will be remarkably brief.
+- 2026-10-29T08:31 · **hints** · deck `aktia-data-warehouse-consolidation-v3.pdf` (unknown) · price signal: **over-hard**
+  > Our primary roadblock here is commercial: the total price is flatly above our budget, which brings this conversation to an abrupt halt unless Recordly is willing to get realistic about their commercial terms.   I will give them credit for their key-person substitution terms, however; putting binding replacement penalties and talent commitments directly into the contract is a refreshing bit of accountability that protects us from standard consultancy games. Ever since I arrived at Aktia to overhaul our Temenos reporting, my corporate survival instinct has depended on keeping our core architecture airtight. To that end, leaving our pipelines and development workflows sitting inside vendor-managed environments while merely handing our team guest access leaves our operational perimeter far too exposed for a regulated bank. They will need to bring their pricing under our ceiling and clean up where that code actually lives before we entertain taking this any further.
+- 2026-10-29T08:32 · **no_reply** · deck `aktia-data-warehouse-consolidation-v4.pdf` (unknown) · price signal: **no reply**
+  > No reply.
+- 2026-10-29T08:35 · **verdict** · deck `aktia-data-warehouse-consolidation-v5.pdf` (unknown) · price signal: **verdict lost, price good**
+  > Layering machine learning anomaly detectors and predictive capabilities over read-only extraction feeds might look cutting-edge in a pitch deck, but indulging in predictive modeling bells and whistles is precisely what sank this proposal.
+  ratings: price good, buyer_fit good, project_fit fair, presentation good
+  - [partly met] Slide 5 and 6 insist on full audit trails and FIN-FSA traceability, keeping an ML anomaly detector tethered to human sign-off.
+  - [met] Slide 8 and 9 mandate all deliverables, runbooks, and workshops in Finnish and Swedish as the default standard.
+  - [partly met] Slide 3 and 7 outlaw standing weekly status syncs in favor of bi-weekly written updates and live dashboards.
+  - [partly met] Slide 11 showcases internal document checking and balance anomaly detection rather than speculative customer-facing AI gimmicks.
+  - [leans against] Slide 4 insists Temenos extraction remains strictly read-only with no core changes, opting for ML anomaly detection on slide 5.
+  - [partly met] Slide 10 details binding staffing substitution terms and financial penalties, though explicit IP buy-out clauses remain implicit.
+  - [met] Slide 4 and 6 dictate that all code, pipelines, and CI/CD live strictly inside Aktia's cloud perimeter and repositories.
+  - [met] Slide 2 and 5 replace spot-checking with automated full-population reconciliation across every historical account balance.
+<!-- /replies:auto -->
