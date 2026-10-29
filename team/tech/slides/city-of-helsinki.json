@@ -1,0 +1,36 @@
+{
+  "client": "City of Helsinki",
+  "title": "Tech & architecture slides for the City of Helsinki SME reporting deck",
+  "subtitle": "Merged into the existing Solution and Plan slides (buyer wants under 5 slides); not extra slides",
+  "footer": "Recordly | City of Helsinki | SME reporting platform",
+  "slides": [
+    {
+      "title": "From SAP record to self-service report, on the City's own platform",
+      "bullets": [
+        "**Extract:** released CDS views and OData with incremental loads, no custom ABAP; reuse the conventions from our earlier City squad work where they fit.",
+        "**Model and serve:** one Finnish definition per SME KPI, tests on every load, row-level security per unit tested before go-live.",
+        "**Find:** every dataset in the catalog with owner, Finnish description, refresh time and lineage."
+      ],
+      "diagram": {
+        "columns": [
+          {"title": "Sources", "boxes": ["SAP S/4HANA Cloud", "City's current data setup"]},
+          {"title": "Extract", "boxes": ["Released CDS views / OData, incremental", "Row counts reconcile to source"]},
+          {"title": "Model (current data setup)", "boxes": ["Raw → cleaned → business-ready", "One Finnish definition per SME KPI", "Tests on every load"]},
+          {"title": "Serve & find (City's BI tool)", "boxes": ["Certified SME dashboards", "Self-service model, row-level security per unit", "Catalog: owner, lineage, refresh"]}
+        ],
+        "band": "Code, tests and runbooks in the City's repos and cloud tenant · City-issued read-only accounts · no data copy outside the tenant · access removed at close"
+      }
+    },
+    {
+      "title": "A week-2 gate decides the build, so legacy quirks surface before pipelines do",
+      "table": [
+        ["Gate", "When", "Pass criterion"],
+        ["Access ready", "Week 1, before any extraction", "City-issued read-only SAP and platform accounts, NDA and security briefing done; stack, BI tool and catalog confirmed"],
+        ["Source go/no-go", "End of week 2", "3 priority SME KPIs trace to raw SAP tables, row counts reconcile, open data-quality issues listed and sized. Fail: re-scope or stop"],
+        ["First dashboard", "Week 5", "In use by the SME team; loads tested automatically"],
+        ["Go-live", "Week 10", "Access test per unit passed; every dataset in the catalog; Finnish runbooks used by City engineers"]
+      ],
+      "note": "Technical unknowns, resolved in week 1–2: the current data setup and BI tool (not named in the RFP), the SAP extraction route already in use, quirks in legacy tables (the gate sizes them). KPIs are ranked at the gate; if work grows, the lowest-ranked move out first."
+    }
+  ]
+}
