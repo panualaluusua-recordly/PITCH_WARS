@@ -8,15 +8,13 @@ skipped because Rauno owns its staffing review (`team/STAFFING_STATUS.md`). Ever
 | Issue | Seen in | Fix |
 | --- | --- | --- |
 | Names, certifications and availability stated as fact ("verified available", "At signing", "3 of 4 confirmed") | all four | Rauno's rule: mark as proposed, confirmed in writing at signature. All names are in `ROSTER.md`, and no one is double-booked. One critic said only Koskinen is listed for oriola; that was wrong. |
-| Price far below the rate floors | all four | oriola ≈ €38/h, tokmanni ≈ €56/h, varma ≈ €57/h, outokumpu ≈ €48/h vs. DE €115/h. Decision needed: `pricing-floor-check.md` |
-| No effort basis (person-days per role and phase), D8 | all four | Add a one-line basis to the price slide |
 | Written governance cadence missing or thin, DP7 | oriola, tokmanni, outokumpu | "Written update every second week, monthly steering, decision log" |
 | Recruitment clause missing, DP5 | all four | One line: "You may recruit our consultants after 12 months, no fee" |
 | Billing control partial, DP3 | all four | "No overage without your written approval; hours reported weekly in your tool" |
 
 ## Per offer: the top delivery fix
 
-- **oriola v1, €168k:** allocations imply about 583 person-days. Shrink the team or the scope, and add pairing with Oriola
+- **oriola v1, €168k:** allocations imply about 583 person-days. Add pairing with Oriola
   engineers from phase 1, Finnish-language delivery and a written-update cadence. The bio says Teemu is "exhausted by relentless fire-fighting".
 - **tokmanni v1, €92k:** add a risks slide (Tarja is "wary of complex technical risk"), replacement and recruitment terms
   and the governance cadence. The RFP asks for "at least two client references", and the deck has two anonymous ones.
