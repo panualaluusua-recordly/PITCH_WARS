@@ -25,7 +25,7 @@
             "title": "Freshness tier",
             "boxes": [
               "Streaming, seconds: Pub/Sub to BigQuery Storage Write API (proposed)",
-              "Change capture, minutes: if the ERP supports it; otherwise API polling",
+              "Change capture, minutes: where the ERP supports it; otherwise API polling at an interval set at Gate 1",
               "Micro-batch: Cloud Composer incremental loads",
               "Daily: Composer, reconciled finance"
             ]
@@ -60,12 +60,12 @@
         [
           "Access ready",
           "Before sprint day 1",
-          "NDA and secrecy undertaking signed; read-only Elisa-issued roles on BigQuery, Composer and Looker metadata and logs; no subscriber rows leave your GCP project; a sandbox dataset for the latency test"
+          "NDA and secrecy undertaking signed; read-only Elisa-issued roles on BigQuery, Composer and Looker metadata and logs; no subscriber rows leave your GCP project; plus a write-enabled sandbox dataset and one feed, in your project, for the latency test (synthetic or masked data only)"
         ],
         [
           "Gate 1",
           "End of week 2",
-          "Each priority domain (3 to 5) has an owner, a stated freshness need and current freshness measured from logs; one real feed run Pub/Sub to BigQuery to Looker, end-to-end latency measured; ERP named with its change-capture options; target range per tier agreed"
+          "Each priority domain (3 to 5) has an owner, a stated freshness need and current freshness measured from logs; one real feed run Pub/Sub to BigQuery to Looker in a sandbox dataset, end-to-end latency measured; ERP named with its change-capture options; target range per tier agreed"
         ],
         [
           "Checkpoint B",
@@ -78,7 +78,7 @@
           "Target architecture and roadmap accepted by the steering committee; anything untested marked 'not tested'"
         ]
       ],
-      "note": "Unknowns and how each is settled: which ERP and its change capture (sprint; without CDC, API polling or micro-batch at an interval set at Gate 1) · Power BI connectivity (import refreshes on a schedule; DirectQuery freshness is bounded by query load, limits and cost; measured per report in the sprint) · real freshness need per domain (owners answer in your chat tool by week 2) · where Composer code, CI/CD and access policies live (recorded in the sprint; existing pipelines stay unless a test fails)."
+      "note": "Unknowns and how each is settled: which ERP and its change capture (sprint; without change capture the ERP domain runs API polling or micro-batch, and Gate 1 shows its measured delay against the stated need) · Power BI connectivity (import refreshes on a schedule; DirectQuery freshness is bounded by query load, limits and cost; measured per report in the sprint) · sandbox dataset and feed (requested before day 1; if none by day 3, the latency test is marked 'not tested' and streaming stays a proposal) · real freshness need per domain (owners answer in your chat tool by week 2) · where Composer code, CI/CD and access policies live (recorded in the sprint; existing pipelines stay unless a test fails)."
     }
   ]
 }
