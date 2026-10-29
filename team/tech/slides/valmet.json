@@ -1,0 +1,36 @@
+{
+  "client": "Valmet Oyj",
+  "title": "Tech & architecture slides for the Valmet deck",
+  "subtitle": "Two slides for deck-writer to insert after the answer-first slide",
+  "footer": "Recordly | Valmet | Senior data engineer, Snowflake ingestion",
+  "slides": [
+    {
+      "title": "Mill telemetry is summarised at the edge, so satellite links are never saturated",
+      "bullets": [
+        "Raw telemetry stays at the mill. Only aggregates and changes travel, under a bandwidth cap, and bulk backfills run off-peak.",
+        "Infor CloudSuite and operational data land in Snowflake through the same monitored ingestion pattern."
+      ],
+      "diagram": {
+        "columns": [
+          {"title": "Mill (edge)", "boxes": ["Local collector per site", "Aggregate + compress (e.g. 1-min stats, deltas)", "Store-and-forward buffer"]},
+          {"title": "Constrained link", "boxes": ["Bandwidth cap per site", "Priority: operations first", "Off-peak backfill window"]},
+          {"title": "Central ingestion", "boxes": ["Infor CloudSuite via ION / Data Lake", "Incremental loads, schema checks", "Pipeline monitoring & alerts"]},
+          {"title": "Snowflake (EU region)", "boxes": ["Raw → modelled → reporting", "Customer-managed keys", "BI tool on certified tables"]}
+        ],
+        "band": "Rollout one mill at a time: link usage is measured before and after, and the next site starts only if operations saw no impact"
+      }
+    },
+    {
+      "title": "We reduce foreign-jurisdiction exposure honestly: what can be controlled, and what cannot",
+      "table": [
+        ["Measure", "What it does", "Limit we state openly"],
+        ["EU-region Snowflake account", "Data stored and processed in the EU", "Provider is US-headquartered"],
+        ["Customer-managed keys (Tri-Secret Secure)", "Valmet can revoke access to the data", "Needs Business Critical edition"],
+        ["Private connectivity, data minimisation", "Only data needed for reporting leaves the mills", "Design choice per data set"],
+        ["Open table format (Iceberg) for core data", "Exit path to another platform", "Migration effort if ever used"]
+      ],
+      "col_widths": [250, 330, 284],
+      "note": "Technical unknowns: link capacity per mill, Infor API limits, which data sets legal classifies as sensitive. Certifications on the proposed engineer: SnowPro Core and SnowPro Advanced: Data Engineer."
+    }
+  ]
+}

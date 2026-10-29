@@ -1,0 +1,17 @@
+# Tech & architecture slides for the Tokmanni deck
+_Tokmanni Group Oyj: Two slides for deck-writer to insert after the answer-first slide_
+
+## 2. Margin figures stay with the people entitled to them: access is closed by default and tested
+- **Deny by default:** a new report or app shows nothing until a role grants it. Margin and purchase-price columns are classed as sensitive and hidden unless the role allows them.
+- Access rules live in code, and an automated test runs on every release: "store supervisor cannot see department margin" fails the release if broken.
+[Sources: ERP (under development), Legacy functional apps, Store & logistics data FI / SE / DK] → [Integration layer: Stable data contracts per ERP object, ERP changes absorbed here, not in reports, Daily reconciliation] → [Data platform (public cloud): Conformed model: store, department, country, Sensitive-column tagging (margin, cost), Version-controlled, in Tokmanni's tenant] → [BI & apps: Row-level security: store / region / dept, Column-level security on margins, Access tests in CI + quarterly review]
+(Legacy apps are replaced one at a time and run in parallel until the new one is proven; rollback is always available)
+
+## 3. Every retired legacy tool is tied to a cost line in the store operating ledger
+| Wave | Legacy tool replaced | Measured result (baseline taken first) | Go-live rule |
+| --- | --- | --- | --- |
+| 1 (pilot) | One high-use reporting tool | Licence and hosting lines removed; manual report hours per store | Parallel run 4 weeks, no ops impact |
+| 2 | Next 2–3 functional apps by ledger impact | Same metrics, reported monthly | Outside peak season (no Q4 cut-overs) |
+| 3 | Remaining reporting on the new model | Total ledger lines removed vs baseline | Business owner sign-off per app |
+
+_Technical unknowns we price in: how much the ERP changes during delivery (handled by the integration layer); undocumented logic in legacy apps; FI/SE/DK differences in store data. No new licences unless a wave's business case shows a net saving._

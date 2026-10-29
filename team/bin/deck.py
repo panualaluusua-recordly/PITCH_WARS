@@ -4,7 +4,8 @@ Usage: python team/bin/deck.py spec.json out_basename
 Writes out_basename.pdf and out_basename.md.
 
 Spec: {"client": str, "title": str, "subtitle": str, "footer": str,
-       "slides": [{"title": str, "bullets": [str], "table": [[str]], "note": str}]}
+       "slides": [{"title": str, "bullets": [str], "diagram": {...}, "table": [[str]], "note": str}]}
+diagram = {"columns": [{"title": str, "boxes": [str]}], "band": str, "height": int}: an architecture flow.
 Bullets starting with "-- " are rendered as sub-bullets. **bold** is supported.
 """
 import json
@@ -61,6 +62,57 @@ def slide_frame(c, spec, n, total):
     c.drawRightString(W - 48, 22, f"{n} / {total}")
 
 
+def draw_diagram(c, d, y_top):
+    """Left-to-right architecture flow: columns of boxes joined by arrows, optional band underneath.
+
+    d = {"columns": [{"title": str, "boxes": [str]}], "band": str, "height": int}
+    """
+    cols = d["columns"]
+    n = len(cols)
+    gap = 26
+    x0, width = 48, W - 96
+    cw = (width - gap * (n - 1)) / n
+    h = d.get("height", 190)
+    top = y_top - 4
+    for i, col in enumerate(cols):
+        x = x0 + i * (cw + gap)
+        c.setFillColor(HexColor("#f2f6f4"))
+        c.setStrokeColor(RULE)
+        c.roundRect(x, top - h, cw, h, 6, fill=1, stroke=1)
+        draw(c, para(col["title"], 11, ACCENT, FB), x + 8, top - 6, cw - 16)
+        boxes = col.get("boxes", [])
+        bh = min(34, (h - 34 - 6 * len(boxes)) / max(len(boxes), 1))
+        by = top - 30
+        for b in boxes:
+            c.setFillColor(HexColor("#ffffff"))
+            c.setStrokeColor(ACCENT)
+            c.roundRect(x + 8, by - bh, cw - 16, bh, 4, fill=1, stroke=1)
+            p = para(b, 9.5, INK, leading=11)
+            _, ph = p.wrap(cw - 26, bh)
+            p.drawOn(c, x + 13, by - bh / 2 - ph / 2)
+            by -= bh + 6
+        if i < n - 1:
+            ax, ay = x + cw + 3, top - h / 2
+            c.setStrokeColor(ACCENT)
+            c.setFillColor(ACCENT)
+            c.setLineWidth(2)
+            c.line(ax, ay, ax + gap - 10, ay)
+            path = c.beginPath()
+            path.moveTo(ax + gap - 6, ay)
+            path.lineTo(ax + gap - 13, ay + 5)
+            path.lineTo(ax + gap - 13, ay - 5)
+            path.close()
+            c.drawPath(path, fill=1, stroke=0)
+            c.setLineWidth(1)
+    y = top - h - 6
+    if d.get("band"):
+        c.setFillColor(HexColor("#e8f3ee"))
+        c.rect(x0, y - 24, width, 22, fill=1, stroke=0)
+        draw(c, para(d["band"], 10, INK), x0 + 8, y - 6, width - 16)
+        y -= 30
+    return y - 6
+
+
 def render(spec, out):
     c = canvas.Canvas(out + ".pdf", pagesize=(W, H))
     c.setTitle(spec["title"])
@@ -88,6 +140,8 @@ def render(spec, out):
                 c.setFillColor(ACCENT)
                 c.circle(56, y - size * 0.55, 3, fill=1, stroke=0)
                 y = draw(c, para(b, size), 68, y, W - 120) - 7
+        if s.get("diagram"):
+            y = draw_diagram(c, s["diagram"], y)
         if s.get("table"):
             rows = [[para(cell, 11, INK, FB if r == 0 else F) for cell in row] for r, row in enumerate(s["table"])]
             ncol = len(s["table"][0])
@@ -115,6 +169,11 @@ def to_md(spec):
         lines += [f"## {i}. {s['title']}"]
         for b in s.get("bullets", []):
             lines.append(("  - " + b[3:]) if b.startswith("-- ") else ("- " + b))
+        if s.get("diagram"):
+            d = s["diagram"]
+            lines.append(" → ".join(f"[{col['title']}: {', '.join(col.get('boxes', []))}]" for col in d["columns"]))
+            if d.get("band"):
+                lines.append(f"({d['band']})")
         for r, row in enumerate(s.get("table", []) or []):
             lines.append("| " + " | ".join(row) + " |")
             if r == 0:
