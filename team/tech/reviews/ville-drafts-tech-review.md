@@ -69,3 +69,21 @@ Slide numbers follow each deck's own slide order (cover = 0). Each fix is ready 
 3. s1: "Tunnisteinventaario: kaikki nykyiset selainpuolen skriptit ja pikselit listataan ja merkitään poistettaviksi tai korvattaviksi palvelinpuolella." Evidence: "regulatory scrutiny surrounding digital pharmacy tags".
 4. s2: "Oletus: arviointi tehdään nykyisillä lisensseillä; vahvistetaan vk 1."
 5. s1: "Gate 1 includes a spot test: one ERP flow and one online-pharmacy event run through each option on sample data."
+
+## Re-check after the tech pass (2026-10-29 ~13:45)
+
+| Buyer, version | Verdict now | Remaining tech fix (ours) |
+| --- | --- | --- |
+| kemira v3 | strong | s3: name the limit: 0 wrong answers on authorisation cases, ≤1 in 5 runs on the rest, confirmed after first measurement |
+| alko v3 | strong | s5 Gate 1: labelled sample of ≥300 candidate pairs; precision target on sure matches confirmed before any merge |
+| elisa v3 | strong | s3 Streaming row: Power BI DirectQuery freshness is limited by query load; measured per report in the sprint |
+| veikkaus v3 | strong | none of ours (vendor-specific certs belong to the staffing owner) |
+| aktia v3 | adequate | s4: "Definition names each model host's HQ jurisdiction and exit; a self-hosted open-weight option is costed alongside, since an EU region of a US cloud can still be foreign-HQ" |
+| city-of-helsinki v4 | adequate | s2: data model, BI and catalog steps tool-neutral until week 1 confirms the stack |
+| sanoma v3 | adequate | none of ours left (Snowflake/dbt in certs and AI-credit pricing belong to other owners) |
+| yliopiston-apteekki v3 | adequate | s3: spot-test pass criteria: same ERP stream and web-pharmacy event arrive in each option with no browser-side script, measured by delay and cost |
+
+**For other owners (not changed by us):** vendor-specific certifications (Azure, AWS, GCP, Databricks, Snowflake) appear in
+team slides where the buyer names no vendor (helsinki, sanoma, veikkaus, yliopiston-apteekki, aktia). Sanoma and Aktia
+price or reference Snowflake AI credits and Snowflake/dbt cases. Yliopiston Apteekki has typos "iikkoa", "uoden".
+Kemira's last slide still carries an internal staffing note.
