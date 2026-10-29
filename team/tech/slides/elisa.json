@@ -41,8 +41,8 @@
           {
             "title": "Serving",
             "boxes": [
-              "Looker on live BigQuery",
-              "Power BI: DirectQuery or import, mode assessed per tier"
+              "Looker live path: cache policy set per tier",
+              "Power BI import serves daily and micro-batch tiers only; DirectQuery on BigQuery is not a seconds path"
             ]
           }
         ],
@@ -65,20 +65,20 @@
         [
           "Gate 1",
           "End of week 2",
-          "Each priority domain (3 to 5) has an owner, a stated freshness need and current freshness measured from logs; one real feed run Pub/Sub to BigQuery to Looker in a sandbox dataset, end-to-end latency measured; ERP named with its change-capture options; target range per tier agreed"
+          "Each priority domain (3 to 5, chosen with you by sprint day 2, the rest listed as out of scope) has an owner, a stated freshness need and current freshness measured from logs; one real feed run Pub/Sub to BigQuery to Looker in a sandbox dataset, latency measured from event to a Looker tile with the cache setting stated; freshness defined as event time to visible in Looker, reported as median and 95th percentile, per tier; ERP named with its change-capture options; target range per tier agreed"
         ],
         [
           "Checkpoint B",
           "Week 8",
-          "Options A tuned, B tiered, C all real-time scored on latency, cost and quota per tier, Composer load, failure mode and effort; every score cites a measurement or is marked 'not tested'"
+          "Options A tuned, B tiered, C all real-time scored on latency, cost and quota per tier, Composer load, failure mode and effort; every score cites a measurement or is marked 'not tested'; same IAM and policy-tag behaviour tested in Looker and Power BI on the tested domain; if the measured 95th percentile misses the Gate 1 range, the tier is re-scoped or Option C is costed for that domain, and the miss is shown to the committee"
         ],
         [
           "Final",
           "Week 10",
-          "Target architecture and roadmap accepted by the steering committee; anything untested marked 'not tested'"
+          "Target architecture and roadmap accepted by the steering committee; plan for existing Composer pipelines: keep, change or retire, per DAG group; anything untested marked 'not tested'"
         ]
       ],
-      "note": "Unknowns and how each is settled: which ERP and its change capture (sprint; without change capture the ERP domain runs API polling or micro-batch, and Gate 1 shows its measured delay against the stated need) · Power BI connectivity (import refreshes on a schedule; DirectQuery freshness is bounded by query load, limits and cost; measured per report in the sprint) · sandbox dataset and feed (requested before day 1; if none by day 3, the latency test is marked 'not tested' and streaming stays a proposal) · real freshness need per domain (owners answer in your chat tool by week 2) · where Composer code, CI/CD and access policies live (recorded in the sprint; existing pipelines stay unless a test fails)."
+      "note": "Unknowns and how each is settled: which ERP and its change capture (sprint; without change capture the ERP domain runs API polling or micro-batch, and Gate 1 shows its measured delay against the stated need) · Power BI connectivity (import refreshes on a schedule; DirectQuery is not a seconds path, its freshness is bounded by query load, limits and cost; measured per report in the sprint) · sandbox dataset and feed (requested before day 1; if none by day 3, the latency test is marked 'not tested' and streaming stays a proposal) · real freshness need per domain (owners answer in your chat tool by week 2) · where Composer code, CI/CD and access policies live (recorded in the sprint; existing pipelines stay unless a test fails)."
     }
   ]
 }

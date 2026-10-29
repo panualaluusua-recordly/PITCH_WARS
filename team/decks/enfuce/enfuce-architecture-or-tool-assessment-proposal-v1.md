@@ -21,6 +21,6 @@ Outputs: current-state flow and ownership map; representative reliability/qualit
 
 ---
 
-# €19,200 covers assessment and recommendations
+# €19,600 covers assessment and recommendations
 
-Architect 10 days × €1,040 + analytics engineer 10 days × €920 = **€19,200 excl. VAT**. Architect minimum needs price-owner confirmation. Role-only draft: verify names, certifications and availability. Assumes architecture materials, anonymized examples and up to eight interviews. 40% kickoff, 60% delivery; no build or new licences. No overage without written approval. No contractual deviations proposed, subject to Enfuce terms.
+Architect 10 days × €1,040 + analytics engineer 10 days × €920 = **€19,600 excl. VAT**. Architect minimum needs price-owner confirmation. Role-only draft: verify names, certifications and availability. Assumes architecture materials, anonymized examples and up to eight interviews. 40% kickoff, 60% delivery; no build or new licences. No overage without written approval. No contractual deviations proposed, subject to Enfuce terms.

@@ -2,14 +2,15 @@
   "client": "Alko Oy",
   "title": "Tekniset diat: Alko, tuote- ja toimittajatietojen laatu",
   "footer": "Recordly | Alko | Master data quality and duplicate cleanup",
-  "subtitle": "Two slides: architecture after 'Tavoitteet ja tausta', gates and risks after the plan slide (as in deck v4); v5 adds tech-critic fixes. Rules slide precedence line and plan row 'koeajo alkaa vk 6' live in the full deck v5",
+  "subtitle": "Two slides: architecture after 'Tavoitteet ja tausta', gates and risks after the plan slide (as in deck v4); v5 adds tech-critic fixes, v6 adds round-2 fixes (survivorship, recall sample, D5 metrics, Gate 2 overrun). Rules slide precedence line and plan row 'koeajo alkaa vk 6' live in the full deck v5",
   "slides": [
     {
       "title": "Suositeltu tekninen ratkaisu: hyväksytyt ja peruttavat yhdistämiset",
       "bullets": [
         "**Yhdistäminen ja palautus:** pääietue valitaan sovitulla säännöllä, viitteet (avoimet tilaukset, hinnastot, toimittajasopimukset) ohjataan pääietueeseen, vanha avain säilyy passiivisena. Palautus palauttaa auditointitaulun ennen-arvot; testataan pilotissa. Auditointitaulu tallentaa myös siirretyt viitteet; palautus siirtää viitteet takaisin ja ohittaa viitteet, joita on luotu yhdistämisen jälkeen (käsin tarkistukseen).",
         "**Validointi on lukevaa:** virhe tuottaa ilmoituksen ja poikkeamalistan, ei muuta dataa eikä pysäytä latausta. Siksi hyväksyntä tarvitaan vain yhdistämisille.",
-        "**Tietosuoja:** toimittajien IBAN- ja osoitetiedot käsitellään vain Alkon ympäristössä Alkon pääsynhallinnalla, ei kopioita ulos."
+        "**Tietosuoja:** toimittajien IBAN- ja osoitetiedot käsitellään vain Alkon ympäristössä Alkon pääsynhallinnalla, ei kopioita ulos.",
+        "**Pääietue ja tyhjät arvot:** attribuuttikohtainen voittosääntö (esim. aktiivinen ennen passiivista, täydempi tietue, uusin muutos) kirjataan sääntökirjaan portilla 1. Jos pakkauskoko tai vahvuus-% puuttuu, pari menee tarkistusjonoon, ei varmaksi ehdokkaaksi."
       ],
       "diagram": {
         "columns": [
@@ -64,12 +65,12 @@
         [
           "1 · Laajuus",
           "vk 2",
-          "Kaksoiskappaleaste rekistereittäin; varmojen (T1, T2, S1) ja tarkistusjonon osuus; ERP:n yhdistämisreitti vahvistettu; vähintään 300 merkittyä ehdokaspariä (Alkon asiantuntija merkitsee, noin 0,5 pv); varmojen sääntöjen tarkkuustavoite sovitaan ja vahvistetaan ennen yhtään yhdistämistä. Alko päättää laajuuden ja raja-arvot."
+          "Kaksoiskappaleaste rekistereittäin; varmojen (T1, T2, S1) ja tarkistusjonon osuus; ERP:n yhdistämisreitti vahvistettu; vähintään 300 merkittyä ehdokaspariä (Alkon asiantuntija merkitsee, noin 0,5 pv); varmojen sääntöjen tarkkuustavoite sovitaan ja vahvistetaan ennen yhtään yhdistämistä. Alko päättää laajuuden ja raja-arvot. Löydettyjen kaksoiskappaleiden kattavuus arvioidaan käsin tarkistetusta satunnaisotoksesta (esim. 200 riviä), ja puuttuvien osuus raportoidaan D1:ssä."
         ],
         [
           "2 · Pilotti",
           "vk 5",
-          "200 hyväksyttyä yhdistämistä ERP-muutosprosessin kautta; viitteet siirretty; vähintään yksi palautus testattu. Jos ERP:ssä ei ole rajapintaa: yhdistämislista ja viiteluettelo luovutetaan ERP-ylläpidolle, pilotti mitataan heidän läpimenoajallaan (rivit/pv), ja koko erän koko mitoitetaan sen mukaan. Vasta sitten koko erä."
+          "200 hyväksyttyä yhdistämistä ERP-muutosprosessin kautta; viitteet siirretty; vähintään yksi palautus testattu. Jos ERP:ssä ei ole rajapintaa: yhdistämislista ja viiteluettelo luovutetaan ERP-ylläpidolle, pilotti mitataan heidän läpimenoajallaan (rivit/pv), ja koko erän koko mitoitetaan sen mukaan. Vasta sitten koko erä. Jos koko erä ei ehdi vk 6 mennessä, viimeistellyt listat luovutetaan vk 6 ja loput yhdistämiset ajetaan ERP-ylläpidon aikataulussa vk 7-10 rinnakkain validoinnin kanssa; D3 on valmis kun lista on hyväksytty, ei kun ERP on ajanut sen."
         ],
         [
           "3 · Validointi",

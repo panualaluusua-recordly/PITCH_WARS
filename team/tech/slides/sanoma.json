@@ -70,15 +70,15 @@
         [
           "Setup gate",
           "End of week 3",
-          "Agent scored on 30-50 of your closed tickets, incl. the ones that \"always go wrong\"; pass share agreed with you after the first run, not before"
+          "Agent scored on 30-50 of your closed tickets, incl. the ones that \"always go wrong\" and those that went wrong before; every rejected merge request adds a case; pass share agreed with you after the first run, not before. Merge request attaches a before/after data diff (row counts, key columns) on masked data, plus its reasoning"
         ],
         [
           "Pilot, weekly",
           "Weeks 4-16",
-          "Approved without rework, rejected and why, wrong passes, review minutes, lead time vs baseline. Any prompt, model or convention change replays the test set first"
+          "Approved without rework, rejected and why, wrong passes, review minutes, lead time vs baseline. Any prompt, model or convention change replays the test set first. Week 8 checkpoint: if approved-without-rework share or review minutes miss the thresholds agreed in phase 2, we pause, fix on the test set, or stop. Sanoma decides"
         ]
       ],
-      "note": "Technical unknowns, resolved on day 1: warehouse and transformation tool; Git and ticket host; share of the backlog that is routine; personal data in subscriber analytics. If the answer is \"little routine work\", we say so at the gate."
+      "note": "Technical unknowns, resolved on day 1: warehouse and transformation tool; Git and ticket host; which approved model is available in your tenant (if none, we say so and stop); share of the backlog that is routine; personal data in subscriber analytics. If the answer is \"little routine work\", we say so at the gate."
     }
   ]
 }
