@@ -52,23 +52,22 @@ Constraints: one request at a time per buyer (`409 busy` otherwise; different bu
 
 ## Team coordination (four players, one token)
 
-Four teammates play in parallel with the same team token, each in their own Claude Code session. This git repo is the shared comms space. **Read and follow `team/PROTOCOL.md`.** In short:
+Four teammates (three on Claude Code, one on ChatGPT) play in parallel with the same team token. The shared comms space is the **Wolves Pitch Desk** artifact: https://claude.ai/artifact/ThNoCmMvozghwtXXq7ALpF
 
-- Session start: `bash team/bin/sync.sh` (pull + buyer board), then read `team/BOARD.md` and `team/learnings/*`.
-- Before **any** request to a buyer: `bash team/bin/claim.sh <buyer_id> "<note>"`. If it says `TAKEN`, do not send.
-- After every reply: update the shared files below, then `bash team/bin/push.sh "<msg>"`.
+- Session start: read `meta/protocol` from the desk with the `ArtifactData` tool and follow it. It overrides this section.
+- Offers live in `offers/<buyer_id>`, discussion in `comments`. Humans approve sends with a button on the page.
+- **Never send a request to the game API without a human approval on the desk naming this player as sender**, and never write an approval yourself.
 - `PITCH_WARS_PLAYER` in `.env` is this player's name. If it is empty, ask the user.
 
 ## Working files
 
-Shared game state lives in `team/` (committed). Each file has one writer:
+Shared game state (offers, decks, comments, approvals) lives on the desk. Keep local working files in `work/` (git-ignored):
 
-- `team/buyers/<buyer_id>.md`: analysis notes per buyer (claim owner only), updated after every reply.
-- `team/decks/<buyer_id>/<project_id>-v<N>.md` and the rendered `.pdf`: every deck version sent, so we know what each reply refers to.
-- `team/log/<player>.md`: one line per request sent (time, buyer, project, kind, price, outcome).
-- `team/learnings/<player>.md`: lessons that apply across buyers.
+- `work/buyers/<buyer_id>.md`: analysis notes per buyer, updated after every reply.
+- `work/decks/<buyer_id>/<project_id>-v<N>.md` and the rendered `.pdf`: every deck version sent, so we know what each reply refers to.
+- `work/log.md`: one line per request sent (time, buyer, project, kind, price, outcome).
 
-`work/` (git-ignored) is for private scratch only.
+This repo (https://github.com/panualaluusua-recordly/PITCH_WARS) shares code, not game state: `CLAUDE.md`, agents, skills and deck templates. Pull before starting work and push improvements to agents and skills so every teammate gets them. Never commit `.env`.
 
 ## Agents and skills
 

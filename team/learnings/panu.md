@@ -1,2 +1,0 @@
-# panu: learnings
-
