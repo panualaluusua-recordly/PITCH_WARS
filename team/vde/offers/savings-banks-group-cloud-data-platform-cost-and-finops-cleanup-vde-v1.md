@@ -69,7 +69,7 @@ Proposal to Rasmus Lindqvist, Head of Data and Analytics · Recordly Oy · Helsi
 | **Definition** | 8 days × €920 | €7,360 |
 | **Delivery** | 22 days × €920 | €20,240 |
 | **Ongoing** (3 months) | VDE 3 × €9,000 flat + 3 lead days × €920 | €29,760 |
-| **Total** | | **€57,360 (VAT 0%)** |
+| **Total** | | **€57,360 (excl. VAT)** |
 
 - You may stop after Definition with no further commitment.
 - Snowflake AI credits used by the agents are billed on your account and reported monthly.

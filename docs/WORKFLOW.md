@@ -45,16 +45,16 @@ draft ──> review ──(human presses Approve)──> approved ──(sender
    Proposal → `won` or `lost`. If a next project opens, archive the old doc as `offers/<buyer_id>__<project_id>`
    and start a fresh offer with the same owner.
 
-## Four-person sign-off: the last reviewer owns the submission
+## Three-person sign-off: the last reviewer owns the submission
 
-Team rule (2026-10-29, from Ville): **every offer is looked at by all four players: Rauno, Ville, Erika and Panu.**
+Team rule (2026-10-29, from Ville): **every offer is looked at by Panu, Rauno and Ville.** (Erika is out sick, so her sign-off is not needed.)
 
 - Each player (or their agent, on their behalf) records a sign-off in `team/signoffs/<buyer_id>.md`: one line with name, UTC time, offer version and verdict (`ok` or `fix: <one concrete change>`).
-- **The last of the four to sign off becomes the offer's owner.** From then on they handle the whole customer process in the game: getting the human approval, submitting, reading the buyer's reply, running review and optimisation rounds (feedback versions), and the final proposal.
+- **The last of the three to sign off becomes the offer's owner.** From then on they handle the whole customer process in the game: getting the human approval, submitting, reading the buyer's reply, running review and optimisation rounds (feedback versions), and the final proposal.
 - Before recording a sign-off, run `claims-auditor` on the version (an unsupported or contradicted claim is a `fix:`).
-- Until all four have signed off, nobody submits the offer to the game.
+- Until all three have signed off, nobody submits the offer to the game.
 - The owner still follows the hard guarantees below: a human Approve on the desk that names them as sender, and sending only with `team/bin/send.py`.
-- A new version after the four sign-offs doesn't need four new sign-offs. The owner iterates, and teammates may still comment.
+- A new version after the three sign-offs doesn't need three new sign-offs. The owner iterates, and teammates may still comment.
 
 ## Roles
 
