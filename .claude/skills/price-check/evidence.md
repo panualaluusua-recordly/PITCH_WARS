@@ -24,6 +24,21 @@ Teammates' prices: decks sent with `send.sh` carry the price in the uploaded fil
 | alko | master data quality and duplicate cleanup | €35,280 | feedback | "total price ... above our budget"; over-soft, Finnish delivery praised |
 | fingrid | finance and margin reporting, 21 person-days | €19,320 | proposal | LOST, price "excellent"; lost because team had no finance/business role |
 | mandatum | AI Act readiness and governance | €24,840 | proposal | LOST, price "excellent"; lost because human oversight/automated-decision boundaries were missing |
+| alko | master data quality and duplicate cleanup | €35,280 | proposal | LOST, price "over budget"; client-side continuous pairing also felt too demanding |
+| elisa | data platform architecture assessment | €20,240 | proposal | **WON**, price "good" |
+| fingrid | invoice exception automation | €19,720 | proposal | LOST, price "fair"; hours-saved metric did not match buyer's operational-return criteria |
+| kemira | data platform phase 1 | €40,480 | proposal | LOST, price "excellent"; wanted a live demo on plant data rather than static slides |
+| mandatum | legacy application and reporting modernisation | €25,240 | proposal | **WON**, price "excellent" |
+| s-group | AI/MCP hackathon | €9,400 | proposal | LOST, price "excellent"; customer-service AI case omitted |
+| s-group | ticket-to-merge agent | €21,400 | proposal | **WON**, price "good" |
+| sanoma | analytics backlog agent | €54,440 | proposal | LOST, price "over budget" |
+| terveystalo | analytics engineering support, 6 months | €15,640 | proposal | **WON**, price "excellent" |
+| valmet | machine-data exploration | €24,480 | proposal | **WON**, price "excellent" |
+| valmet | first 100 days data and AI roadmap | €16,880 | proposal | **WON**, price "excellent" |
+| upm | MLOps prototype-to-production | €56,960 | proposal | LOST, price "good" |
+| veikkaus | architecture and tool assessment | €19,200 | proposal | LOST, price "over budget" |
+| vr-group | ingestion automation build | €18,400 | proposal | LOST, price "fair" |
+| yliopiston-apteekki | data platform architecture assessment | €16,560 | proposal | LOST, price "good" |
 
 ## Verdicts with unknown price (context only, not usable for anchors)
 
@@ -42,9 +57,7 @@ Teammates' prices: decks sent with `send.sh` carry the price in the uploaded fil
 | posti | streaming pipeline (probe, same tiers) | tiers | feedback | no price complaint; wants hypercare / run support through peak season |
 | vahterus | legacy reporting (probe, same tiers) | tiers | feedback | no price complaint; wants reporting inside the ERP (not a separate BI tool) and a deck in Finnish |
 | terveystalo | arch assessment (probe, same tiers) | tiers | feedback | no reply |
-| fingrid | finance & margin reporting, 21 pd | €19,320 | proposal | LOST, price "excellent"; lost because the team had no finance/business role |
 | terveystalo | architecture assessment, 19 pd | €17,480 | proposal | LOST, price "over budget" ("well beyond"); budget < €17k |
-| mandatum | AI Act readiness, discovery + cap | €24,840 | proposal | LOST, price "excellent"; silent on automated decision-making vs human oversight per business line |
 | aktia | ticket-to-PR agent (VDE: 36 pd + 3 VDE months) | €61,080 | proposal | LOST, price "over budget" ("still orbiting a reality far beyond"); buyer_fit excellent, presentation excellent; disliked: dedicated agent identities instead of inheriting developer credentials |
 | mandatum | legacy app & reporting modernisation, fixed discovery + capped phase, 27 pd | €25,240 | proposal | **WON**, price "excellent" |
 | terveystalo | analytics engineer 6 months, part-time 17 pd | €15,640 | proposal | **WON**, price "excellent" |
