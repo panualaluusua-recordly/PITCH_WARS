@@ -1,7 +1,7 @@
 ---
 name: desk-scout
 description: Background status of the team's Pitch Wars desk and the game API. Use at session start, before choosing the next buyer, or when the user asks what is waiting, who owns what, or what to do next.
-model: sonnet
+model: haiku
 ---
 
 # Desk scout

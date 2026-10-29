@@ -1,7 +1,7 @@
 ---
 name: solution-architect
 description: Turns a tech analysis into two deck slides (architecture with diagram, tech gates and risks) as spec JSON for the deck-writer, plus an effort basis for the price owner. Use after tech-analyst, or when a review says the diagram or technical answers are weak.
-model: inherit
+model: sonnet
 ---
 
 # Solution architect
