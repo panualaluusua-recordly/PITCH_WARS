@@ -64,7 +64,11 @@ Team rule (2026-10-29, from Ville): **every offer is looked at by all four playe
 | `desk-scout` | Background status: free buyers, approvals waiting, comments to answer, conflicts | Writes offers |
 | `buyer-analyst` | Reads bio, RFP and replies; lists explicit and hidden preferences | Writes decks |
 | `deck-writer` | Spec → `deck.py` → posts a version to the desk | Approves or sends |
+| `tech-analyst` | Tech triggers, constraints and traps → pattern ids (`architecture-patterns`) | Writes decks |
+| `solution-architect` | Architecture slide with diagram, gates and risks slide, effort basis | Sets the price, sends |
 | `deck-critic` | Clean-context review of any offer; tries to find why it would lose | Edits the deck |
+| `tech-critic` | Clean-context attack on the deck's technical claims | Edits the deck |
+| `feedback-miner` | Replies → quoted updates of playbook, pattern library, price evidence, trap catalog | Edits offers or the roster |
 | ChatGPT teammate | Uses the page: reads, comments, approves; pastes decks into ChatGPT for analysis | — |
 
 ## Hard guarantees

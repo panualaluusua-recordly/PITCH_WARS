@@ -20,10 +20,16 @@ you do not care who did. You are given the deck and the buyer, nothing about the
 ## What to do
 
 Score the deck as the buyer would on `price`, `buyer_fit`, `project_fit` and `presentation`
-(`client_understanding`, `storyline`, `honest_unknowns`, `concreteness`, `slide_clarity`). For each RFP
-requirement and each hidden preference, find the slide that answers it, or record that none does. Look for
-over-promising (staff, dates, AI extras), a price above the likely budget, more than six slides, and topic titles
-instead of action titles.
+(`client_understanding`, `storyline`, `honest_unknowns`, `concreteness`, `slide_clarity`,
+`explanatory_visuals`, `recordly_style`). For each RFP requirement and each hidden preference, find the slide
+that answers it, or record that none does. Look for over-promising (staff, dates, AI extras), a price above the
+likely budget, more than six slides, and topic titles instead of action titles. Also check:
+
+- **Diagram:** is there an architecture or flow diagram on the buyer's own stack? None → `explanatory_visuals` weak.
+- **Style:** dark charcoal with lime accents is expected; a white/teal deck scored `recordly_style` weak.
+- **Rate floor:** price ≥ person-days × role minimum (`price-check`); one fixed total, no competing subtotals.
+- **Roster:** names, allocation and start dates consistent with `team/delivery/ROSTER.md`; nobody double-booked.
+- **Tech depth:** for the architecture claims, the `tech-critic` agent does the full attack; ask for it or run it.
 
 ## Output
 

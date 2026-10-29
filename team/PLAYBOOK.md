@@ -6,6 +6,11 @@ The proposal `review` rates `price`, `buyer_fit`, `project_fit`, `presentation`,
 (about half from the buyer's bio, half hidden in the project) plus presentation criteria:
 `client_understanding`, `storyline`, `honest_unknowns`, `concreteness`, `slide_clarity`.
 
+Later reviews add two more presentation criteria: `explanatory_visuals` (needs a real diagram on the buyer's own
+stack; Aktia, Enfuce: "architectural diagram is conspicuously absent") and `recordly_style` (dark charcoal and lime;
+the white/teal render got *weak*). Slide limit: cover + 5 content slides by default; go beyond it only when the RFP
+itself asks for more sections.
+
 **Every "past problem" sentence in the RFP or bio is a hidden preference.** Answer each one explicitly,
 with a concrete mechanism, on a named slide. Examples seen:
 
@@ -43,6 +48,9 @@ Calibration so far (both rated price **excellent** and won):
 - Kemira, 100-day data & AI roadmap: **€16,500**
 - City of Helsinki, 2 data engineers x 6 months: **€84,000** fixed
 Most first decks were "above budget", so buyers' budgets are modest.
+
+These two wins are **below the team rate floor** (`price-check`: €115/h and up). Do not copy their rates. Fit the
+scope (person-days) to the budget instead; see the max-person-days table in `price-check`.
 
 ## Etiquette
 
