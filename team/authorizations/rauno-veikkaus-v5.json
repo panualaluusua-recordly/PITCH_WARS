@@ -1,0 +1,21 @@
+{
+  "source": "direct human instruction in chat",
+  "by_player": "rauno",
+  "at": "2026-10-29T12:01:24.908972+00:00",
+  "human_instruction": "käytä sitä; sit ala vaan painaa tarjouksia sisään ohjeiden mukaisesti",
+  "buyer_id": "veikkaus",
+  "project_id": "veikkaus-architecture-or-tool-assessment",
+  "version": 5,
+  "price_eur": 19200,
+  "allowed_kinds": [
+    "feedback",
+    "proposal"
+  ],
+  "pdf_source": "team/decks/veikkaus/veikkaus-architecture-or-tool-assessment-v5.pdf",
+  "pdf_sha256": "c4692c58b0312aabde200612603f2e859bd066f2a5d0a1f7fe9d1b88a5eb14e3",
+  "review": "Three-player contributions present in signoffs; latest technical and staffing revisions integrated. No named consultant availability asserted. Live API provided no consultants field.",
+  "status": "active",
+  "control_change_explicitly_approved": true,
+  "control_approval_at": "2026-10-29T12:05:35.305152+00:00",
+  "control_approval_human_reply": "anna mennä (reply to explicit approval-control change and exact three-offer question)"
+}

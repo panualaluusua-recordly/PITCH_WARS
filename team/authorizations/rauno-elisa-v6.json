@@ -1,0 +1,21 @@
+{
+  "source": "direct human instruction in chat",
+  "by_player": "rauno",
+  "at": "2026-10-29T12:01:24.908972+00:00",
+  "human_instruction": "käytä sitä; sit ala vaan painaa tarjouksia sisään ohjeiden mukaisesti",
+  "buyer_id": "elisa",
+  "project_id": "elisa-data-platform-architecture-and-tool-selection-as",
+  "version": 6,
+  "price_eur": 20240,
+  "allowed_kinds": [
+    "feedback",
+    "proposal"
+  ],
+  "pdf_source": "team/decks/elisa/elisa-data-platform-architecture-and-tool-selection-as-v6.pdf",
+  "pdf_sha256": "30f9f4b57f222f9a491572ab5cff8a3b0c70c771d50ae1cc5ceacb08dcee5823",
+  "review": "Three-player contributions present in signoffs; latest technical and staffing revisions integrated. No named consultant availability asserted. Live API provided no consultants field.",
+  "status": "active",
+  "control_change_explicitly_approved": true,
+  "control_approval_at": "2026-10-29T12:05:35.303363+00:00",
+  "control_approval_human_reply": "anna mennä (reply to explicit approval-control change and exact three-offer question)"
+}
