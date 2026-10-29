@@ -7,6 +7,14 @@
 - To verify before sending: GCP certs and Power BI PL-300 on roster; 50% unused-day credit is a commercial commitment (drop it if the team does not want it); VDE = NO (BigQuery, advisory).
 - Fallback if over budget: 18 days × €920 = €16,560 (sprint 3, A 5, B 6, C 4).
 
+<!-- replies:auto -->
+## Buyer replies (auto, from the game API; do not edit inside the markers)
+
+### elisa-data-platform-architecture-and-tool-selection-as
+- 2026-10-29T12:07 · **hints** · deck `elisa-data-platform-architecture-and-tool-selection-as-v6-eur20240.pdf` (€20,240) · price signal: **none**
+  > The proposed gating structure prior to finalizing broader project commitments provides a solid basis for governance, and ensuring that our internal engineering personnel are spared from extensive interactive sessions will be appreciated across the department. When we carried out our migration to BigQuery and Cloud Composer, disciplined adherence to operational reality was what ultimately kept executive management supportive. However, framing the engagement strictly around an isolated assessment exercise creates an informational gap, as steering committees typically require clear visibility into the ongoing operational platform commitments and internal engineering upkeep required over a multi-year horizon. While the submission moves in a constructive direction, we would need these extended operational implications addressed before presenting an unassailable case to leadership.
+<!-- /replies:auto -->
+
 ## Rauno / Codex feedback round 2026-10-29
 
 Sent 6 (source version), kind feedback; fee EUR 1,000.

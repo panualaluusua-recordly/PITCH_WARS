@@ -58,3 +58,16 @@ scope (person-days) to the budget instead; see the max-person-days table in `pri
 - Feedback max ~2 per project. Enfuce after 5 feedbacks: "Stop asking for reviews".
 - Re-sending the same deck for feedback wastes money.
 - `no_reply` happens and the fee is lost.
+
+## Candidate lessons from recent losses
+
+- **Separate human-assisted recommendations from automated decisions in regulated offers.** Mandatum's AI Act
+  readiness proposal lost despite price and presentation rated excellent: the buyer said it was "completely
+  silent on how model governance addresses automated decision-making versus human oversight" across policies,
+  claims and pensions. Add an explicit decision-boundary matrix by use case, including permission inheritance and
+  LLM cost/evaluation controls when relevant. (Mandatum, AI Act readiness v1; candidate from one verdict.)
+- **Show the business-side owner and delivery governance, not only technical roles.** Fingrid's reporting offer
+  lost with price excellent and presentation excellent; the buyer objected that resourcing was "structured
+  exclusively around technical architecture and engineering specialists" and the review flagged no dedicated
+  project manager. When the RFP expects accountable delivery, name that role and allocate its effort. (Fingrid,
+  margin-reporting automation v2; candidate from one verdict.)

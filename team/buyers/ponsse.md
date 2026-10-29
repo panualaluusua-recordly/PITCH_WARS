@@ -12,3 +12,11 @@ v2 (work/decks/ponsse/ponsse-sme-cpq-reporting-v2.md, 6 slides, English):
 - Persona answers: 2 seniors + architect 2 days, transparent days x rate, pairing from week 1, Finnish docs in Ponsse repos, built for a future internal hire to take over, recruit after 12 months fee-free, stop at gate and pay Phase 0 only.
 - Price: 32 pd = 19 x €920 (DE) + 11 x €1,000 (DA) + 2 x €920 (architect) = €30,320 fixed, excl. VAT. No VDE, no AI.
 Open risks: v1 price unknown so the size of the reset is a guess (if still over budget next cut: Phase 0 + thin Phase 1 ~22 pd, about €21k); budget undisclosed; cloud vendor unknown ("a public cloud"), Microsoft certs assumed; the 6-8 KPI list is an assumption to confirm in week 1; CPQ data (quotes/contracts) only mapped, not built in this price; roster unverified.
+
+<!-- replies:auto -->
+## Buyer replies (auto, from the game API; do not edit inside the markers)
+
+### ponsse-sme-cpq-reporting
+- 2026-10-29T08:48 · **hints** · deck `ponsse-sme-cpq-reporting-v1.pdf` (unknown) · price signal: **over-hard**
+  > Credit where it's due: tackling automated reconciliation between machine metrics and group ledger definitions so controllers stop escalating discrepancies during month-end close addresses a genuine headache. That focus hits home, especially after dealing with finance breathing down our necks ever since we kicked off modernizing our operational analytics. However, jumping straight into a massive, multi-phase delivery roadmap feels bloated while our quote and contract feeds remain an unmapped mess; committing to an entire implementation package from day zero rather than de-risking the data through a sharp, focused preliminary assessment leaves me deeply uneasy. Most critically, the commercial fee is flat-out above our budget, making this scope completely unviable unless there is a radical reset.
+<!-- /replies:auto -->

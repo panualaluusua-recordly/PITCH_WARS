@@ -47,3 +47,22 @@ Open questions:
 
 ## 2026-10-29 C-batch draft (v2)
 Deck decks/fingrid/fingrid-financial-and-margin-reporting-automation-v2.pdf, 6 slides, 21 pd x €920 = €19,320. Bets: Phase 0 reconciliation gate; Yes/Yes but not included/Yes if matrix (10 assumed rows) with latency tiers; price cut to budget-class. Open: real requirement list unknown; v1 price unknown; run-cost cap number set only in Phase 0. Not sent.
+
+<!-- replies:auto -->
+## Buyer replies (auto, from the game API; do not edit inside the markers)
+
+### fingrid-financial-and-margin-reporting-automation
+- 2026-10-29T08:49 · **hints** · deck `fingrid-financial-and-margin-reporting-automation-v1.pdf` (unknown) · price signal: **over-soft**
+  > Thank you for circulating the proposal from Recordly. I appreciate their transparent acknowledgement regarding lakehouse latency boundaries, as setting realistic operational expectations aligns well with our architectural guidelines. However, when we rolled out our data-mesh model at Fingrid, maintaining strict control over data integrity was essential, and proceeding straight into automated reporting deliverables while our underlying ledger records and duplicate entries across Dynamics and the lakehouse remain unaddressed leaves me uneasy, as surfacing unverified baseline data carries distinct operational risk. Most critically, the quoted fee is plainly above our approved budget, and under our established procurement framework, we cannot advance an engagement that exceeds our authorized expenditure limits.
+- 2026-10-29T11:55 · **verdict** · deck `fingrid-financial-and-margin-reporting-automation-v2-eur19320.pdf` (€19,320) · price signal: **verdict lost, price excellent**
+  > In accordance with our procurement evaluation, we agree with the decision not to proceed, as the proposed resourcing plan is structured exclusively around technical architecture and engineering specialists.
+  ratings: price excellent, buyer_fit fair, project_fit good, presentation excellent
+  - [met] Slide 2 confirms solutions build on existing D365, Databricks, and Power BI with no new licenses required.
+  - [met] Slide 2 and Slide 5 specify native Finnish language for the delivery team and all documentation.
+  - [not addressed] The deck does not present AI acceleration figures or labor productivity metrics.
+  - [not addressed] The proposal excludes generative AI features entirely on Slide 2 and makes no mention of AI governance policies.
+  - [met] Slide 5 and Slide 6 allocate the entire scope to a lean pairing of one Senior Data Architect and one Senior Data Engineer.
+  - [met] Slide 4 establishes Phase 0 to match records and eliminate duplicates before any reporting build begins.
+  - [against] Slide 5 fields only technical delivery roles and omits a dedicated, named project manager.
+  - [met] Slide 2 and Slide 3 plainly detail why continuous real-time streaming breaks accounting reconciliation.
+<!-- /replies:auto -->
