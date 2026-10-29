@@ -1,30 +1,24 @@
-# Rate floors vs. what has won: a decision for the humans
+# Staffing rate-floor check - updated by Rauno / Codex
 
-Rauno's staffing rules (`team/STAFFING_STATUS.md`) set rate floors: DE €115/h, DA €125/h, AI +€5/h. Applied to our
-batch-2 effort bases at 7.5 h/day:
+Rauno's rates are **mandatory**, not optional guidance: DE EUR 115/h, DA EUR 125/h; AI expertise adds EUR 5/h to the relevant specialist. Lower buyer budgets require less scope, fewer hours or another delivery model. Do not lower the effective rate to match historical wins.
 
-| Buyer | Effort basis | Floor price |
-| --- | --- | --- |
-| vr-group | 132 pd DE | €113,850 |
-| upm | 120 pd AI DE | €108,000 |
-| metsa-group | 67 pd AI DA + 50 pd DE + 8 pd architect | €115,350 |
-| savings-banks-group | 95 pd DE + 3 pd/month ongoing | €81,938 + €2,588/month |
-| vahterus | 70 pd DE + 35 pd DA | €93,188 |
+See `team/staffing/REVIEW.md` for corrected human-only estimates, missing role rates and candidate-evidence checks. Do not classify all person-days as DE: architects, data scientists, FinOps leads and regulatory advisors need their own prices.
 
-**The conflict.** Every proposal won so far was priced far below these floors, and "above budget" is the most common
-reason for a no (`team/PLAYBOOK.md`):
+## Day-length conventions
 
-- City of Helsinki, 2 engineers × 6 months, won at **€84,000**. That is about 240 person-days, or **≈ €47/h**.
-- Kemira, 100-day roadmap, won at **€16,500**.
-- The playbook's starting point for 1 consultant × 6 months is €55–75k. At the floor it would be ≈ €104k.
+- Delivery module planning: **7.5 hours/day**, 20 days/month; DE EUR 862.50/day, DA EUR 937.50/day, AI DE EUR 900/day, AI DA EUR 975/day.
+- VDE offer variants: **8 hours/day**, six months estimated as 26 weeks; DE EUR 920/day, DA EUR 1,000/day, AI DE EUR 960/day, AI DA EUR 1,040/day.
+- Confirm actual client working time, holidays, dates and absences before final commitment. Never mix the two day lengths in one quote. VDE licence fees do not count as human hours.
 
-At the floors, most batch-2 offers would likely be rated "over budget". Two ways forward, for the humans to choose:
+## Corrected VDE variants
 
-1. **Floors as rules:** keep the rates and cut the scope (fewer person-days, a smaller first phase) until the price
-   fits the buyer's likely budget.
-2. **Floors as guidance:** price to win, as the playbook does, and record the gap.
+| Buyer | Human effort and rates (8 h/day) | VDE | Draft total |
+| --- | --- | --- | --- |
+| UPM | AI engineer 78 days x EUR 960 + AI architect 14 days x EUR 960 | 3 x EUR 9,000 | EUR 115,320; 6 x EUR 19,220 |
+| Valmet | AI-capable DE 78 days x EUR 960 + AI architect 14 days x EUR 960 | 3 x EUR 9,000 | EUR 115,320; 6 x EUR 19,220 |
+| VR Group | Analytics engineer 78 days x EUR 1,000 + AI architect 14 days x EUR 960 | 3 x EUR 9,000 | EUR 118,440; 6 x EUR 19,740 |
+| Savings Banks pilot | Definition EUR 7,960; delivery EUR 21,600; run architecture EUR 2,880 | Run: 3 x EUR 9,000 | EUR 59,440; one-bank pilot only |
 
-Until someone decides, our slides give effort bases (person-days) and leave the price to the price owner.
+The three build variants each budget **8 setup days + 2 review days per VDE month = 14 architect days**, approximately 10.8% over 130 planning workdays. Their human allocation is 78/130 = 60%. Proposed AI architect rate EUR 120/h includes an assumed EUR 115/h base + EUR 5/h AI premium; the owner must confirm the base. The Savings Banks variant proposes FinOps EUR 125/h and advisor EUR 150/h; these are proposed selling rates, not minima supplied by Rauno.
 
-Also from Rauno's rules: our slides now say availability is *planned* and confirmed in writing at signature,
-not "confirmed". Names stay as proposals in `ROSTER.md`.
+No final budget fit, actual staff availability or buyer acceptance has been verified. The fixed totals cover the stated scope and capacity; risks and exclusions must be agreed, not treated as unlimited fixed-scope delivery promises. Full-bank rollout is excluded from the small Savings Banks pilot. The human-only and VDE alternatives are mutually exclusive, not additive staffing reservations.

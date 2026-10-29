@@ -3,7 +3,7 @@
 
 ## Production-grade ML pipelines on Snowflake + dbt and Databricks, feeding SAP S/4HANA. Six months, fixed monthly fee, UPM's standard terms with no deviations.
 
-Proposal to Tapio Rantala, VP Enterprise Data & Analytics · Recordly Oy · Helsinki
+Draft proposal to Tapio Rantala, VP Enterprise Data & Analytics · Recordly Oy · Helsinki
 
 ---
 
@@ -12,9 +12,9 @@ Proposal to Tapio Rantala, VP Enterprise Data & Analytics · Recordly Oy · Hels
 | | |
 |---|---|
 | **Outcome** | 3–4 ML use cases taken from notebook to monitored production pipelines, with predictions written back to SAP S/4HANA |
-| **People** | **Henna Kallio**, forward-deployed ML engineer, embedded in your Helsinki team **3 days a week** from 1 Dec 2026, plus **Tuomas Rantanen**, solution architect, for delivery governance (5%) |
+| **People** | **Proposed forward-deployed ML engineer**, embedded in your Helsinki team **3 days a week** targeting 1 Dec 2026, subject to confirmation, plus **Proposed AI solution architect**, for architecture setup and agent review (14 days) |
 | **Agents** | Recordly **Virtual Data Engineer** (months 4–6): runs 24/7 inside your Snowflake account and takes the repetitive dbt, testing and monitoring work |
-| **Price** | **€107,640 fixed**, invoiced as **6 × €17,940 per month**. No timesheets, so no reconciliation drift. |
+| **Price** | **€115,320 fixed**, invoiced as **6 × €19,220 per month**. Weekly hours and capacity reporting; monthly invoice is fixed. |
 | **Contract** | UPM standard purchase agreement **as is, no deviations, no tracked changes**. Right to recruit the engineer after 12 months without a fee: **accepted**. |
 
 ---
@@ -47,11 +47,11 @@ Fixed scope boundary: if priorities change, we swap use cases in the backlog. **
 # The engineer and the agents
 
 :::cols
-### Henna Kallio, forward-deployed ML engineer
+### Required profile: forward-deployed ML engineer
 - Snowflake, dbt, Databricks ML, SAP S/4HANA integration
-- **Certifications:** Databricks ML Professional · SnowPro Core · dbt Analytics Engineering
-- Finnish and English · **60% from 1 Dec 2026**
-- With **Tuomas Rantanen**, solution architect (Azure Solutions Architect Expert), 5% for architecture and delivery governance
+- **Required certifications:** Databricks ML Professional · SnowPro Core · dbt Analytics Engineering
+- Finnish and English · **60% target from 1 Dec 2026; availability pending**
+- With **Proposed AI solution architect** (Azure Solutions Architect Expert required), 14 days for setup and agent review
 :::col
 ### Virtual Data Engineer (Recordly product)
 - A team of agents: data engineer, review and auditor agents, with a full audit trail
@@ -66,12 +66,22 @@ Fixed scope boundary: if priorities change, we swap use cases in the backlog. **
 
 | Item | Effort | Amount |
 |---|---|---|
-| Henna Kallio, ML engineer, 3 days/week × 6 months | 78 days × €960 | €74,880 |
-| Tuomas Rantanen, architect and governance | 6 days × €960 | €5,760 |
+| Proposed forward-deployed ML engineer, ML engineer, 3 days/week × 6 months | 78 days × €960 | €74,880 |
+| AI solution architect and governance | 14 days × €960 | €13,440 |
 | Virtual Data Engineer, months 4–6 | 3 months × €9,000 flat | €27,000 |
-| **Fixed total** | | **€107,640 (VAT 0%)** |
+| **Fixed total** | | **€115,320 (VAT 0%)** |
 
-- Invoiced monthly: **6 × €17,940**. No hourly billing, no timesheets.
+- Invoiced monthly: **6 × €19,220**. No hourly overage; weekly hours and capacity reporting remain available.
 - Snowflake AI credits used by the agents are billed by Snowflake on UPM's account. We report them monthly.
 - Standard purchase agreement accepted with **no deviations**. Recruit-after-12-months clause accepted.
-- **Honest unknown:** which use cases are production-ready is confirmed in month 1. The fee stays fixed either way.
+- **Honest unknown:** which use cases are production-ready is confirmed in month 1. Delivery is capped at 78 engineer days and 14 architect days; reprioritisation stays within that capacity.
+
+---
+
+# Staffing basis and confirmation gate
+
+- Planning assumption: six months = 26 weeks, five working days/week, eight hours/day; exact holiday and absence calendar to confirm. Engineer: 3 days/week = 78 days (60%).
+- Architect: 8 setup days + 2 review days in each of the 3 VDE months = **14 days**, about 10.8% across 26 weeks. Setup precedes agent use.
+- AI DE and AI architect: **EUR 120/h (EUR 960/day)**; analytics engineer: **EUR 125/h (EUR 1,000/day)**. Architect base EUR 115/h plus AI EUR 5/h is a proposed commercial rate, not an approved company minimum.
+- Candidate names, CVs, certificates, languages, start dates and availability require written verification before submission. Named profiles in earlier drafts are not evidence.
+- Fixed fee covers the stated capacity and prioritised backlog. Validate source effort and VDE offload in discovery; changes outside this boundary need written approval. AI credits, travel and licences are excluded. No additional production throughput is guaranteed.

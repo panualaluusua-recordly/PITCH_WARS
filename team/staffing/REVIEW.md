@@ -2,6 +2,10 @@
 
 Updated 2026-10-29. Staffing review completed for the five delivery modules currently in the repo, plus a new Valmet staffing module. Technical architecture remains with the tech owner. No game request was sent.
 
+**Latest handoff:** four VDE offer drafts added by Ville were also reviewed and updated in place. Corrected totals and the separate 8-hour convention are in `team/delivery/pricing-floor-check.md`. UPM and Valmet are EUR 115,320 each, VR EUR 118,440, Savings Banks EUR 59,440 for a reduced one-bank pilot. Original lower totals are superseded. These are draft commercial proposals with candidate and base-rate confirmation still pending.
+
+The Valmet six-week human pilot module below is an optional reduced-scope alternative, **not a replacement for the six-month RFP or a staffing addition to the VDE option**. Keep the six-month duration in the full offer. Select one variant with the offer owner; never add their allocations together or present a small pilot price as the full six-month price.
+
 ## Ready for the offer owners
 
 Use the revised JSON/Markdown/PDF modules in `team/delivery/slides/` for UPM, VR, Metsa Group, Savings Banks Group and Vahterus. Use `team/staffing/valmet.json` for the Valmet staffing section. These are draft inputs for the deck writer, not complete approved offers.
