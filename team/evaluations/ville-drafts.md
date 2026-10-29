@@ -1,6 +1,6 @@
 # Ville's offer drafts: ready for review (nothing sent to the game)
 
-Each needs sign-offs from rauno, erika and panu (`team/signoffs/<buyer>.md`). **The last of the four to sign off owns submission and optimisation.** All are rendered in the Recordly dark/lime theme with `.claude/skills/recordly-deck/render.py`. Team rows are **roles, not roster names yet**; add names from `team/delivery/ROSTER.md` before sending. Rates are at the team minimums (DE/architect €920/day, AI DE €960/day, DA €1,000/day).
+Each needs sign-offs from rauno and panu (Erika is out sick) (`team/signoffs/<buyer>.md`). **The last of the three to sign off owns submission and optimisation.** All are rendered in the Recordly dark/lime theme with `.claude/skills/recordly-deck/render.py`. Team rows are **roles, not roster names yet**; add names from `team/delivery/ROSTER.md` before sending. Rates are at the team minimums (DE/architect €920/day, AI DE €960/day, DA €1,000/day).
 
 | Buyer | Deck | Price | Person-days | Main bets | Open items before sending |
 |---|---|---|---|---|---|

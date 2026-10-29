@@ -2,4 +2,4 @@
 
 | player | time (UTC) | version | verdict |
 | --- | --- | --- | --- |
-| ville (drafter) | 2026-10-29T11:06Z | v2 | ok, ready for rauno, erika and panu to review; open items in team/evaluations/ville-drafts.md |
+| ville (drafter) | 2026-10-29T11:06Z | v2 | ok, ready for rauno and panu to review; open items in team/evaluations/ville-drafts.md |
