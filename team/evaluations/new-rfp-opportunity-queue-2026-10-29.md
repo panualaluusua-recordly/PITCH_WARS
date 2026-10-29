@@ -13,7 +13,7 @@ Zero-conversation open projects only. “Clear” below means no request in this
 ## Hold / do not pick in this pass
 
 - **Aktia streaming**: buyer is explicitly owned by Ville from prior submissions (`team/evaluations/handover-status.md`).
-- **Alko lead architect**: an Alko v8 is already in preparation; this follow-on may belong to the same offer owner. Reconcile the desk before any separate deck.
+- **Alko lead architect**: the previous master-data proposal is now closed/lost and this new project has no game conversation yet. The buyer-level owner is still unknown; reconcile the desk before drafting or sending.
 - **Fingrid assessment**: previous Fingrid work was sent by an unknown teammate; ownership is not cleared.
 - **Enfuce assessment**: previous project was won by a teammate; follow-on ownership stays with that player.
 - **Kemira, S Group, Valmet**: Ville owns these buyers (Prio A); hands off.
