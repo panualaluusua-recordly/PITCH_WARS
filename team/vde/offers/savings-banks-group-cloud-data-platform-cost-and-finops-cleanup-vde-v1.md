@@ -69,7 +69,7 @@ Draft proposal to Rasmus Lindqvist, Head of Data and Analytics · Recordly Oy ·
 | **Definition** | 4 FinOps days × €1,000 + 3 DE days × €920 + 1 advisor day × €1,200 | €7,960 |
 | **Delivery** | 6 FinOps days × €1,000 + 6 DE days × €920 + 8 AI architect days × €960 + 2 advisor days × €1,200 | €21,600 |
 | **Ongoing** (3 months) | VDE 3 × €9,000 + 3 AI architect days × €960 | €29,880 |
-| **Total** | | **€59,440 (VAT 0%)** |
+| **Total** | | **€59,440 (excl. VAT)** |
 
 - You may stop after Definition with no further commitment.
 - Snowflake AI credits used by the agents are billed on your account and reported monthly.

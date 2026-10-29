@@ -38,7 +38,7 @@ Minimum rates per role, at 8 h per person-day (team rules, Ville and Rauno):
 6. **Present it.**
    - State **one fixed total** clearly on the summary slide and the price slide. Repeat it at most once more.
    - Show the breakdown as person-days × day rate (rate ≥ role minimum). The buyer must be able to see the days and the rate. Avoid percentages that hide the effort. Avoid several separate € subtotals that could be added up wrongly.
-   - Payment terms, "no new licences", "VAT 0%".
+   - Payment terms, "no new licences", "excl. VAT".
    - If the buyer fears rigid lump sums (Helsinki SME hint), offer a **fixed discovery fee plus a capped build** instead of one monolithic sum.
 7. Log the price, person-days, VDE months and the verdict in `evidence.md` after every reply.
 

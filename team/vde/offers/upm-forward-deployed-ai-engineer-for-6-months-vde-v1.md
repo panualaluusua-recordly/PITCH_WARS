@@ -69,7 +69,7 @@ Fixed scope boundary: if priorities change, we swap use cases in the backlog. **
 | Proposed forward-deployed ML engineer, ML engineer, 3 days/week × 6 months | 78 days × €960 | €74,880 |
 | AI solution architect and governance | 14 days × €960 | €13,440 |
 | Virtual Data Engineer, months 4–6 | 3 months × €9,000 flat | €27,000 |
-| **Fixed total** | | **€115,320 (VAT 0%)** |
+| **Fixed total** | | **€115,320 (excl. VAT)** |
 
 - Invoiced monthly: **6 × €19,220**. No hourly overage; weekly hours and capacity reporting remain available.
 - Snowflake AI credits used by the agents are billed by Snowflake on UPM's account. We report them monthly.
